@@ -47,7 +47,10 @@ body{
 }
 
 .nav-link{
-    color: black !important;
+    /* color: black !important; */
+    color: #f9f9f9 !important;
+    font-size: 1.5em;
+    /* padding-top: 20px; */
 }
 
 .header-wrapper{
@@ -76,6 +79,22 @@ header {
     color: black !important;
 }
 
+.drop-menus{
+  background-color: #6F8777;
+}
+
+.nav-item{
+  width: 8.5rem;
+  background-color: #849f8d;
+    border-radius: 30px;
+}
+
+.nav-item:hover{
+  /* background-color: #D6A976; */
+  background-color: #D6A976;
+    border-radius: 30px;
+
+}
 
 /* main page */
 .wrapper{

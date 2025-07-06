@@ -39,9 +39,11 @@
     <header class="border-bottom">
         <div class="container">
             <div class="row align-items-center d-none d-md-flex" style="height: 85px;">
-                <!-- Left -->
+                <!-- Left: Burger Menu Dropdown -->
                 <div class="col-md-3">
-                    <i class="fa-solid fa-bars" style="color: #50685D; font-size: 2em;"></i>
+                    <button id="burgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" style="background:none; border:none; cursor:pointer;">
+                        <i class="fa-solid fa-bars" style="color: #f9f9f9; font-size: 2em;"></i>
+                    </button>
                 </div>
 
                 <!-- Logo -->
@@ -54,13 +56,78 @@
                 <!-- Right -->
                 <div class="col-md-3 d-flex justify-content-end align-items-center gap-2">
                     <a href="/">
-                        <button class="btn btn-outline-secondary btn-lg rounded-pill px-3 fs-6" style="width: 70px; background-color: #50685D; color: white;">menu</button>
-                    </a>
-                    <a href="/">
-                        <button class="btn btn-lg rounded-pill px-3 fs-6" style="background-color: #B18149; color: white;">Order Now</button>
+                        <button class="btn btn-lg rounded-pill px-3 fs-6 order-now-btn pulse" style="background-color: #B18149; color: white;">Order Now</button>
                     </a>
                 </div>
             </div>
+
+             <!-- Dropdown Menu -->
+            <nav id="burgerDropdown" class="d-none border-top  py-3">
+                <ul class="drop-menus nav justify-content-center flex-wrap gap-5 pt-5 pb-3 border rounded-pill extra-gap">
+
+                    <!-- About -->
+                    <li class="nav-item text-center">
+                        <a href="<?php echo site_url('/about'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="About" style="width: 60px; height: 60px;" class="mb-2">
+                            About
+                        </a>
+                    </li>
+
+                    <!-- Menu -->
+                    <li class="nav-item text-center">
+                        <a href="<?php echo site_url('/menu'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Menu" style="width: 60px; height: 60px;" class="mb-2">
+                            Menu
+                        </a>
+                    </li>
+
+                    <!-- Gift Cards -->
+                    <li class="nav-item text-center">
+                        <a href="<?php echo site_url('/gift-cards'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Gift Cards" style="width: 60px; height: 60px;" class="mb-2">
+                            Gift Cards
+                        </a>
+                    </li>
+
+                    <!-- Membership -->
+                    <li class="nav-item text-center">
+                        <a href="<?php echo site_url('/membership'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Membership" style="width: 60px; height: 60px;" class="mb-2">
+                            Membership
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item text-center">
+                        <a href="<?php echo site_url('/contact'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Contact" style="width: 60px; height: 60px;" class="mb-2">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
     </header>
 </div>
+
+<!-- Toggle Burger Dropdown -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const burgerBtn = document.getElementById('burgerBtn');
+        const burgerDropdown = document.getElementById('burgerDropdown');
+
+        burgerBtn.addEventListener('click', () => {
+            const isHidden = burgerDropdown.classList.contains('d-none');
+            burgerDropdown.classList.toggle('d-none', !isHidden);
+            burgerBtn.setAttribute('aria-expanded', String(isHidden));
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!burgerDropdown.contains(e.target) && !burgerBtn.contains(e.target)) {
+                burgerDropdown.classList.add('d-none');
+                burgerBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+</script>
