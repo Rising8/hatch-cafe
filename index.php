@@ -18,8 +18,10 @@
                             </p>
                             <div class="button1 pt-3">
                                 <a href="#">
-                                    <button class="btn btn-outline-secondary btn-lg rounded-pill px-5 fs-6 fs-md-5" type="button">
-                                        Go Somewhere
+                                    <button class="btn btn-lg rounded-pill px-5 py-3 fs-5 pulse" 
+                                        style="background: linear-gradient(135deg, #C7A678, #B88A54, #B18149); color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); box-shadow: 0 4px 10px rgba(177, 129, 73, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;" 
+                                        type="button">
+                                        Order Now
                                     </button>
                                 </a>
                             </div>
