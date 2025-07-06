@@ -28,6 +28,13 @@ html {
 
 .pulse:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(177, 129, 73, 0.5);
+    box-shadow: 0 6px 15px rqgba(177, 129, 73, 0.5);
     filter: brightness(1.1);
+}
+
+.frying-egg {
+  display: inline-block;
+  animation: pulse 2s infinite;
+  font-size: 1.5rem;
+  margin-left: 6px;
 }
