@@ -67,9 +67,9 @@
 
         <!-- Content 3 -->
         <div class="content-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack8.png" class="img-fluid" alt="Image description">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack7.png" class="img-fluid" alt="Image description">
             <div class="part1 text-center">
-                <h2 class="menus-h2">Yummy Picks for You</h2>
+                <h2 class="menus-h2 mb-5">Yummy Picks for You</h2>
                 <div class="d-flex justify-content-center flex-wrap gap-5">
                     <?php
                     $items = ['Waffle', 'Coffee', 'Soft Drink', 'Combo', 'Cakes'];
