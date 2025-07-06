@@ -36,39 +36,40 @@
 
         <!-- Content 2 -->
         <div class="content-2">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack1.png" class="img-fluid" alt="Image description">
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack1.png" class="img-fluid" alt="Image description"> -->
             <div class="text-center">
-                <h2 class="menus-h2 fs-3 fs-md-2 fs-lg-1">How Do You Want It?</h2>
-                <div class="category-section d-flex flex-wrap justify-content-center gap-4 my-2">
+                <h2 class="menus-h2">How Do You Want It?</h2>
+                <div class="category-section d-flex flex-wrap justify-content-center gap-5 my-2">
                     <div class="category-card text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Takeaway" class="card-img-top" width="50">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Takeaway" class="card-img-categories " width="50">
                         <h3 class="menus-h3 mt-3">Grab & Go Goodness</h3>
                         <p class="menus-p">Freshly made egg waffles and drinks ready when you are.</p>
                         <a href="#" class="menus-btn btn rounded-pill mt-2">Order Now</a>
                     </div>
 
                     <div class="category-card text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Party Pack" class="card-img-top" width="50">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Party Pack" class="card-img-categories" width="50">
                         <h3 class="menus-h3 mt-3">Party Pack Joy</h3>
                         <p class="menus-p">Perfect for birthdays and gatherings. Waffle happiness in a box!</p>
                         <a href="#" class="menus-btn btn rounded-pill mt-2">View Options</a>
                     </div>
 
                     <div class="category-card text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Cakes" class="card-img-top" width="50">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Cakes" class="card-img-categories" width="50">
                         <h3 class="menus-h3 mt-3">Handcrafted Cakes</h3>
                         <p class="menus-p">Golden waffle cakes and sweets — beautiful and delicious.</p>
                         <a href="#" class="menus-btn btn rounded-pill mt-2">Explore Cakes</a>
                     </div>
                 </div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack2.png" class="img-fluid" alt="Image description">
+                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack2.png" class="img-fluid" alt="Image description"> -->
             </div>
         </div>
 
         <!-- Content 3 -->
         <div class="content-3">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack8.png" class="img-fluid" alt="Image description">
             <div class="part1 text-center">
-                <h2 class="menus-h2 text-body-emphasis fs-3 fs-md-2 fs-lg-1 py-4">Yummy Picks for You</h2>
+                <h2 class="menus-h2">Yummy Picks for You</h2>
                 <div class="d-flex justify-content-center flex-wrap gap-5">
                     <?php
                     $items = ['Waffle', 'Coffee', 'Soft Drink', 'Combo', 'Cakes'];

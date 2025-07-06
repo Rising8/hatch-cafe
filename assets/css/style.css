@@ -47,7 +47,10 @@ body{
 }
 
 .nav-link{
-    color: black !important;
+    /* color: black !important; */
+    color: #f9f9f9 !important;
+    font-size: 1.5em;
+    /* padding-top: 20px; */
 }
 
 .header-wrapper{
@@ -76,6 +79,22 @@ header {
     color: black !important;
 }
 
+.drop-menus{
+  background-color: #6F8777;
+}
+
+.nav-item{
+  width: 8.5rem;
+  background-color: #849f8d;
+    border-radius: 30px;
+}
+
+.nav-item:hover{
+  /* background-color: #D6A976; */
+  background-color: #D6A976;
+    border-radius: 30px;
+
+}
 
 /* main page */
 .wrapper{
@@ -119,12 +138,13 @@ header {
 .content-2{
     /* height: 70px; */
     /* background-color: #f9f9f9; */
-    background-color: #6F8777;
+    /* background-color: #6F8777; */
     /* background-color: #D6A976; */
 }
 
 .menus-h2{
-  color: #f9f9f9 !important;
+  /* color: #f9f9f9 !important; */
+  color: #50685D !important;
 }
 
 .card-text{
@@ -141,12 +161,15 @@ header {
 }
 
 .menus-btn{
-  background-color: #6F8777;
+  /* background-color: #6F8777; */
+  background-color: #D6A976;
   color: #f9f9f9;
+  transition: transform 0.3s ease;
 }
 
 .menus-btn:hover{
-  background-color: #50685D;
+  background-color: #D6A976;
+  transform: scale(1.1);
   color: #f9f9f9;
 }
 
@@ -156,14 +179,24 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+   padding-top: 130px;
 }
+
 
 /* Card style */
 .category-card {
-  width: 350px;
-  padding: 2rem;
-  /* background: #6F8777; */
+   position: relative;
+  background: #6F8777;
   border-radius: 1rem;
+  width: 350px;
+  height: 400px;
+  padding: 2rem;
+  text-align: center;
+  overflow: visible; /* allow image to go outside */
+  /* width: 350px;
+  padding: 2rem;
+  background: #6F8777;
+  border-radius: 1rem; */
   /* box-shadow: 0 4px 12px rgba(0,0,0,0.08); */
   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
@@ -173,13 +206,20 @@ header {
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 } */
 
-/* Top image style */
+
+.card-img-categories {
+  width: 280px;
+  /* margin-top: -20px; */
+  margin-top: -180px; /* pop it out upward */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .card-img-top {
   margin-top: -20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-img-top:hover {
+.card-img-top:hover, .card-img-categories:hover {
   transform: scale(1.05);
   /* box-shadow: 0 6px 18px rgba(0,0,0,0.15); */
 }
