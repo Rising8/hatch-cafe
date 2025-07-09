@@ -7,14 +7,14 @@
         <div class="content-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <div class="container">
                             <h1 class="vertical-text text-start animated-header">
-                                <span class="word-1">Crispy Outside</span><br>
-                                <span class="word-2">Fluffy Inside</span>
+                                <span class="word-1">Your Hidden</span><br>
+                                <span class="word-2">Hatchaway</span>
                             </h1>
                             <p class="sentence-2 typing-paragraph text-start mx-auto py-3" id="sentenceTyping">
-                                Our Signature Egg Waffles Made Fresh Daily.
+                                Follow the scent of warm waffles and you’ll find us — your secret hideout from the city buzz. Cozy, charming, and always freshly hatched.
                             </p>
                             <div class="button1 pt-3">
                                 <a href="#">
@@ -27,8 +27,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <!-- Column 2 content -->
+                    <div class="col-md-7 pt-5">
+                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/hero.png" class="img-fluid" alt="Image description">
                     </div>
                 </div>
             </div>
