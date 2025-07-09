@@ -36,12 +36,14 @@ get_header();
         </p>
         
         <h4 class="fw-bold mb-2">⏰ Opening Hours</h4>
-        <p class="mb-4">Mon–Sun: 4PM – 10PM</p>
+        <p class="mb-0">Mon–Sat: 4PM – 10PM</p>
+        <p class="mb-4">Sun: Closed</p>
 
         <h4 class="fw-bold mb-2">📞 Contact</h4>
         <p>
-            <strong>Phone:</strong> (08) 1234 5678<br>
-            <strong>Email:</strong> <a href="mailto:hello@hatchperth.com" class="text-decoration-none">hello@hatchperth.com</a>
+            <strong>Phone:</strong> +(61) 493 346 288<br>
+            <!-- CHANGE THIS HREF MAIL LATER -->
+            <strong>Email:</strong> <a href="mailto:hello@hatchperth.com" class="text-decoration-none">hatchawaffleegg@gmail.com</a>
         </p>
     </div>
   </div>
