@@ -370,6 +370,39 @@ header {
   background-color: #6F8777;
 }
 
+.footer-h2{
+  color: #f9f9f9;
+}
+
+.footer-p{
+  color: #f9f9f9;
+}
+
+.signup-email{
+  position: relative;
+}
+
+.emailbox{
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.emailbutton{
+    width: 100px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #D6A976;
+    display: inline-block;
+    margin-left: -105px;
+    cursor: pointer;
+}
+
+.emailbutton:hover{
+    background-color:#B1804B;
+    color: #f9f9f9;
+}
+
 .icons{
   font-size: 2em;
   color: #f9f9f9;

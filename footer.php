@@ -1,9 +1,16 @@
 <footer class="footer-wrapper">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack9.png" class="img-fluid" alt="Image description">
     <div class="container">
-        <!-- Social Media Icons -->
+         <!-- Sign Up Email -->
+        <div class="container signup-email text-center pb-3">
+            <h2 class="footer-h2 fs-3 fs-md-2 fs-lg-1 pb-2">Don’t Miss a Crumb!</h2>
+            <p class="footer-p">Be the first to know about new flavours, specials, and Hatch news. Sign up for tasty updates!</p>
+            <input type="text" class="emailbox" placeholder="Email Address:">
+            <button class="emailbutton" aria-label="Email box">Sign Up</button>
+        </div>
+
+         <!-- Social Media Icons -->
         <div class="container text-center mb-4">
-            <h2 class="menus-h2 fs-3 fs-md-2 fs-lg-1 pb-3">Follow Us on Social Media</h2>
             <a href="#" class="icons me-3"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" class="icons me-3"><i class="fa-brands fa-tiktok"></i></a>
             <a href="#" class="icons me-3"><i class="fa-brands fa-facebook"></i></a>
@@ -14,14 +21,14 @@
             <ul class="list-inline mb-0">
                 <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">About Us</a></li>
                 <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Menu</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Drinks</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Waffles</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Cakes</a></li>
+                <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Membership</a></li>
+                <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Gift Card</a></li>
+                <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
             </ul>
         </div>
 
         <!-- Bottom -->
-        <div class="text-center py-3 border-top border-secondary mt-3">
+        <div class="text-center py-3 border-top border-secondary mt-3" style="color: #f9f9f9;">
             <small>&copy; 2025 Hatch Café. All rights reserved.</small>
         </div>
     </div>
