@@ -432,3 +432,45 @@ header {
 .soda-card:hover .soda-img {
   transform: scale(1.05);
 }
+
+/* Contact Page Styling */
+.contact-section-1 {
+  background-color: #fef9f6;
+  background-image: url('../img/waffle-bg-light.jpg');
+  background-size: cover; 
+  background-repeat: repeat;
+}
+
+.contact-hero h1 {
+  color: #4a5746;
+}
+
+.contact-hero p {
+  color: #6b7768;
+}
+
+.contact-map {
+  height: 400px;
+}
+
+.contact-map-iframe {
+  border: 0;
+  border-radius: 16px;
+  filter: grayscale(30%) contrast(1.15);
+}
+
+.contact-info {
+  background: linear-gradient(135deg, #fffaf0, #fef6ed);
+  border: 1px solid #f3e4d7;
+  height: 400px;
+}
+
+.contact-form {
+  background-color: #fefaf4;
+}
+
+.contact-form-card {
+  max-width: 700px;
+  background: linear-gradient(135deg, #fffaf0, #fef6ed);
+  border: 1px solid #eee1d6;
+}
