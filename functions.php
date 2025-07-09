@@ -31,6 +31,15 @@ function hatch_enqueue_styles()
 
     // Custom JS - ( this may need to be changed later !!! )
     wp_enqueue_script('hatch-scripts', get_template_directory_uri() . '/assets/js/custom.js', array('jquery', 'bootstrap-js'), null, true);
+
+    // Enqueue Animate.css
+    wp_enqueue_style('animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+    // Enqueue Confetti.js (dependency for gift-cards.js)
+    wp_enqueue_script('confetti', 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js', array(), null, true);
+
+    // Gift Card custom JS
+    wp_enqueue_script('gift-cards', get_template_directory_uri() . '/assets/js/gift-cards.js', array('confetti'), null, true);
 }
 add_action('wp_enqueue_scripts', 'hatch_enqueue_styles');
 
