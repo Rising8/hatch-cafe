@@ -374,3 +374,28 @@ header {
   font-size: 2em;
   color: #f9f9f9;
 }
+
+/* Mont Blanc Coconut Dreams Header Styling - Menu Page */
+.coconut-header {
+  background-color: #ffe8f0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(255, 174, 209, 0.2);
+  color: #6b3e26;
+}
+
+/* Soda Drinks Section Styling - Menu Page */
+.soda-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 174, 255, 0.15);
+  transition: all 0.2s ease;
+}
+
+.soda-img {
+  transition: transform 0.3s ease;
+}
+
+.soda-card:hover .soda-img {
+  transform: scale(1.05);
+}
