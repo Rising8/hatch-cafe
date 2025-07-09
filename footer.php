@@ -1,5 +1,5 @@
 <footer class="footer-wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack6.png" class="img-fluid" alt="Image description">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack9.png" class="img-fluid" alt="Image description">
     <div class="container">
         <!-- Social Media Icons -->
         <div class="container text-center mb-4">
@@ -74,6 +74,21 @@
         }
     });
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const egg = document.getElementById('crackEgg');
+    const targetURL = "<?php echo site_url('/membership-signup'); ?>"; // Change this to your link
+
+    egg.addEventListener('click', function () {
+      egg.classList.add('egg-cracked');
+      setTimeout(() => {
+        window.location.href = targetURL;
+      }, 500); // matches the animation time
+    });
+  });
+</script>
+
 
 </body>
 </html>
