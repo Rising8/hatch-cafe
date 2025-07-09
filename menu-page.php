@@ -299,18 +299,21 @@ get_header();
                   </div>
                   <span class="badge bg-danger-subtle text-danger fw-semibold ms-2">Hot</span>
                 </div>
-
-                <a href="<?php echo $drink[3]; ?>" target="_blank"
-                   class="btn btn-warning btn-sm rounded-pill fw-semibold mt-2"
-                   style="background-color: #ffc107; border: none; transition: all 0.2s ease;"
-                   onmouseover="this.style.transform='scale(1.05)'"
-                   onmouseout="this.style.transform='scale(1)'">
-                   ☕ Order via Square
-                </a>
               </div>
             </div>
           </div>
         <?php endforeach; ?>
+      </div>
+
+      <!-- Order Button -->
+      <div class="text-center mt-5"> <!-- CHANGE THE SQUARE LINK LATER -->
+        <a href="https://hatch-square-order-link.com" target="_blank"
+          class="btn btn-primary btn-sm px-4 py-2 rounded-pill fw-semibold mt-2"
+          style="background-color: #ffc107; border: none; transition: all 0.2s ease;"
+          onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          ☕ Order via Square
+        </a>
       </div>
     </div>
 
@@ -357,18 +360,21 @@ get_header();
                   </div>
                   <span class="badge bg-primary-subtle text-primary fw-semibold ms-2">Cold</span>
                 </div>
-
-                <a href="<?php echo $drink[3]; ?>" target="_blank"
-                   class="btn btn-primary btn-sm rounded-pill fw-semibold mt-2"
-                   style="background-color: #5ac8fa; border: none; transition: all 0.2s ease;"
-                   onmouseover="this.style.transform='scale(1.05)'"
-                   onmouseout="this.style.transform='scale(1)'">
-                   ❄️ Order via Square
-                </a>
               </div>
             </div>
           </div>
         <?php endforeach; ?>
+      </div>
+
+      <!-- Order Button -->
+      <div class="text-center mt-5"> <!-- CHANGE THE SQUARE LINK LATER -->
+        <a href="https://hatch-square-order-link.com" target="_blank"  
+          class="btn btn-primary btn-sm px-4 py-2 rounded-pill fw-semibold mt-2"
+          style="background-color: #5ac8fa; border: none; transition: all 0.2s ease;"
+          onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          ❄️ Order via Square
+        </a>
       </div>
     </div>
   </div>
@@ -410,111 +416,13 @@ get_header();
     </div>
 
     <!-- Order Button -->
-    <div class="text-center mt-5">
+    <div class="text-center mt-5"> <!-- CHANGE THE SQUARE LINK LATER -->
       <a href="https://hatch-square-order-link.com" target="_blank" 
          class="btn btn-info px-4 py-2 rounded-pill fw-bold shadow-sm"
          style="background-color: #bae6fd; border: none; color: #00324f; font-size: 1rem;">
         🛒 Order via Square
       </a>
     </div>
-  </div>
-</section>
-
-
-<!-- BELOW IS JUST TESTING - DIFFERENT MENU CONTENT -->
-
-
-<!-- Menu Content -->
-<section class="py-5" style="background-color: #fffaf5;">
-  <div class="container">
-
-    <!-- 🧇 Eggcellent Waffles -->
-    <h2 class="fw-bold mb-4">🧇 Eggcellent Waffles</h2>
-    <div class="mb-4">
-      <div class="mb-3">
-        <h5 class="fw-bold mb-1">Classic Waffle <span class="text-muted fw-normal">$8</span></h5>
-        <p class="text-muted">Light, airy, and golden bubble perfection.</p>
-      </div>
-      <div class="mb-3">
-        <h5 class="fw-bold mb-1">Matcha Dream <span class="text-muted fw-normal">$11</span></h5>
-        <p class="text-muted">Earthy Japanese matcha + creamy drizzle combo.</p>
-      </div>
-      <div class="mb-3">
-        <h5 class="fw-bold mb-1">Chocolate Crunch <span class="text-muted fw-normal">$10</span></h5>
-        <p class="text-muted">Cocoa-infused bubbles with choc chips and syrup.</p>
-      </div>
-    </div>
-
-    <div class="row g-3 mb-5">
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/chocolate-waffles.jpg" class="img-fluid rounded shadow-sm" alt="Waffle 1">
-      </div>
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/strawberry-waffles.jpg" class="img-fluid rounded shadow-sm" alt="Waffle 2">
-      </div>
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle-creation.jpg" class="img-fluid rounded shadow-sm" alt="Waffle 3">
-      </div>
-    </div>
-
-    <!-- ☕️ Eggspresso Bar -->
-    <h2 class="fw-bold mb-4">☕️ Eggspresso Bar</h2>
-    <div class="mb-4">
-      <div class="mb-3">
-        <h5 class="fw-bold mb-1">Flat White <span class="text-muted fw-normal">$5</span></h5>
-        <p class="text-muted">Smooth and silky Aussie favourite with rich crema.</p>
-      </div>
-      <div class="mb-3">
-        <h5 class="fw-bold mb-1">Mocha Love <span class="text-muted fw-normal">$5.5</span></h5>
-        <p class="text-muted">Espresso meets chocolate in a warm hug.</p>
-      </div>
-      <div class="mb-3">
-        <h5 class="fw-bold mb-1">Eggspresso Shot <span class="text-muted fw-normal">$4</span></h5>
-        <p class="text-muted">A bold solo espresso with eggy warmth.</p>
-      </div>
-    </div>
-
-    <div class="row g-3 mb-5">
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/matcha-latte.jpg" class="img-fluid rounded shadow-sm" alt="Coffee 1">
-      </div>
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hot-chocolate.jpg" class="img-fluid rounded shadow-sm" alt="Coffee 2">
-      </div>
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/iced-coffee.jpg" class="img-fluid rounded shadow-sm" alt="Coffee 3">
-      </div>
-    </div>
-
-    <!-- 🎉 Bundles of Eggcitement -->
-    <h2 class="fw-bold mb-4">🎉 Bundles of Eggcitement</h2>
-    <div class="mb-4">
-      <div class="mb-3">
-        <h5 class="fw-bold mb-1">Mini Waffle Platter <span class="text-muted fw-normal">$30</span></h5>
-        <p class="text-muted">6 assorted sweet & savoury mini waffles.</p>
-      </div>
-      <div class="mb-3">
-        <h5 class="fw-bold mb-1">Eggcellent Combo <span class="text-muted fw-normal">$55</span></h5>
-        <p class="text-muted">4 drinks + 4 waffles of your choice — besties love it.</p>
-      </div>
-      <div class="mb-3">
-        <h5 class="fw-bold mb-1">Party Pack <span class="text-muted fw-normal">$90</span></h5>
-        <p class="text-muted">10 waffles, 10 drinks, party napkins & sauce cups!</p>
-      </div>
-    </div>
-
-    <div class="row g-3">
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample-image1.jpg" class="img-fluid rounded shadow-sm" alt="Party 1">
-      </div>
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample-image2.jpg" class="img-fluid rounded shadow-sm" alt="Party 2">
-      </div>
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample-image3.jpg" class="img-fluid rounded shadow-sm" alt="Party 3">
-      </div>
-    </div>
-
   </div>
 </section>
 
