@@ -432,3 +432,33 @@ header {
 .soda-card:hover .soda-img {
   transform: scale(1.05);
 }
+
+/* contact page */
+.contact-wrapper{
+  background-color: #f9f9f9;
+}
+
+.contact-content-1{
+  height: 300px;
+  background-color: #f9f9f9;
+  padding-top: 100px;
+}
+
+.contact-informations{
+  background-color: #ecd8c1;
+}
+
+.info-boxes{
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-boxes:hover {
+  transform: translateY(-8px); /* moves up slightly */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* optional: bigger shadow */
+}
+
+
+.contact-form{
+  background-color:#F0F0F0;
+}
