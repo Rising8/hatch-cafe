@@ -408,31 +408,6 @@ header {
   color: #f9f9f9;
 }
 
-/* Mont Blanc Coconut Dreams Header Styling - Menu Page */
-.coconut-header {
-  background-color: #ffe8f0;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  display: inline-block;
-  box-shadow: 0 4px 15px rgba(255, 174, 209, 0.2);
-  color: #6b3e26;
-}
-
-/* Soda Drinks Section Styling - Menu Page */
-.soda-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 174, 255, 0.15);
-  transition: all 0.2s ease;
-}
-
-.soda-img {
-  transition: transform 0.3s ease;
-}
-
-.soda-card:hover .soda-img {
-  transform: scale(1.05);
-}
-
 /* Contact Page Styling */
 .contact-section-1 {
   background-color: #fef9f6;
@@ -524,4 +499,228 @@ header {
   height: 100%;
   pointer-events: none;
   z-index: 9999;
+}
+
+/* Menu Page Styling */
+.menu-section-1 {
+  background-image: url('../img/golden-eggs.jpg');
+  background-size: cover; 
+  background-position: center;
+}
+
+.paradise-plate {
+  background-color: #fff6ee;
+}
+
+.menu-img {
+  max-width: 200px; 
+  cursor: pointer;
+}
+
+.eggchi-creation {
+  background-color: #fff1e6;
+}
+
+.eggchi-card {
+  cursor: pointer;
+}
+
+.eggchi-img {
+  height: 140px; 
+  width: 140px; 
+  object-fit: cover; 
+}
+
+.modal-section .modal-box {
+  background: #fff9f3; 
+  border-radius: 1rem; 
+  box-shadow: 0 0 40px rgba(255, 205, 122, 0.3);
+}
+
+.modal-section .modal-title {
+  font-family: 'Poppins', sans-serif; 
+  color: #6b3e26;
+}
+
+.modal-section .modal-img {
+    height: 240px; 
+    width: 240px; 
+    object-fit: cover; 
+    object-position: center;
+}
+
+.modal-section .modal-quantity {
+  color: #5e4027;
+}
+
+.modal-section .eggchi-modal-btn {
+  background-color: #ffc107; 
+  border: none; 
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4); 
+  transition: transform 0.2s ease;
+}
+
+.modal-section .eggchi-modal-hover {
+  transform: scale(1.05);
+}
+
+.coconut-header {
+  background-color: #ffe8f0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(255, 174, 209, 0.2);
+  color: #6b3e26;
+}
+
+.mont-blanc {
+  background-color: #fff0f5;
+}
+
+.mont-blanc-card {
+  background: linear-gradient(135deg, #fff8fb 0%, #ffeef5 100%);
+  border: 1px solid #ffdce7;
+  box-shadow: 0 8px 24px rgba(255, 190, 220, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.mont-blanc-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 28px rgba(255, 180, 210, 0.3);
+}
+
+.mont-blanc-img {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover; 
+  border-color: #fcead8;
+}
+
+.mont-blanc-modal .modal-content {
+  background: linear-gradient(135deg, #fffafc 0%, #ffeef5 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 40px rgba(255, 174, 209, 0.25);
+  padding: 1rem;
+}
+
+.mont-blanc-modal .modal-content .modal-title {
+  font-family: 'Poppins', sans-serif; 
+  color: #5e3b2b;
+}
+
+.mont-blanc-modal .modal-content .modal-text {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover;
+}
+
+.espresso-bar {
+  background-color: #fdf7f3;
+}
+
+.espresso-bar h2 {
+  color: #5b3924;
+}
+
+.hot-drinks h4 {
+  color: #8b5c3b;
+}
+
+.hot-drinks-bg {
+  background: #fffaf5; 
+  border: 1px solid #f2e0d5;
+}
+
+.hot-drinks-img {
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover; 
+  border: 2px solid #fcead8;
+}
+
+.hot-drinks-order {
+  background-color: #ffc107; 
+  border: none; 
+  transition: all 0.2s ease;
+  transform: scale(1);
+}
+
+.hot-drinks-order:hover {
+  background-color: #ffc107; 
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 193, 7, 0.4);
+}
+
+.animated-divider {
+  height: 4px; 
+  border-radius: 2px; 
+  background: linear-gradient(to right, #ff6a00, #ffc107, #e0f7ff, #00bcd4);
+}
+
+.cold-drinks h4 {
+  color: #3a6e91;
+}
+
+.cold-drinks-bg {
+  background: #f0f9ff;
+  border: 1px solid #cce8f4;
+}
+
+.cold-drinks-img {
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover; 
+  border: 2px solid #d3f2ff;
+}
+
+.cold-drinks-order {
+  background-color: #5ac8fa; 
+  border: none; 
+  transition: all 0.2s ease;
+  transform: scale(1);
+}
+
+.cold-drinks-order:hover {
+  background-color: #5ac8fa;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(90, 200, 250, 0.35);
+}
+
+.soda-drinks {
+  background-color: #f0f9ff;
+}
+
+.soda-drinks h2 {
+  color: #2d3a45;
+}
+
+.soda-drinks-bg {
+  background: rgba(255, 255, 255, 0.25); 
+  backdrop-filter: blur(6px); 
+  border: 1px solid #ffffff55;
+}
+
+.soda-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 174, 255, 0.15);
+  transition: all 0.2s ease;
+}
+
+.soda-drinks-img {
+  width: 100px; 
+  height: 100px; 
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.soda-card:hover .soda-img {
+  transform: scale(1.05);
+}
+
+.soda-drinks-order {
+  background-color: #bae6fd; 
+  border: none; 
+  color: #00324f; 
+  font-size: 1rem;
 }
