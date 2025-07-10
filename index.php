@@ -18,8 +18,7 @@
                             </p>
                             <div class="button1 pt-3">
                                 <a href="#">
-                                    <button class="btn btn-lg rounded-pill px-5 py-3 fs-5 pulse" 
-                                        style="background: linear-gradient(135deg, #C7A678, #B88A54, #B18149); color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); box-shadow: 0 4px 10px rgba(177, 129, 73, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;" 
+                                    <button class="index-hero-order btn btn-lg rounded-pill px-5 py-3 fs-5 pulse"                         
                                         type="button">
                                         Order Now
                                     </button>
@@ -99,7 +98,7 @@
                                     <p class="fw-semibold">Hatch to Sign Up!</p>
                                     
                                     <!-- small egg button -->
-                                    <div class="egg-wrapper" id="crackEgg" style="cursor: pointer;">
+                                    <div class="egg-wrapper" id="crackEgg">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/top.png" alt="Top Egg" class="egg-part egg-top">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/bottom.png" alt="Bottom Egg" class="egg-part egg-bottom">
                                     </div>
@@ -175,7 +174,7 @@
         <!-- Content 6 -->
         <div class="content-6 pb-5 mt-5">
             <div class="container">
-                <div class="position-relative p-5 text-center text-muted border border-dashed rounded-5" style="background-color: #E5E5E5;">
+                <div class="index-contact position-relative p-5 text-center text-muted border border-dashed rounded-5">
                     <h2 class="text-body-emphasis">Need a Hand? We're Here to Help!</h2>
                     <p class="col-lg-6 mx-auto mb-4">
                         Whether you're planning a party, curious about our flavours, or just have a question we're only a click away. Get in touch and we’ll crack it together!
