@@ -96,6 +96,47 @@
   });
 </script>
 
+<!-- Swiper Menu Page -->
+  <script>
+    const FlavourSlider = new Swiper('.tranding-slider', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      loop: false,       // ← set to false here
+      slidesPerView: 'auto',
+      initialSlide: 1,   // Chocolate in the center at start
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1.5,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      }
+    });
+  </script>
+<!-- swiper menu page -->
+<script>
+  const swiper = new Swiper(".menuSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 4,
+      }
+    }
+  });
+</script>
+
 
 </body>
 </html>

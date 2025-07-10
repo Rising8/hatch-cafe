@@ -6,407 +6,622 @@ get_header();
 ?>
 
 <div class="menu-wrapper">
-    <div class="menu-content-1">
-        <!-- Menu Hero Section -->
-        <section class="menu-section-1 py-5 text-light text-center">
-            <div class="container py-5">
-                <h1 class="display-4 fw-bold">🥚 Explore Our Egg-licious Menu 🥚</h1>
-            </div>
-        </section>
+  <div class="menu-content-1">
+     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/menu-img.jpeg" class="img-fluid" alt="Image description">
+  </div>
+
+  <div class="menu-content-2">
+  <section id="tranding">
+    <div class="container-tranding-slider">
+      <h2 class="text-center">Most Egg-cellent</h2>
     </div>
 
-    <!-- Paradise Plate -->
-    <div class="menu-content-2">
-        <section class="paradise-plate py-5">
-            <div class="container">
-                <h2 class="fw-bold mb-5 text-center">🥭 Paradise Plate</h2>
+    <div class="container-tranding-slider">
+      <div class="swiper tranding-slider">
+        <div class="swiper-wrapper">
 
-                <!-- Item: Strawberry and Cream -->
-                <div class="row align-items-center mb-5">
-                    <div class="col-md-8">
-                        <h5 class="fw-bold mb-1">Strawberry and Cream <span class="text-muted fw-normal float-end">$16.00</span></h5>
-                        <p class="text-muted">Signature Eggchi with a dip, creamy cheese with sour berries coulis and fresh strawberries.</p>
-                        <button class="btn btn-outline-warning btn-sm mt-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#modalStrawberry">
-                          🍓 See More
-                        </button>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/strawberry-plate.webp" class="menu-img img-fluid rounded shadow-sm" alt="Strawberry and Cream" data-bs-toggle="modal" data-bs-target="#modalStrawberry">
-                    </div>
-                </div>
-
-                <!-- Item: Chocolate Ganache -->
-                <div class="row align-items-center mb-5">
-                    <div class="col-md-8">
-                        <h5 class="fw-bold mb-1">Chocolate Ganache <span class="text-muted fw-normal float-end">$16.00</span></h5>
-                        <p class="text-muted">Signature Eggchi with a dip, buttery Belgian chocolate ganache and chocolate sauce.</p>
-                        <button class="btn btn-outline-warning btn-sm mt-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#modalChocolate">
-                          🍫 See More
-                        </button>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/chocolate-plate.webp" class="menu-img img-fluid rounded shadow-sm" alt="Chocolate Ganache" data-bs-toggle="modal" data-bs-target="#modalChocolate">
-                    </div>
-                </div>
-
-                <!-- Strawberry Modal -->
-                <div class="modal fade" id="modalStrawberry" tabindex="-1" aria-labelledby="modalStrawberryLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content rounded-4">
-                            <div class="modal-body text-center">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/strawberry-plate.webp" class="img-fluid rounded mb-3" alt="Strawberry and Cream">
-                                <h5 class="fw-bold">Strawberry and Cream</h5>
-                                <p class="text-muted">Signature eggchi with a dip, creamy cheese with sour berries coulis and fresh strawberries.</p>
-                                <a href="https://hatch-square-order-link.com" target="_blank" class="btn btn-warning rounded-pill fw-bold">Order via Square</a> <!-- MUST CHANGE THIS HATCH LINK -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chocolate Modal -->
-                <div class="modal fade" id="modalChocolate" tabindex="-1" aria-labelledby="modalChocolateLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content rounded-4">
-                            <div class="modal-body text-center">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/chocolate-plate.webp" class="img-fluid rounded mb-3" alt="Chocolate Ganache">
-                                <h5 class="fw-bold">Chocolate Ganache</h5>
-                                <p class="text-muted">Signature eggchi with a dip, buttery Belgium chocolate ganache and chocolate sauce.</p>
-                                <a href="https://hatch-square-order-link.com" target="_blank" class="btn btn-warning rounded-pill fw-bold">Order via Square</a> <!-- MUST CHANGE THIS HATCH LINK -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Slide 1 -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/egg-swiper.png" class="img-fluid" alt="Classic Egg Waffle">
             </div>
-        </section>
-    </div>
-
-    <!-- Egg-chi Creations -->
-    <div class="menu-content-3">
-        <section class="eggchi-creation py-5">
-            <div class="container">
-                <h2 class="fw-bold mb-4 text-center">🧇 Egg-chi Creations</h2>
-
-                <?php
-                $eggchi_items = [
-                    ['Original Eggchi', 'The classic golden, buttery, and freshly hatched plain Egg-Chi — crisp outside, fluffy inside.', 'original.webp', '$3'],
-                    ['Yuzu Custard Eggchi', 'Silky smooth custard with a zesty yuzu twist — light, citrusy, and refreshingly sweet.', 'yuzu.webp', '$4'],
-                    ['Matcha Eggchi', 'Earthy matcha ganache meets red bean paste in a crispy golden shell.', 'matcha.webp', '$4'],
-                    ['Chocolate Eggchi', 'Decadent chocolate ganache sealed in a toasty egg-chi — melty, rich, and always a good idea.', 'chocolate.webp', '$4'],
-                    ['Miso Caramel Eggchi', 'Sweet-salty umami bomb — buttery caramel with a hint of miso wrapped in warm waffle bliss.', 'miso-caramel.webp', '$4'],
-                    ['Pork Floss Eggchi', 'Sweet meets savoury — fluffy pork floss and creamy condensed milk.', 'pork-floss.webp', '$4'],
-                    ['Cheese Corn Eggchi', 'Creamy corn, melted cheese, and buttery magic — pure comfort.', 'cheese-corn.webp', '$4']
-                ];
-
-                foreach ($eggchi_items as $index => $item) :
-                    $modalId = 'eggchiModal' . $index;
-                ?>
-                    <!-- Eggchi Row -->
-                    <div class="eggchi-row row align-items-center g-4 mb-4">
-                        <!-- Left: Text Box -->
-                        <div class="col-md-8">
-                            <div class="eggchi-card bg-white p-4 rounded shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#<?php echo $modalId; ?>">
-                                <h5 class="fw-bold mb-1"><?php echo $item[0]; ?> <span class="text-muted fw-normal float-end"><?php echo $item[3]; ?></span></h5>
-                                <p class="text-muted mb-0"><?php echo $item[1]; ?></p>
-                                <small class="text-muted fst-italic d-block mt-1">Tap to customise</small>
-                            </div>
-                        </div>
-
-                        <!-- Right: Image -->
-                        <div class="col-md-4 text-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $item[2]; ?>" 
-                                class="eggchi-img img-fluid rounded shadow-sm" 
-                                alt="<?php echo $item[0]; ?>">
-                        </div>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal-section modal fade" id="<?php echo $modalId; ?>" tabindex="-1" aria-labelledby="<?php echo $modalId; ?>Label" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-box modal-content border-0 shadow">
-                          
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0 pb-0">
-                                    <h4 class="modal-title fw-bold text-center w-100" id="<?php echo $modalId; ?>Label">
-                                      🍳 Customize Your Eggchi!
-                                    </h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-
-                                <!-- Modal Body -->
-                                <div class="modal-body row px-4 py-3" style="min-height: 400px;">
-                                  
-                                    <!-- Left: Image -->
-                                    <div class="col-md-6 text-center d-flex align-items-center justify-content-center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $item[2]; ?>"
-                                            class="modal-img rounded-circle shadow-sm border border-warning"
-                                            alt="<?php echo $item[0]; ?>">
-                                    </div>
-
-                                    <!-- Right: Content -->
-                                    <div class="col-md-6 d-flex flex-column justify-content-center">
-                                        <p class="text-muted small fst-italic"><?php echo $item[1]; ?></p>
-                                        <p class="fw-bold text-dark mb-2">Price: <?php echo $item[3]; ?> each</p>
-
-                                        <label for="quantitySelect<?php echo $index; ?>" class="modal-quantity form-label fw-semibold">
-                                          Choose your hatch size 🍽️
-                                        </label>
-                                        <select id="quantitySelect<?php echo $index; ?>" class="form-select mb-3 w-75 rounded-pill">
-                                            <option value="1">Just 1 Eggchi</option>
-                                            <option value="6">Half Dozen (6)</option>
-                                            <option value="12">Full Dozen (12)</option>
-                                        </select>
-
-                                        <!-- CHANGE THIS SQUARE LINK LATER -->
-                                        <a href="https://squaresite.com" target="_blank"
-                                            class="eggchi-modal-btn eggchi-modal-hover btn btn-warning rounded-pill px-4 fw-bold">
-                                              🍽️ Order This Eggchi
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
+            <h3 class="title-us">Original Eggchi</h3>
+            <div class="d-flex justify-content-around gap-2 py-3">
+              <a href="#" class="btn btn-view w-50" style="background-color: #e5e5e5;">View</a>
+              <a href="#" class="btn btn-order w-100">Order Now</a>
             </div>
-        </section>
-    </div>
+          </div>
 
-    <!-- Mont Blanc Coconut Dreams -->
-    <div class="menu-content-4">
-        <section class="mont-blanc py-5">
-            <div class="container text-center">
-
-                <!-- Coconut Header -->
-                <div class="coconut-header mx-auto mb-4">
-                    <h2 class="fw-bold mb-0">🥥 Mont Blanc Coconut Dreams</h2>
-                </div>
-                <p class="text-muted mb-5">Delicate whipped coconut cream meets earthy flavours — cloud-soft, cool and dreamy.</p>
-
-                <!-- Mont Blanc Items -->
-                <div class="row g-4">
-                    <?php
-                    $montblanc_items = [
-                      ['Coffee Mont Blanc', 'Smooth coffee layered with whipped coconut cream and cocoa.', 'coffee-montblanc.webp'],
-                      ['Matcha Mont Blanc', 'Earthy matcha meets coconut cloud — mellow and rich.', 'matcha-montblanc.webp'],
-                      ['Hojicha Mont Blanc', 'Toasty roasted green tea + cool coconut fluff.', 'hojicha-montblanc.webp'],
-                      ['Black Sesame Mont Blanc', 'Nutty, deep sesame cream over icy coconut base.', 'black-sesame-montblanc.webp']
-                    ];
-
-                    foreach ($montblanc_items as $index => $item) :
-                        $modalId = 'montblancModal' . $index;
-                    ?>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="mont-blanc-card mont-blanc-hover text-center p-4 rounded-4 shadow-sm border"                        
-                                data-bs-toggle="modal" data-bs-target="#<?php echo $modalId; ?>">
-                                <div class="mb-3">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $item[2]; ?>" 
-                                    alt="<?php echo $item[0]; ?>" 
-                                    class="mont-blanc-img rounded-circle border shadow-sm">                                    
-                                </div>
-                                <h5 class="fw-bold"><?php echo $item[0]; ?></h5>
-                                <p class="text-muted small"><?php echo $item[1]; ?></p>
-                                <span class="text-warning fw-semibold d-block">A$8.80</span>
-                                <small class="text-muted fst-italic">✨ Tap to explore</small>
-                            </div>
-                        </div>
-
-                        <!-- Modal -->
-                        <div class="mont-blanc-modal modal fade" id="<?php echo $modalId; ?>" tabindex="-1" aria-labelledby="<?php echo $modalId; ?>Label" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content border-0">
-                                    <div class="modal-header border-0 pb-0">
-                                        <h4 class="modal-title fw-bold text-center w-100">
-                                          🍧 Customize Your Coconut Treat
-                                        </h4>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <div class="modal-body text-center p-4">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $item[2]; ?>" 
-                                            class="modal-text img-fluid rounded-circle mb-3 shadow-sm"                                        
-                                            alt="<?php echo $item[0]; ?>">
-                                        <h5 class="fw-bold"><?php echo $item[0]; ?></h5>
-                                        <p class="text-muted"><?php echo $item[1]; ?></p>
-                                        <p class="fw-bold mb-3">Price: A$8.80</p>
-                                        <a href="https://hatch-square-order-link.com" target="_blank" class="btn btn-outline-warning rounded-pill px-4 fw-semibold">🛒 Order on Square</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/egg-swiper.png" class="img-fluid" alt="Matcha Eggchi">
             </div>
-        </section>
-    </div>
-
-    <!-- Eggspresso Bar -->
-    <div class="menu-content-5">
-        <section class="espresso-bar py-5">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bold">☕️ Eggspresso Bar</h2>
-                    <p class="text-muted fst-italic">Warming hearts & chilling vibes — one dreamy sip at a time.</p>
-                </div>
-
-                <!-- Hot Drinks -->
-                <div class="hot-drinks mb-5">
-                    <h4 class="fw-bold mb-4">🔥 Hot Drinks</h4>    
-                    <div class="row g-4">
-                        <?php
-                        $hot_drinks = [ /* CHANGE ALL SQUARE LINKS LATER - ALSO SOME IMAGES DO NOT HAVE PICTURES YET */
-                            ['Babycinno', 'A$2.00', 'babycinno.webp', 'https://square.link'],
-                            ['Espresso', 'A$4.80', 'espresso.webp', 'https://square.link'],
-                            ['Short Macchiato', 'A$4.50', 'short-macchiato.webp', 'https://square.link'],
-                            ['Long Macchiato', 'A$5.00', 'long-macchiato.webp', 'https://square.link'],
-                            ['Long Black', 'A$5.30', 'long-black.jpg', 'https://square.link'],
-                            ['Flat White', 'A$6.30', 'flat-white.webp', 'https://square.link'],
-                            ['Cappuccino', 'A$6.30', 'cappuccino.webp', 'https://square.link'],
-                            ['Hot Chocolate', 'A$6.00', 'hot-chocolate.webp', 'https://square.link'],
-                            ['Mocha', 'A$6.00', 'mocha.webp', 'https://square.link'],
-                            ['Coffee Latte', 'A$6.30', 'coffee-latte.webp', 'https://square.link'],
-                            ['Chai Latte', 'A$6.00', 'chai-latte.webp', 'https://square.link'],
-                            ['Black Sesame Latte', 'A$6.80', 'black-sesame-latte.webp', 'https://square.link'],
-                            ['Hojicha Latte', 'A$6.80', 'hojicha-latte.webp', 'https://square.link'],
-                            ['Matcha Latte', 'A$6.80', 'matcha-latte.webp', 'https://square.link']
-                        ];
-
-                        foreach ($hot_drinks as $drink) :
-                        ?>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="hot-drinks-bg d-flex p-3 rounded-4 shadow-sm h-100 align-items-center justify-content-between">
-                                    <!-- Image -->
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $drink[2]; ?>" 
-                                        alt="<?php echo $drink[0]; ?>" 
-                                        class="hot-drinks-img rounded-circle shadow-sm me-3">
-                                  
-                                    <!-- Info + Button -->
-                                    <div class="flex-grow-1">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <div>
-                                                <h6 class="fw-bold mb-0"><?php echo $drink[0]; ?></h6>
-                                                <p class="text-muted mb-1 small"><?php echo $drink[1]; ?></p>
-                                            </div>
-                                            <span class="badge bg-danger-subtle text-danger fw-semibold ms-2">Hot</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-
-                    <!-- Order Button -->
-                    <div class="text-center mt-5"> <!-- CHANGE THE SQUARE LINK LATER -->
-                        <a href="https://hatch-square-order-link.com" target="_blank"
-                          class="hot-drinks-order btn btn-primary btn-sm px-4 py-2 rounded-pill fw-semibold mt-2">
-                            ☕ Order via Square
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Animated Divider -->
-                <div class="text-center my-5">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <span class="fs-4 me-3">🔥</span>
-                        <div class="animated-divider flex-grow-1 mx-2"></div>
-                        <span class="fs-4 ms-3">❄️</span>
-                    </div>
-                </div>
-
-                <!-- Cold Drinks -->
-                <div class="cold-drinks">
-                    <h4 class="fw-bold mb-4">🧊 Cold Drinks</h4>    
-                    <div class="row g-4">
-                        <?php
-                        $cold_drinks = [ /* CHANGE ALL SQUARE LINKS LATER */
-                            ['Ice Coffee Latte', 'A$7.80', 'ice-coffee-latte.webp', 'https://square.link'],
-                            ['Ice Matcha Latte', 'A$7.80', 'ice-matcha.webp', 'https://square.link'],
-                            ['Ice Black Sesame Latte', 'A$7.80', 'ice-black-sesame.webp', 'https://square.link'],
-                            ['Ice Hojicha Latte', 'A$7.80', 'ice-hojicha.webp', 'https://square.link'],
-                            ['Ice Chocolate', 'A$7.00', 'ice-chocolate.webp', 'https://square.link'],
-                            ['Ice Mocha', 'A$7.00', 'ice-mocha.webp', 'https://square.link'],
-                            ['Ice Chai Latte', 'A$7.00', 'ice-chai.webp', 'https://square.link']
-                        ];
-
-                        foreach ($cold_drinks as $drink) :
-                        ?>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="cold-drinks-bg d-flex p-3 rounded-4 shadow-sm h-100 align-items-center justify-content-between">
-                                    <!-- Image -->
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $drink[2]; ?>" 
-                                        alt="<?php echo $drink[0]; ?>" 
-                                        class="cold-drinks-img rounded-circle shadow-sm me-3">
-                                  
-                                    <!-- Info + Button -->
-                                    <div class="flex-grow-1">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <div>
-                                                <h6 class="fw-bold mb-0"><?php echo $drink[0]; ?></h6>
-                                                <p class="text-muted mb-1 small"><?php echo $drink[1]; ?></p>
-                                            </div>
-                                            <span class="badge bg-primary-subtle text-primary fw-semibold ms-2">Cold</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-
-                    <!-- Order Button -->
-                    <div class="text-center mt-5"> <!-- CHANGE THE SQUARE LINK LATER -->
-                        <a href="https://hatch-square-order-link.com" target="_blank"
-                          class="cold-drinks-order btn btn-sm px-4 py-2 rounded-pill fw-semibold mt-2">
-                            ❄️ Order via Square
-                        </a>
-                    </div>
-                </div>
+            <h3 class="title-us">Matcha Eggchi</h3>
+            <div class="d-flex justify-content-around gap-2 py-3">
+              <a href="#" class="btn btn-view w-50" style="background-color: #e5e5e5;">View</a>
+              <a href="#" class="btn btn-order w-100">Order Now</a>
             </div>
-        </section>
-    </div>
+          </div>
 
-    <!-- Soda Drinks Section -->
-    <div class="menu-content-6">
-        <section class="soda-drinks py-5">
-            <div class="container">
-                <h2 class="fw-bold text-center mb-4">🫧 Soda Drinks</h2>
-                <p class="text-muted text-center mb-5">Pop, fizz, and chill — sip your favourite sparkle ✨</p>
-
-                <div class="row g-4 justify-content-center">
-                    <?php
-                    $soda_items = [
-                        ['Sanpellegrino Sparkling Mineral Water', 'A$6.00', 'sanpellegrino.webp'],
-                        ['Fiji Natural Artisan Water', 'A$6.00', 'fiji-water.webp'],
-                        ['Tonic Water', 'A$6.00', 'tonic.webp'],
-                        ['Yuzu Sparkling Water', 'A$6.00', 'yuzu-sparkling.webp'],
-                        ['Coke', 'A$4.00', 'coke.webp'],
-                        ['Coke No Sugar', 'A$4.00', 'coke-zero.webp'],
-                        ['Fanta', 'A$4.00', 'fanta.webp'],
-                        ['Sprite', 'A$4.00', 'sprite.webp']
-                    ];
-
-                    foreach ($soda_items as $item) :
-                    ?>
-                        <div class="col-6 col-sm-4 col-md-3">
-                            <div class="soda-drinks-bg rounded-4 p-3 soda-card text-center shadow-sm">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $item[2]; ?>"
-                                    alt="<?php echo $item[0]; ?>" 
-                                    class="soda-drinks-img img-fluid mb-2">
-                                <h6 class="fw-semibold mb-0"><?php echo $item[0]; ?></h6>
-                                <small class="text-muted"><?php echo $item[1]; ?></small>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-
-                <!-- Order Button -->
-                <div class="text-center mt-5"> <!-- CHANGE THE SQUARE LINK LATER -->
-                    <a href="https://hatch-square-order-link.com" target="_blank" 
-                        class="soda-drinks-order btn btn-info px-4 py-2 rounded-pill fw-bold shadow-sm">
-                        🛒 Order via Square
-                    </a>
-                </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/egg-swiper.png" class="img-fluid" alt="Chocolate Eggchi">
             </div>
-        </section>
+            <h3 class="title-us">Chocolate Eggchi</h3>
+            <div class="d-flex justify-content-around gap-2 py-3">
+              <a href="#" class="btn btn-view w-50" style="background-color: #e5e5e5;">View</a>
+              <a href="#" class="btn btn-order w-100">Order Now</a>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/egg-swiper.png" class="img-fluid" alt="Yuzu Eggchi">
+            </div>
+            <h3 class="title-us">Yuzu Eggchi</h3>
+            <div class="d-flex justify-content-around gap-2 py-3">
+              <a href="#" class="btn btn-view w-50" style="background-color: #e5e5e5;">View</a>
+              <a href="#" class="btn btn-order w-100">Order Now</a>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/egg-swiper.png" class="img-fluid" alt="Strawberry Eggchi">
+            </div>
+            <h3 class="title-us">Strawberry Eggchi</h3>
+            <div class="d-flex justify-content-around gap-2 py-3">
+              <a href="#" class="btn btn-view w-50" style="background-color: #e5e5e5;">View</a>
+              <a href="#" class="btn btn-order w-100">Order Now</a>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/egg-swiper.png" class="img-fluid" alt="Miso Eggchi">
+            </div>
+            <h3 class="title-us">Miso Eggchi</h3>
+            <div class="d-flex justify-content-around gap-2 py-3">
+              <a href="#" class="btn btn-view w-50" style="background-color: #e5e5e5;">View</a>
+              <a href="#" class="btn btn-order w-100">Order Now</a>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/egg-swiper.png" class="img-fluid" alt="Pork Eggchi">
+            </div>
+            <h3 class="title-us">Pork Eggchi</h3>
+            <div class="d-flex justify-content-around gap-2 py-3">
+              <a href="#" class="btn btn-view w-50" style="background-color: #e5e5e5;">View</a>
+              <a href="#" class="btn btn-order w-100">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
+  </section>
+    <style> 
+    #tranding {
+          padding: 4rem 0;
+        }
+
+        .container-tranding-slider {
+          /* max-width: 1200px; */
+          margin: 0 auto;
+          padding: 0 1rem;
+        }
+
+        h2.text-center {
+          text-align: center;
+          font-size: 2.5rem;
+          margin-bottom: 2rem;
+          color: #333;
+        }
+
+        .swiper.tranding-slider {
+          height: 45rem;
+          /* padding: 2rem 0; */
+        }
+
+        @media (max-width: 500px) {
+          .swiper.tranding-slider {
+            height: 42rem;
+          }
+        }
+
+        .tranding-slide {
+          width: 32rem;
+          height: 42rem;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: var(--white);
+          border-radius: 2rem;
+          box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+          background-color: #f9f9f9;
+        }
+
+        @media (max-width: 500px) {
+          .tranding-slide {
+            width: 28rem !important;
+            height: 36rem !important;
+          }
+
+          .tranding-slide .tranding-slide-img img {
+            width: 28rem !important;
+            height: 36rem !important;
+          }
+        }
+        
+        .tranding-slide-img {
+          width: 400px;
+        }
+
+        .slideimg {
+          width: 32rem;
+          height: 30rem;
+          border-radius: 2rem;
+          object-fit: cover;
+          /* margin-top: 1rem; */
+          opacity: 0.9;
+        }
+
+        .title-us {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-top: 1.5rem;
+          color: #333;
+          text-align: center;
+        }
+
+        .swiper-slide-shadow-left,
+        .swiper-slide-shadow-right {
+          display: none;
+        }
+
+        .swiper-pagination {
+          margin-top: 2rem;
+          text-align: center;
+        }
+
+        .swiper-pagination-bullet {
+          background: #ccc;
+          opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+          background: var(--primary);
+        } 
+    </style>
+  </div>
+
+  <div class="menu-content-3">
+      <div class="container">
+        <h2 class="text-center mb-4 pt-5">Paradise Plate</h2>
+        <div class="row g-4">
+          
+          <!-- Column 1 -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi1.jpeg" class="menu-img" alt="Classic Egg Waffle">
+              <div class="card-body">
+                <h5 class="card-title">Original Eggchi</h5>
+                <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                <div class="d-flex justify-content-center gap-5">
+                  <a href="#" class="btn btn-view w-20">View</a>
+                  <a href="#" class="btn btn-order w-50">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi2.webp" class="menu-img" alt="Matcha Eggchi">
+              <div class="card-body">
+                <h5 class="card-title">Matcha Eggchi</h5>
+                <p class="card-text">Earthy matcha meets a gooey lava center.</p>
+                <div class="d-flex justify-content-center gap-5">
+                  <a href="#" class="btn btn-view w-20">View</a>
+                  <a href="#" class="btn btn-order w-50">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+  <div class="menu-content-4">
+      <div class="container">
+        <h2 class="text-center mb-4 pt-5">One Eggchi</h2>
+        
+        <div class="swiper menuSwiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi1.jpeg" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Original Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi2.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Matcha Eggchi</h5>
+                  <p class="card-text">Earthy matcha meets a gooey lava center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi3.jpeg" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Miso Caramel Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi4.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Cheese Corn Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi5.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Yuzu Custard Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi6.jpeg" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi7.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Pork Floss Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Swiper Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="menu-content-5">
+      <div class="container">
+        <h2 class="text-center mb-4 pt-5">6 Eggchi</h2>
+        
+        <div class="swiper menuSwiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi1.jpeg" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Original Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi2.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Matcha Eggchi</h5>
+                  <p class="card-text">Earthy matcha meets a gooey lava center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi3.jpeg" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Miso Caramel Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi4.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Cheese Corn Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi5.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Yuzu Custard Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi6.jpeg" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi7.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Pork Floss Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Swiper Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+  </div>
+
+  <div class="menu-content-6">
+      <div class="container">
+        <h2 class="text-center mb-4 pt-5">12 Eggchi</h2>
+        
+        <div class="swiper menuSwiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi1.jpeg" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Original Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi2.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Matcha Eggchi</h5>
+                  <p class="card-text">Earthy matcha meets a gooey lava center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi3.jpeg" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Miso Caramel Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi4.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Cheese Corn Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi5.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Yuzu Custard Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi6.jpeg" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/one-eggchi/one-eggchi7.webp" class="menu-img" alt="Classic Egg Waffle">
+                <div class="card-body">
+                  <h5 class="card-title">Pork Floss Eggchi</h5>
+                  <p class="card-text">A golden, crispy shell with a soft, chewy center.</p>
+                  <div class="d-flex justify-content-between gap-2">
+                    <a href="#" class="btn btn-view w-20">View</a>
+                    <a href="#" class="btn btn-order w-50">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Swiper Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+  </div>
+
+  <div class="menu-content-7">
+
+  </div>
+
+  <div class="menu-content-8">
+
+  </div>
+
+  <div class="menu-content-9">
+
+  </div>
+
 </div>
 
+
 <?php get_footer(); ?>
+
