@@ -794,3 +794,20 @@ header {
   width: 400px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
+
+/* giftcard page */
+.giftcard-content-1{
+  background-color: #D6A976;
+}
+
+.giftcard-content-2{
+  background-color: #f9f9f9;
+}
+
+.giftcard-content-3{
+  background-color: #f9f9f9;
+}
+
+.giftcard-h2 {
+  color: #B1804B;
+}
