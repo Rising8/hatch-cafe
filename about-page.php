@@ -21,7 +21,7 @@ get_header(); ?>
     </div>
 
     <!-- Full-Width Image -->
-    <div class="about-content-2 full-width-image">
+    <div class="about-content-2 full-width-image pt-5">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about-page/about-img.png" class="img-fluid floating-img" alt="Hatch interior">
     </div>
 
