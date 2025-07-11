@@ -43,6 +43,9 @@ function hatch_enqueue_styles()
 
     // Membership custom JS
     wp_enqueue_script('membership-js', get_template_directory_uri() . '/assets/js/membership.js', array(), '1.0', true);
+
+    // About custom JS
+    wp_enqueue_script('about-js', get_template_directory_uri() . '/assets/js/about.js', array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'hatch_enqueue_styles');
 
