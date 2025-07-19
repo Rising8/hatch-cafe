@@ -49,6 +49,15 @@ function hatch_enqueue_styles()
 
     // Tranding JS
     wp_enqueue_script('tranding-js', get_template_directory_uri() . '/assets/js/tranding.js', array('jquery'), '1.0', true);
+
+    // Index JS
+    wp_enqueue_script('index-js', get_template_directory_uri() . '/assets/js/index.js', array('jquery'), '1.0', true);
+
+    // Preloader JS
+    wp_enqueue_script('preloader-js', get_template_directory_uri() . '/assets/js/preloader.js', array('jquery'), '1.0', true);
+
+    // Header JS
+    wp_enqueue_script('header-js', get_template_directory_uri() . '/assets/js/header.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'hatch_enqueue_styles');
 
