@@ -535,14 +535,62 @@ header {
   background-color: #fff1e6;
 }
 
+.eggchi-order-buttons .shiny-btn {
+  background: linear-gradient(90deg, #ffe57f, #ffcc33);
+  color: #3e2900;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 12px 24px;
+  border-radius: 40px;
+  box-shadow: 0 0 12px rgba(255, 214, 102, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.eggchi-order-buttons .shiny-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ffcc33, #ffe57f);
+  box-shadow: 0 0 18px rgba(255, 204, 51, 0.8);
+}
+
 .eggchi-card {
   cursor: pointer;
+}
+
+.eggchi-card small {
+  display: inline-block;
+  background-color: #fff3cd;
+  color: #856404;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-top: 8px;
+  animation: pulse 2s infinite ease-in-out;
 }
 
 .eggchi-img {
   height: 140px; 
   width: 140px; 
   object-fit: cover; 
+}
+
+.special-bundle-card {
+  background: #fff8e1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.special-bundle-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.special-bundle-card h5 {
+  color: #b8860b;
 }
 
 .modal-section .modal-box {
