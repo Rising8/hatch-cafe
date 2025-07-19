@@ -1,4 +1,4 @@
-document.getElementById("crackEgg").addEventListener("click", () => {
+document.getElementById("crackEggMemberPage").addEventListener("click", () => {
   const top = document.querySelector(".egg-top");
   const bottom = document.querySelector(".egg-bottom");
   const sprinkles = document.getElementById('sprinkles');
@@ -51,4 +51,8 @@ document.getElementById("crackEgg").addEventListener("click", () => {
   popText.innerText = 'POP!';
   page.appendChild(popText);
   setTimeout(() => page.removeChild(popText), 800);
+
+  setTimeout(() => {
+    window.open(encodeURI("https://www.hatchcafe.com.au/s/order"), "_blank");
+  }, 1200);
 });

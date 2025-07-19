@@ -55,8 +55,12 @@
 
                 <!-- Right -->
                 <div class="col-md-3 d-flex justify-content-end align-items-center gap-2">
-                    <a href="/">
-                        <button class="btn btn-lg rounded-pill px-3 fs-6 order-now-btn pulse" style="background-color: #B18149; color: white;">Order Now</button>
+                    <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-lg rounded-pill px-3 fs-6 order-now-btn pulse" 
+                        style="background-color: #B18149; color: white;">
+                        Order Now
                     </a>
                 </div>
             </div>

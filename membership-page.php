@@ -33,7 +33,8 @@ get_header();
                 <p class="fw-bold fs-5 text-shadow tracking-wide text-danger-emphasis" style="letter-spacing: 1px;">
                     Tap to crack... something sweet might hatch 🐣
                 </p>
-                <div class="egg-wrapper position-relative" id="crackEgg">
+                <!-- Egg Animation Trigger -->
+                <div class="egg-wrapper-page position-relative" id="crackEggMemberPage" style="cursor: pointer;">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/top.png" alt="Top Egg" class="egg-part egg-top">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/bottom.png" alt="Bottom Egg" class="egg-part egg-bottom">
                     <div class="sprinkles" id="sprinkles"></div>
@@ -155,7 +156,7 @@ get_header();
         <div class="container">
             <h2 class="fw-bold mb-3">Still Not Signed Up?</h2>
             <p class="lead">We saved you a warm spot. Treats, smiles, and eggstra love await 🧇</p>
-            <a href="https://your-square-membership-link.com" class="btn btn-dark btn-lg rounded-pill px-5 mt-3">
+            <a href="https://www.hatchcafe.com.au/s/order" target="_blank" class="btn btn-dark btn-lg rounded-pill px-5 mt-3">
                 🔑 Unlock Eggclusive Access
             </a>
         </div>

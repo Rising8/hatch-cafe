@@ -265,13 +265,16 @@ header {
   padding-left: 40px;
 }
 
-
 .egg-wrapper {
   position: relative;
   display: inline-block;
   width: 100px; 
   height: 110px;
   cursor: pointer;
+}
+
+.egg-wrapper:hover {
+  animation: wiggle 0.5s ease;
 }
 
 .egg-part {
@@ -869,7 +872,7 @@ header {
   transition: box-shadow 0.3s ease;
 }
 
-.egg-wrapper {
+.egg-wrapper-page {
   position: relative;
   width: 120px;
   height: 120px;
@@ -878,7 +881,7 @@ header {
   transition: transform 0.3s ease;
 }
 
-.egg-wrapper:hover {
+.egg-wrapper-page:hover {
   animation: wiggle 0.5s ease;
 }
 

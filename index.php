@@ -17,11 +17,11 @@
                                 Follow the scent of warm waffles and you’ll find us — your secret hideout from the city buzz. Cozy, charming, and always freshly hatched.
                             </p>
                             <div class="button1 pt-3">
-                                <a href="#">
-                                    <button class="index-hero-order btn btn-lg rounded-pill px-5 py-3 fs-5 pulse"                         
-                                        type="button">
-                                        Order Now
-                                    </button>
+                                <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="index-hero-order btn btn-lg rounded-pill px-5 py-3 fs-5 pulse">
+                                    Order Now
                                 </a>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Cakes" class="card-img-categories" width="50">
                         <h3 class="menus-h3 mt-3">Handcrafted Cakes</h3>
                         <p class="menus-p">Golden waffle cakes and sweets — beautiful and delicious.</p>
-                        <a href="#" class="menus-btn btn rounded-pill mt-2">Explore Cakes</a>
+                        <a href="https://www.hatchcafe.com.au/s/order/F252CY6EXPK6ZFBYLICOCEY7?location=11f0192a377f200dbfc53cecef6d5b2a" target="_blank" class="menus-btn btn rounded-pill mt-2">Explore Cakes</a>
                     </div>
                 </div>
                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack2.png" class="img-fluid" alt="Image description"> -->
@@ -180,14 +180,14 @@
                         Whether you're planning a party, curious about our flavours, or just have a question we're only a click away. Get in touch and we’ll crack it together!
                     </p>
                     <div class="button1 pt-3">
-                                <a href="#">
-                                    <button class="btn btn-lg rounded-pill px-5 py-3 fs-5 pulse" 
-                                        style="background: linear-gradient(135deg, #C7A678, #B88A54, #B18149); color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); box-shadow: 0 4px 10px rgba(177, 129, 73, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;" 
-                                        type="button">
-                                        Contact Us
-                                    </button>
-                                </a>
-                            </div>
+                        <a href="<?php echo site_url('/contact'); ?>" 
+                            class="btn btn-lg rounded-pill px-5 py-3 fs-5 pulse" 
+                            style="background: linear-gradient(135deg, #C7A678, #B88A54, #B18149); color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); box-shadow: 0 4px 10px rgba(177, 129, 73, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;" 
+                            type="button">
+                            Contact Us
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

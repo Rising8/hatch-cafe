@@ -32,7 +32,7 @@ get_header();
                                 <div class="giftcard-option bg-white rounded-4 shadow-sm p-4 h-100 text-center border">
                                     <h3 class="fw-bold mb-2">🎫 E-Gift Card</h3>
                                     <p>Instant delivery via email — perfect for last-minute surprises! Customize your amount and message.</p>
-                                    <a href="#" class="btn btn-outline-warning rounded-pill fw-bold mt-2">Buy E-Gift Card</a>
+                                    <a href="https://www.hatchcafe.com.au/s/gift-cards" target="_blank" class="btn btn-outline-warning rounded-pill fw-bold mt-2">Buy E-Gift Card</a>
                                 </div>
                             </div>
                             <!-- Physical Gift Card -->

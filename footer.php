@@ -85,17 +85,19 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const egg = document.getElementById('crackEgg');
-    const targetURL = "<?php echo site_url('/membership-signup'); ?>"; // Change this to your link
+    const targetURL = "https://www.hatchcafe.com.au/s/order";
 
     egg.addEventListener('click', function () {
       egg.classList.add('egg-cracked');
+      const newTab = window.open('', '_blank');
       setTimeout(() => {
-        window.location.href = targetURL;
-      }, 500); // matches the animation time
+        if (newTab) {
+          newTab.location.href = targetURL;
+        }
+      }, 1200);
     });
   });
 </script>
-
 
 </body>
 </html>

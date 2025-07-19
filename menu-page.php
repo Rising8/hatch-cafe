@@ -57,7 +57,7 @@ get_header();
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/strawberry-plate.webp" class="img-fluid rounded mb-3" alt="Strawberry and Cream">
                                 <h5 class="fw-bold">Strawberry and Cream</h5>
                                 <p class="text-muted">Signature eggchi with a dip, creamy cheese with sour berries coulis and fresh strawberries.</p>
-                                <a href="https://hatch-square-order-link.com" target="_blank" class="btn btn-warning rounded-pill fw-bold">Order via Square</a> <!-- MUST CHANGE THIS HATCH LINK -->
+                                <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=BAVEJ3HIPWB7CKAR2HEBXK4P" target="_blank" class="btn btn-warning rounded-pill fw-bold">Order via Square</a>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ get_header();
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/chocolate-plate.webp" class="img-fluid rounded mb-3" alt="Chocolate Ganache">
                                 <h5 class="fw-bold">Chocolate Ganache</h5>
                                 <p class="text-muted">Signature eggchi with a dip, buttery Belgium chocolate ganache and chocolate sauce.</p>
-                                <a href="https://hatch-square-order-link.com" target="_blank" class="btn btn-warning rounded-pill fw-bold">Order via Square</a> <!-- MUST CHANGE THIS HATCH LINK -->
+                                <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=IK3DLHSGLEQ25NWQVQ4TFUTN" target="_blank" class="btn btn-warning rounded-pill fw-bold">Order via Square</a>
                             </div>
                         </div>
                     </div>
@@ -88,13 +88,13 @@ get_header();
 
                 <?php
                 $eggchi_items = [
-                    ['Original Eggchi', 'The classic golden, buttery, and freshly hatched plain Egg-Chi — crisp outside, fluffy inside.', 'original.webp', '$3'],
-                    ['Yuzu Custard Eggchi', 'Silky smooth custard with a zesty yuzu twist — light, citrusy, and refreshingly sweet.', 'yuzu.webp', '$4'],
-                    ['Matcha Eggchi', 'Earthy matcha ganache meets red bean paste in a crispy golden shell.', 'matcha.webp', '$4'],
-                    ['Chocolate Eggchi', 'Decadent chocolate ganache sealed in a toasty egg-chi — melty, rich, and always a good idea.', 'chocolate.webp', '$4'],
-                    ['Miso Caramel Eggchi', 'Sweet-salty umami bomb — buttery caramel with a hint of miso wrapped in warm waffle bliss.', 'miso-caramel.webp', '$4'],
-                    ['Pork Floss Eggchi', 'Sweet meets savoury — fluffy pork floss and creamy condensed milk.', 'pork-floss.webp', '$4'],
-                    ['Cheese Corn Eggchi', 'Creamy corn, melted cheese, and buttery magic — pure comfort.', 'cheese-corn.webp', '$4']
+                    ['Original Eggchi', 'The classic golden, buttery, and freshly hatched plain Egg-Chi — crisp outside, fluffy inside.', 'original.webp', '$3', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=1'],
+                    ['Yuzu Custard Eggchi', 'Silky smooth custard with a zesty yuzu twist — light, citrusy, and refreshingly sweet.', 'yuzu.webp', '$4', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=4'],
+                    ['Matcha Eggchi', 'Earthy matcha ganache meets red bean paste in a crispy golden shell.', 'matcha.webp', '$4', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=2'],
+                    ['Chocolate Eggchi', 'Decadent chocolate ganache sealed in a toasty egg-chi — melty, rich, and always a good idea.', 'chocolate.webp', '$4', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=3'],
+                    ['Miso Caramel Eggchi', 'Sweet-salty umami bomb — buttery caramel with a hint of miso wrapped in warm waffle bliss.', 'miso-caramel.webp', '$4', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=5'],
+                    ['Pork Floss Eggchi', 'Sweet meets savoury — fluffy pork floss and creamy condensed milk.', 'pork-floss.webp', '$4', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=6'],
+                    ['Cheese Corn Eggchi', 'Creamy corn, melted cheese, and buttery magic — pure comfort.', 'cheese-corn.webp', '$4', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=7']
                 ];
 
                 foreach ($eggchi_items as $index => $item) :
@@ -155,9 +155,8 @@ get_header();
                                             <option value="6">Half Dozen (6)</option>
                                             <option value="12">Full Dozen (12)</option>
                                         </select>
-
-                                        <!-- CHANGE THIS SQUARE LINK LATER -->
-                                        <a href="https://squaresite.com" target="_blank"
+                                        
+                                        <a href="<?php echo $item[4]; ?>" target="_blank"
                                             class="eggchi-modal-btn eggchi-modal-hover btn btn-warning rounded-pill px-4 fw-bold">
                                               🍽️ Order This Eggchi
                                         </a>
@@ -186,10 +185,10 @@ get_header();
                 <div class="row g-4">
                     <?php
                     $montblanc_items = [
-                      ['Coffee Mont Blanc', 'Smooth coffee layered with whipped coconut cream and cocoa.', 'coffee-montblanc.webp'],
-                      ['Matcha Mont Blanc', 'Earthy matcha meets coconut cloud — mellow and rich.', 'matcha-montblanc.webp'],
-                      ['Hojicha Mont Blanc', 'Toasty roasted green tea + cool coconut fluff.', 'hojicha-montblanc.webp'],
-                      ['Black Sesame Mont Blanc', 'Nutty, deep sesame cream over icy coconut base.', 'black-sesame-montblanc.webp']
+                      ['Coffee Mont Blanc', 'Smooth coffee layered with whipped coconut cream and cocoa.', 'coffee-montblanc.webp', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=VFT2JSMO5V2RKHDMKG7NFHEM'],
+                      ['Matcha Mont Blanc', 'Earthy matcha meets coconut cloud — mellow and rich.', 'matcha-montblanc.webp', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=U3XWJJTVEEMQZMXXID3TE4B5'],
+                      ['Hojicha Mont Blanc', 'Toasty roasted green tea + cool coconut fluff.', 'hojicha-montblanc.webp', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=ET6B5OW57S2SQEIQWPTYI52G'], 
+                      ['Black Sesame Mont Blanc', 'Nutty, deep sesame cream over icy coconut base.', 'black-sesame-montblanc.webp', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=EOOAS6VHCS3O3R5YG5IZZ7VF']
                     ];
 
                     foreach ($montblanc_items as $index => $item) :
@@ -228,7 +227,7 @@ get_header();
                                         <h5 class="fw-bold"><?php echo $item[0]; ?></h5>
                                         <p class="text-muted"><?php echo $item[1]; ?></p>
                                         <p class="fw-bold mb-3">Price: A$8.80</p>
-                                        <a href="https://hatch-square-order-link.com" target="_blank" class="btn btn-outline-warning rounded-pill px-4 fw-semibold">🛒 Order on Square</a>
+                                        <a href="<?php echo $item[3]; ?>" target="_blank" class="btn btn-outline-warning rounded-pill px-4 fw-semibold">🛒 Order on Square</a>
                                     </div>
                                 </div>
                             </div>
@@ -253,21 +252,21 @@ get_header();
                     <h4 class="fw-bold mb-4">🔥 Hot Drinks</h4>    
                     <div class="row g-4">
                         <?php
-                        $hot_drinks = [ /* CHANGE ALL SQUARE LINKS LATER - ALSO SOME IMAGES DO NOT HAVE PICTURES YET */
-                            ['Babycinno', 'A$2.00', 'babycinno.webp', 'https://square.link'],
-                            ['Espresso', 'A$4.80', 'espresso.webp', 'https://square.link'],
-                            ['Short Macchiato', 'A$4.50', 'short-macchiato.webp', 'https://square.link'],
-                            ['Long Macchiato', 'A$5.00', 'long-macchiato.webp', 'https://square.link'],
-                            ['Long Black', 'A$5.30', 'long-black.jpg', 'https://square.link'],
-                            ['Flat White', 'A$6.30', 'flat-white.webp', 'https://square.link'],
-                            ['Cappuccino', 'A$6.30', 'cappuccino.webp', 'https://square.link'],
-                            ['Hot Chocolate', 'A$6.00', 'hot-chocolate.webp', 'https://square.link'],
+                        $hot_drinks = [ /* SOME IMAGES DO NOT HAVE PICTURES YET */
+                            ['Babycinno', 'A$2.00', 'babycinno.webp'],
+                            ['Espresso', 'A$4.80', 'espresso.webp'],
+                            ['Short Macchiato', 'A$4.50', 'short-macchiato.webp'],
+                            ['Long Macchiato', 'A$5.00', 'long-macchiato.webp'],
+                            ['Long Black', 'A$5.30', 'long-black.jpg'],
+                            ['Flat White', 'A$6.30', 'flat-white.webp'],
+                            ['Cappuccino', 'A$6.30', 'cappuccino.webp'],
+                            ['Hot Chocolate', 'A$6.00', 'hot-chocolate.webp'],
                             ['Mocha', 'A$6.00', 'mocha.webp', 'https://square.link'],
-                            ['Coffee Latte', 'A$6.30', 'coffee-latte.webp', 'https://square.link'],
-                            ['Chai Latte', 'A$6.00', 'chai-latte.webp', 'https://square.link'],
-                            ['Black Sesame Latte', 'A$6.80', 'black-sesame-latte.webp', 'https://square.link'],
-                            ['Hojicha Latte', 'A$6.80', 'hojicha-latte.webp', 'https://square.link'],
-                            ['Matcha Latte', 'A$6.80', 'matcha-latte.webp', 'https://square.link']
+                            ['Coffee Latte', 'A$6.30', 'coffee-latte.webp'],
+                            ['Chai Latte', 'A$6.00', 'chai-latte.webp'],
+                            ['Black Sesame Latte', 'A$6.80', 'black-sesame-latte.webp'],
+                            ['Hojicha Latte', 'A$6.80', 'hojicha-latte.webp'],
+                            ['Matcha Latte', 'A$6.80', 'matcha-latte.webp']
                         ];
 
                         foreach ($hot_drinks as $drink) :
@@ -295,8 +294,8 @@ get_header();
                     </div>
 
                     <!-- Order Button -->
-                    <div class="text-center mt-5"> <!-- CHANGE THE SQUARE LINK LATER -->
-                        <a href="https://hatch-square-order-link.com" target="_blank"
+                    <div class="text-center mt-5">
+                        <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a#ODQNIASYVI5U2NDNVPHHMY23" target="_blank"
                           class="hot-drinks-order btn btn-primary btn-sm px-4 py-2 rounded-pill fw-semibold mt-2">
                             ☕ Order via Square
                         </a>
@@ -317,14 +316,14 @@ get_header();
                     <h4 class="fw-bold mb-4">🧊 Cold Drinks</h4>    
                     <div class="row g-4">
                         <?php
-                        $cold_drinks = [ /* CHANGE ALL SQUARE LINKS LATER */
-                            ['Ice Coffee Latte', 'A$7.80', 'ice-coffee-latte.webp', 'https://square.link'],
-                            ['Ice Matcha Latte', 'A$7.80', 'ice-matcha.webp', 'https://square.link'],
-                            ['Ice Black Sesame Latte', 'A$7.80', 'ice-black-sesame.webp', 'https://square.link'],
-                            ['Ice Hojicha Latte', 'A$7.80', 'ice-hojicha.webp', 'https://square.link'],
-                            ['Ice Chocolate', 'A$7.00', 'ice-chocolate.webp', 'https://square.link'],
-                            ['Ice Mocha', 'A$7.00', 'ice-mocha.webp', 'https://square.link'],
-                            ['Ice Chai Latte', 'A$7.00', 'ice-chai.webp', 'https://square.link']
+                        $cold_drinks = [
+                            ['Ice Coffee Latte', 'A$7.80', 'ice-coffee-latte.webp'],
+                            ['Ice Matcha Latte', 'A$7.80', 'ice-matcha.webp'],
+                            ['Ice Black Sesame Latte', 'A$7.80', 'ice-black-sesame.webp'],
+                            ['Ice Hojicha Latte', 'A$7.80', 'ice-hojicha.webp'],
+                            ['Ice Chocolate', 'A$7.00', 'ice-chocolate.webp'],
+                            ['Ice Mocha', 'A$7.00', 'ice-mocha.webp'],
+                            ['Ice Chai Latte', 'A$7.00', 'ice-chai.webp']
                         ];
 
                         foreach ($cold_drinks as $drink) :
@@ -352,8 +351,8 @@ get_header();
                     </div>
 
                     <!-- Order Button -->
-                    <div class="text-center mt-5"> <!-- CHANGE THE SQUARE LINK LATER -->
-                        <a href="https://hatch-square-order-link.com" target="_blank"
+                    <div class="text-center mt-5"> 
+                        <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a#FBOP43NO6KRYQWKR7HR4PZBZ" target="_blank"
                           class="cold-drinks-order btn btn-sm px-4 py-2 rounded-pill fw-semibold mt-2">
                             ❄️ Order via Square
                         </a>
@@ -398,8 +397,8 @@ get_header();
                 </div>
 
                 <!-- Order Button -->
-                <div class="text-center mt-5"> <!-- CHANGE THE SQUARE LINK LATER -->
-                    <a href="https://hatch-square-order-link.com" target="_blank" 
+                <div class="text-center mt-5">
+                    <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a#7JC4HPZNFWALD7K54UU2H3MS" target="_blank" 
                         class="soda-drinks-order btn btn-info px-4 py-2 rounded-pill fw-bold shadow-sm">
                         🛒 Order via Square
                     </a>
