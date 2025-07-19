@@ -11,8 +11,7 @@ get_header();
         <section class="giftcard-hero-section py-5 text-dark animate__animated animate__bounceIn">
             <div class="giftcard-hero container text-center py-5">
                 <h1 class="display-4 fw-bold mb-3">Give the Gift of Hatch</h1>
-                <p class="lead">Perfect for birthdays, thank-yous, or just because - our gift cards are the ultimate treat. 🧇✨</p>
-                <p class="fw-semibold text-muted">Click below to choose an e-gift card or physical one, then personalize it and send or pick up.</p>
+                <p class="lead">Perfect for birthdays, thank-yous, or just because - our gift cards are the ultimate treat. 🧇✨</p>                
                 <button class="btn btn-warning btn-lg rounded-pill fw-bold mt-3 shadow animate__animated animate__bounceIn animate__delay-1s animate__faster" data-bs-toggle="modal" data-bs-target="#giftCardModal">🎁 Purchase a Gift Card</button>
             </div>
         </section>
@@ -26,23 +25,14 @@ get_header();
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="row g-4">
-                            <!-- Digital Gift Card -->
-                            <div class="col-md-6">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 mx-auto">
                                 <div class="giftcard-option bg-white rounded-4 shadow-sm p-4 h-100 text-center border">
                                     <h3 class="fw-bold mb-2">🎫 E-Gift Card</h3>
                                     <p>Instant delivery via email — perfect for last-minute surprises! Customize your amount and message.</p>
                                     <a href="https://www.hatchcafe.com.au/s/gift-cards" target="_blank" class="btn btn-outline-warning rounded-pill fw-bold mt-2">Buy E-Gift Card</a>
                                 </div>
-                            </div>
-                            <!-- Physical Gift Card -->
-                            <div class="col-md-6">
-                                <div class="giftcard-option bg-white rounded-4 shadow-sm p-4 h-100 text-center border">
-                                    <h3 class="fw-bold mb-2">📬 Physical Card</h3>
-                                    <p>Beautifully printed cards available in-store. Pick one up next time you visit Hatch Café!</p>
-                                    <a href="<?php echo site_url('/contact'); ?>" class="btn btn-outline-warning rounded-pill fw-bold mt-2">Find our Location</a>
-                                </div>
-                            </div>
+                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -67,9 +57,9 @@ get_header();
                     <!-- Step 2 -->
                     <div class="col-md-3">
                         <div class="p-4 rounded-4 shadow-sm bg-white h-100 hover-shadow transition">
-                            <div class="display-6 mb-2">🎁</div>
-                            <h6 class="fw-bold">Step 2: Choose a Card</h6>
-                            <p class="text-muted">Select an e-gift card or a physical card option.</p>
+                            <div class="display-6 mb-2">🔗</div>
+                            <h6 class="fw-bold">Step 2: Redirect to Square</h6>
+                            <p class="text-muted">You'll be redirected to our secure Square site to continue your purchase.</p>
                         </div>
                     </div>
                     <!-- Step 3 -->
@@ -77,7 +67,7 @@ get_header();
                         <div class="p-4 rounded-4 shadow-sm bg-white h-100 hover-shadow transition">
                             <div class="display-6 mb-2">💌</div>
                             <h6 class="fw-bold">Step 3: Personalize</h6>
-                            <p class="text-muted">Add a message and choose your amount with love.</p>
+                            <p class="text-muted">Add a message, select the amount, and choose who to send it to.</p>
                         </div>
                     </div>
                     <!-- Step 4 -->
@@ -85,7 +75,7 @@ get_header();
                         <div class="p-4 rounded-4 shadow-sm bg-white h-100 hover-shadow transition">
                             <div class="display-6 mb-2">📬</div>
                             <h6 class="fw-bold">Step 4: Send or Pick Up</h6>
-                            <p class="text-muted">Send instantly or collect in-store. Done!</p>
+                            <p class="text-muted">Send your personalized gift card instantly via email or SMS. Done!</p>
                         </div>
                     </div>
                 </div>
