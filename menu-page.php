@@ -8,16 +8,40 @@ get_header();
 <div class="menu-wrapper">
     <div class="menu-content-1">
         <!-- Menu Hero Section -->
-        <section class="menu-section-1 py-5 text-light text-center">
+        <section id="top" class="menu-section-1 py-5 text-light text-center">
             <div class="container py-5">
                 <h1 class="display-4 fw-bold">🥚 Explore Our Egg-licious Menu 🥚</h1>
             </div>
         </section>
     </div>
 
+    <div id="scrollNavWrapper">
+        <nav id="menuScrollNav" class="scroll-nav py-3 bg-light shadow-sm">
+            <div class="container d-flex justify-content-center gap-4">
+            <a href="#paradise" class="scroll-link fw-bold text-decoration-none">🥭 Paradise Plate</a>
+            <a href="#eggchi" class="scroll-link fw-bold text-decoration-none">🍳 Egg-chi Creations</a>
+
+            <!-- Dropdown container -->
+            <div class="dropdown">
+                <a href="#eggspresso" class="scroll-link fw-bold text-decoration-none dropdown-toggle">
+                ☕ Eggspresso Bar
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#hotdrinks" class="dropdown-item">🔥 Hot Drinks</a>
+                    <a href="#icedrinks" class="dropdown-item">🧊 Ice Drinks</a>
+                </div>
+            </div>
+
+            <a href="#montblanc" class="scroll-link fw-bold text-decoration-none">🥥 Mont Blanc Dreams</a>
+            <a href="#sodadrinks" class="scroll-link fw-bold text-decoration-none">🫧 Soda Drinks</a>
+            <a href="#top" class="scroll-link fw-bold text-decoration-none">⬆️ Back to Top</a>
+            </div>
+        </nav>
+    </div>
+
     <!-- Paradise Plate -->
     <div class="menu-content-2">
-        <section class="paradise-plate py-5">
+        <section id="paradise" class="paradise-plate py-5">
             <div class="container">
                 <h2 class="fw-bold mb-5 text-center">🥭 Paradise Plate</h2>
 
@@ -82,7 +106,7 @@ get_header();
 
     <!-- Egg-chi Creations -->
     <div class="menu-content-3">
-        <section class="eggchi-creation py-5">
+        <section id="eggchi" class="eggchi-creation py-5">
             <div class="container">
                 <h2 class="fw-bold mb-4 text-center">🧇 Egg-chi Creations</h2>
                 <!-- Quick Order Buttons -->
@@ -252,7 +276,7 @@ get_header();
 
     <!-- Mont Blanc Coconut Dreams -->
     <div class="menu-content-4">
-        <section class="mont-blanc py-5">
+        <section id="montblanc" class="mont-blanc py-5">
             <div class="container text-center">
 
                 <!-- Coconut Header -->
@@ -335,7 +359,7 @@ get_header();
 
     <!-- Eggspresso Bar -->
     <div class="menu-content-5">
-        <section class="espresso-bar py-5">
+        <section id="eggspresso" class="espresso-bar py-5">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="fw-bold">☕️ Eggspresso Bar</h2>
@@ -343,7 +367,7 @@ get_header();
                 </div>
 
                 <!-- Hot Drinks -->
-                <div class="hot-drinks mb-5">
+                <div id="hotdrinks" class="hot-drinks mb-5">
                     <h4 class="fw-bold mb-4">🔥 Hot Drinks</h4>    
                     <div class="row g-4">
                         <?php
@@ -406,8 +430,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Cold Drinks -->
-                <div class="cold-drinks">
+                <!-- Ice Drinks -->
+                <div id="icedrinks" class="cold-drinks">
                     <h4 class="fw-bold mb-4">🧊 Ice Drinks</h4>    
                     <div class="row g-4">
                         <?php
@@ -459,7 +483,7 @@ get_header();
 
     <!-- Soda Drinks Section -->
     <div class="menu-content-6">
-        <section class="soda-drinks py-5">
+        <section id="sodadrinks" class="soda-drinks py-5">
             <div class="container">
                 <h2 class="fw-bold text-center mb-4">🫧 Soda Drinks</h2>
                 <p class="text-muted text-center mb-5">Pop, fizz, and chill — sip your favourite sparkle ✨</p>

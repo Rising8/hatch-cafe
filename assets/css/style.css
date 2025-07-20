@@ -522,6 +522,73 @@ header {
   background-position: center;
 }
 
+.scroll-link {
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+  color: #5e503f;
+  background-color: #fff4e6;
+}
+
+.scroll-link:hover {
+  background-color: #f9c46b;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+/* Make dropdown container inline-flex to fit with navbar */
+.dropdown {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #fff4e6;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  min-width: 140px;
+  margin-top: 0;
+  z-index: 10;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  color: #5e503f;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 1rem;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #f9c46b;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
 .paradise-plate {
   background-color: #fff6ee;
 }

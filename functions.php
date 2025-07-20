@@ -58,6 +58,9 @@ function hatch_enqueue_styles()
 
     // Header JS
     wp_enqueue_script('header-js', get_template_directory_uri() . '/assets/js/header.js', array('jquery'), '1.0', true);
+
+    // Menu JS
+    wp_enqueue_script('menu-js', get_template_directory_uri() . '/assets/js/menu.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'hatch_enqueue_styles');
 
