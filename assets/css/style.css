@@ -306,7 +306,6 @@ header {
   transform: translateY(25px) rotate(8deg);
 }
 
-
 .waffle-img {
   width: 70%;
 }
@@ -490,6 +489,24 @@ header {
 
 .gift-how-section {
   background-color: #fdf5ee;
+}
+
+.gift-how-section .hiw-step {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 60% 40% 55% 45% / 55% 45% 60% 40%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.gift-how-section .hiw-step:hover {
+  transform: scale(1.03);
 }
 
 .gift-faq-section {

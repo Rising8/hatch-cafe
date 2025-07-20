@@ -8,7 +8,7 @@ get_header();
 <div class="giftcard-wrapper">
     <div class="giftcard-content-1">
         <!-- Gift Cards Hero Section -->
-        <section class="giftcard-hero-section py-5 text-dark animate__animated animate__bounceIn">
+        <section class="giftcard-hero-section pt-5 pb-3 text-dark animate__animated animate__bounceIn">
             <div class="giftcard-hero container text-center py-5">
                 <h1 class="display-4 fw-bold mb-3">Give the Gift of Hatch</h1>
                 <p class="lead">Perfect for birthdays, thank-yous, or just because - our gift cards are the ultimate treat. 🧇✨</p>                
@@ -41,43 +41,31 @@ get_header();
     </div>
 
     <div class="giftcard-content-2">
-        <section class="gift-how-section py-5 text-dark">
+        <section class="gift-how-section pt-3 pb-4" style="background-color: #fffaf3;">
             <!-- How It Works -->
             <div class="container text-center">
-                <h2 class="fw-bold mb-4">How It Works</h2>
-                <div class="row g-4">
-                    <!-- Step 1 -->
-                    <div class="col-md-3">
-                        <div class="p-4 rounded-4 shadow-sm bg-white h-100 hover-shadow transition">
-                            <div class="display-6 mb-2">🛒</div>
-                            <h6 class="fw-bold">Step 1: Click 'Purchase a Gift Card'</h6>
-                            <p class="text-muted">Start the journey by clicking the big yellow button above.</p>
+                <h2 class="fw-bold mb-2">How It Works</h2>
+                <div class="row justify-content-center g-4">
+                    <!-- Steps -->
+                    <?php 
+                    $steps = [
+                        ['img' => 'hiw1.png', 'title' => "Step 1: Click 'Purchase a Gift Card'", 'desc' => 'Start the journey by clicking the big yellow button above.'],
+                        ['img' => 'hiw2.png', 'title' => "Step 2: Redirect to Square", 'desc' => 'You\'ll be redirected to our secure Square site to continue your purchase.'],
+                        ['img' => 'hiw3.png', 'title' => "Step 3: Personalize", 'desc' => 'Add a message, select the amount, and choose who to send it to.'],
+                        ['img' => 'hiw4.png', 'title' => "Step 4: Send or Pick Up", 'desc' => 'Send your personalized gift card instantly via email or SMS. Done!']
+                    ];
+                    foreach ($steps as $step): ?>
+                    <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+                        <div class="hiw-step shadow">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/giftcard-page/<?php echo $step['img']; ?>" 
+                                alt="Step" 
+                                class="rounded-circle mb-3" 
+                                style="width: 70px; height: 70px; object-fit: cover;">
+                            <h6 class="fw-bold mb-1" style="font-size: 0.95rem;"><?php echo $step['title']; ?></h6>
+                            <p class="text-muted mb-0" style="font-size: 0.85rem;"><?php echo $step['desc']; ?></p>
                         </div>
                     </div>
-                    <!-- Step 2 -->
-                    <div class="col-md-3">
-                        <div class="p-4 rounded-4 shadow-sm bg-white h-100 hover-shadow transition">
-                            <div class="display-6 mb-2">🔗</div>
-                            <h6 class="fw-bold">Step 2: Redirect to Square</h6>
-                            <p class="text-muted">You'll be redirected to our secure Square site to continue your purchase.</p>
-                        </div>
-                    </div>
-                    <!-- Step 3 -->
-                    <div class="col-md-3">
-                        <div class="p-4 rounded-4 shadow-sm bg-white h-100 hover-shadow transition">
-                            <div class="display-6 mb-2">💌</div>
-                            <h6 class="fw-bold">Step 3: Personalize</h6>
-                            <p class="text-muted">Add a message, select the amount, and choose who to send it to.</p>
-                        </div>
-                    </div>
-                    <!-- Step 4 -->
-                    <div class="col-md-3">
-                        <div class="p-4 rounded-4 shadow-sm bg-white h-100 hover-shadow transition">
-                            <div class="display-6 mb-2">📬</div>
-                            <h6 class="fw-bold">Step 4: Send or Pick Up</h6>
-                            <p class="text-muted">Send your personalized gift card instantly via email or SMS. Done!</p>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </section>
