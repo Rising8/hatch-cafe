@@ -425,42 +425,39 @@ header {
 .contact-section-1 {
   background-color: #fef9f6;
   background-image: url('../img/waffle-bg-light.jpg');
-  background-size: cover; 
+  background-size: cover;
   background-repeat: repeat;
 }
 
-.contact-hero h1 {
+.info-boxes {
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.info-boxes:hover {
+  transform: translateY(-5px);
+}
+
+.opening-hours {
+  font-size: 1.1rem;
   color: #4a5746;
-}
-
-.contact-hero p {
-  color: #6b7768;
-}
-
-.contact-map {
-  height: 400px;
-}
-
-.contact-map-iframe {
-  border: 0;
-  border-radius: 16px;
-  filter: grayscale(30%) contrast(1.15);
-}
-
-.contact-info {
-  background: linear-gradient(135deg, #fffaf0, #fef6ed);
-  border: 1px solid #f3e4d7;
-  height: 400px;
-}
-
-.contact-form {
-  background-color: #fefaf4;
+  font-weight: 500;
 }
 
 .contact-form-card {
-  max-width: 700px;
   background: linear-gradient(135deg, #fffaf0, #fef6ed);
   border: 1px solid #eee1d6;
+}
+
+.contact-form-card input,
+.contact-form-card textarea,
+.contact-form-card select {
+  border-radius: 10px;
+}
+
+.contact-form-card h2 {
+  color: #4a5746;
 }
 
 /* Gift Cards Page Styling */
