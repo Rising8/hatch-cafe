@@ -285,7 +285,7 @@ get_header();
                                     </div>
                                     <h5 class="fw-bold"><?php echo $item[0]; ?></h5>
                                     <p class="text-muted small"><?php echo $item[1]; ?></p>
-                                    <span class="text-warning fw-semibold d-block">A$8.80</span>
+                                    <span class="text-warning fw-semibold d-block">A$8.00</span>
                                     <small class="text-muted fst-italic">✨ Tap to explore</small>
                                 </div>
                             </div>
@@ -349,19 +349,19 @@ get_header();
                         <?php
                         $hot_drinks = [ /* SOME IMAGES DO NOT HAVE PICTURES YET */
                             ['Babycinno', 'A$2.00', 'babycinno.webp'],
-                            ['Espresso', 'A$4.80', 'espresso.webp'],
+                            ['Espresso', 'A$4.00', 'espresso.webp'],
                             ['Short Macchiato', 'A$4.50', 'short-macchiato.webp'],
                             ['Long Macchiato', 'A$5.00', 'long-macchiato.webp'],
-                            ['Long Black', 'A$5.30', 'long-black.jpg'],
-                            ['Flat White', 'A$6.30', 'flat-white.webp'],
-                            ['Cappuccino', 'A$6.30', 'cappuccino.webp'],
+                            ['Long Black', 'A$4.50', 'long-black.jpg'],
+                            ['Flat White', 'A$5.50', 'flat-white.webp'],
+                            ['Cappuccino', 'A$5.50', 'cappuccino.webp'],
                             ['Hot Chocolate', 'A$6.00', 'hot-chocolate.webp'],
-                            ['Mocha', 'A$6.00', 'mocha.webp', 'https://square.link'],
-                            ['Coffee Latte', 'A$6.30', 'coffee-latte.webp'],
+                            ['Mocha', 'A$6.00', 'mocha.webp'],
+                            ['Coffee Latte', 'A$5.50', 'coffee-latte.webp'],
                             ['Chai Latte', 'A$6.00', 'chai-latte.webp'],
-                            ['Black Sesame Latte', 'A$6.80', 'black-sesame-latte.webp'],
-                            ['Hojicha Latte', 'A$6.80', 'hojicha-latte.webp'],
-                            ['Matcha Latte', 'A$6.80', 'matcha-latte.webp']
+                            ['Black Sesame Latte', 'A$6.00', 'black-sesame-latte.webp'],
+                            ['Hojicha Latte', 'A$6.00', 'hojicha-latte.webp'],
+                            ['Matcha Latte', 'A$6.00', 'matcha-latte.webp']
                         ];
 
                         foreach ($hot_drinks as $drink) :
@@ -412,10 +412,10 @@ get_header();
                     <div class="row g-4">
                         <?php
                         $cold_drinks = [
-                            ['Ice Coffee Latte', 'A$7.80', 'ice-coffee-latte.webp'],
-                            ['Ice Matcha Latte', 'A$7.80', 'ice-matcha.webp'],
-                            ['Ice Black Sesame Latte', 'A$7.80', 'ice-black-sesame.webp'],
-                            ['Ice Hojicha Latte', 'A$7.80', 'ice-hojicha.webp'],
+                            ['Ice Coffee Latte', 'A$7.00', 'ice-coffee-latte.webp'],
+                            ['Ice Matcha Latte', 'A$7.00', 'ice-matcha.webp'],
+                            ['Ice Black Sesame Latte', 'A$7.00', 'ice-black-sesame.webp'],
+                            ['Ice Hojicha Latte', 'A$7.00', 'ice-hojicha.webp'],
                             ['Ice Chocolate', 'A$7.00', 'ice-chocolate.webp'],
                             ['Ice Mocha', 'A$7.00', 'ice-mocha.webp'],
                             ['Ice Chai Latte', 'A$7.00', 'ice-chai.webp']
