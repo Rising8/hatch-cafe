@@ -28,8 +28,8 @@
 <div id="preloader">
     <div class="loader-text">
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Hatch Logo" style="width: 200px; border-radius: 50%;">
-            <h1 class="mt-3 text-center">HATCH...</h1>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-wb.png" alt="Hatch Logo" style="width: 60%;" class="logo-animation">
+              <p class="loading-caption mt-5">Loading your egg-citement...</p>
         </div>
     </div>
 </div>
