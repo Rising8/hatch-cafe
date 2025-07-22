@@ -44,7 +44,7 @@ get_header();
         <section class="gift-how-section pt-3 pb-4" style="background-color: #fffaf3;">
             <!-- How It Works -->
             <div class="container text-center">
-                <h2 class="fw-bold mb-2">How It Works</h2>
+                <h2 class="fw-bold mb-2">How It Works!</h2>
                 <div class="row justify-content-center g-4">
                     <!-- Steps -->
                     <?php 

@@ -20,6 +20,7 @@ get_header();
             <div class="container d-flex justify-content-center gap-4">
             <a href="#paradise" class="scroll-link fw-bold text-decoration-none">🥭 Paradise Plate</a>
             <a href="#eggchi" class="scroll-link fw-bold text-decoration-none">🍳 Egg-chi Creations</a>
+            <a href="#montblanc" class="scroll-link fw-bold text-decoration-none">🥥 Mont Blanc Dreams</a>
 
             <!-- Dropdown container -->
             <div class="dropdown">
@@ -31,8 +32,7 @@ get_header();
                     <a href="#icedrinks" class="dropdown-item">🧊 Ice Drinks</a>
                 </div>
             </div>
-
-            <a href="#montblanc" class="scroll-link fw-bold text-decoration-none">🥥 Mont Blanc Dreams</a>
+            
             <a href="#sodadrinks" class="scroll-link fw-bold text-decoration-none">🫧 Soda Drinks</a>
             <a href="#top" class="scroll-link fw-bold text-decoration-none">⬆️ Back to Top</a>
             </div>
