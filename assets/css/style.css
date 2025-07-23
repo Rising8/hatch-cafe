@@ -89,12 +89,6 @@ header {
     color: black !important;
 }
 
-.burger-menu{
-  background-color: rgba(111, 135, 119, 0.4); 
-  border: 1px solid #f9f9f9; /* Use background color as border */
-  border-radius: 50%;
-}
-
 .explore{
   color: #f9f9f9;
 }

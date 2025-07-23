@@ -42,8 +42,8 @@
                 <!-- Left: Burger Menu Dropdown -->
                 <div class="col-md-3">
                     <button id="burgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" style="background:none; border:none; cursor:pointer;">
-                        <i class="burger-menu p-3 fa-solid fa-bars" style="color: #f9f9f9; font-size: 2em;"></i>
-                        <span class="explore px-2"> EXPLORE</span>
+                        <i class="burger-menu p-2 fa-solid fa-bars" style="color: #f9f9f9; font-size: 2em;"></i>
+                        <span class="explore px-1"> EXPLORE</span>
                     </button>
                 </div>
 
