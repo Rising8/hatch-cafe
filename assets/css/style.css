@@ -348,7 +348,50 @@ header {
     background-color: #f9f9f9;
 }
 
-.egg-animation{
+.map-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.map-image{
+  width: 600px;
+  margin: -85px auto 0 auto;
+}
+
+.egg-pin {
+    position: absolute;
+    top: 7%; /* adjust this value */
+    left: 31%; /* adjust this value */
+    transform: translate(-50%, -100%); /* center horizontally, place point at location */
+    width: 40px; /* adjust pin size */
+    z-index: 10;
+
+    animation: 
+    glow 2s ease-in-out infinite,
+    bounce 2s ease-in-out infinite;
+}
+
+/* Glowing effect */
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px #FFD700) drop-shadow(0 0 8px #FFA500);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px #FFD700) drop-shadow(0 0 20px #FFA500);
+  }
+}
+
+/* Bouncing effect */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.map-animation{
   background-color: #D6A976;
   box-shadow: 0 8px 24px rgba(179, 128, 75, 0.3);
   height: 400px;

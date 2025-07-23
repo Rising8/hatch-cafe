@@ -140,7 +140,7 @@
 
         <!-- Content 5 -->
         <div class="content-5 pt-5">
-            <div class="egg-animation container p-5 rounded-3">
+            <div class="map-animation container p-5 rounded-3">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="container">
@@ -161,11 +161,14 @@
                             </div> -->
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <!-- <div class="egg-wrapper text-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top.png" alt="Top Egg" class="egg-part egg-top" style="width: 400px;">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bottom.png" alt="Bottom Egg" class="egg-part egg-bottom" style="width: 400px;">
-                        </div> -->
+                    <div class="col-md-6 justify-content-center">
+                        <div class="map-wrapper position-relative">
+                            <!-- map image -->
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map-animation/map-hatch.png" alt="Map" class="map-image">
+                            
+                            <!-- egg pin -->
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map-animation/egg.png" alt="Egg Pin" class="egg-pin">
+                        </div>
                     </div>
                 </div>
             </div>
