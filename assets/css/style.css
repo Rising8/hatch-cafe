@@ -72,18 +72,24 @@ header {
     overflow: visible;
     position: relative;
     z-index: 10;
-  }
+}
 
-  .logo {
+.logo {
     height: 150px;
     width: 150px;
     position: absolute;
-    top: -32.5px; /* Center the logo over the 85px header */
+    top: -32.5px; 
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
     z-index: 999;
-  }
+    box-shadow: 0 0 15px rgba(111, 135, 119, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.logo:hover {
+    box-shadow: 0 0 25px rgba(111, 135, 119, 0.9);
+}
 
 .icon i{
     color: black !important;
