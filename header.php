@@ -25,14 +25,14 @@
 
 <body <?php body_class(); ?>>
 
-<!-- <div id="preloader">
+<div id="preloader">
     <div class="loader-text">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-wb.png" alt="Hatch Logo" style="width: 60%;" class="logo-animation">
               <p class="loading-caption mt-5">Loading your eggcitement...</p>
         </div>
     </div>
-</div> -->
+</div>
 
 <!-- Header -->
 <div class="header-wrapper">
