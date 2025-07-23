@@ -9,32 +9,3 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: hatch-website
 */
-
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-    100% { transform: scale(1); }
-}
-
-.pulse {
-    animation: pulse 1.5s infinite;
-    transition: transform 0.2s ease;
-}
-
-.pulse:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rqgba(177, 129, 73, 0.5);
-    filter: brightness(1.1);
-}
-
-.frying-egg {
-  display: inline-block;
-  animation: pulse 2s infinite;
-  font-size: 1.5rem;
-  margin-left: 6px;
-}

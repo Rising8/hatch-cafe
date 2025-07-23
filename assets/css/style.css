@@ -10,6 +10,11 @@ body{
      margin: 0;
 }
 
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 #preloader {
   position: fixed;
   top: 0;
@@ -50,8 +55,8 @@ body{
   /* background-color: #BFA65A; */
   background-color: #6F8777;
   /* background-color: #D6A976; */
-    /* background-color: #f9f9f9; */
-    /* background-color: #FBFBFB; */
+  /* background-color: #f9f9f9; */
+  /* background-color: #FBFBFB; */
 }
 
 .nav-link{
@@ -74,15 +79,16 @@ header {
     z-index: 10;
   }
 
-  .logo {
+.logo {
     height: 150px;
     width: 150px;
     position: absolute;
-    top: -32.5px; /* Center the logo over the 85px header */
+    top: -32.5px; 
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
-  }
+}
+
 .icon i{
     color: black !important;
 }
@@ -105,12 +111,8 @@ header {
 }
 
 /* main page */
-.wrapper{
-    /* background-color: #F0F0F0; */
-    background-color: #FBFBFB;
-    /* scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh; */
+.index-wrapper{
+  background-color: #FBFBFB;
 }
 
 /* Index Hero Order Now Button */
@@ -151,7 +153,6 @@ header {
 }
 
 .menus-h2{
-  /* color: #f9f9f9 !important; */
   color: #50685D !important;
 }
 
@@ -169,7 +170,6 @@ header {
 }
 
 .menus-btn{
-  /* background-color: #6F8777; */
   background-color: #D6A976;
   color: #f9f9f9;
   transition: transform 0.3s ease;
@@ -190,7 +190,6 @@ header {
    padding-top: 130px;
 }
 
-
 /* Card style */
 .category-card {
    position: relative;
@@ -202,23 +201,10 @@ header {
   text-align: center;
   overflow: visible; /* allow image to go outside */
   padding-bottom: 50px;
-  /* width: 350px;
-  padding: 2rem;
-  background: #6F8777;
-  border-radius: 1rem; */
-  /* box-shadow: 0 4px 12px rgba(0,0,0,0.08); */
-  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
-
-/* .category-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-} */
-
 
 .card-img-categories {
   width: 280px;
-  /* margin-top: -20px; */
   margin-top: -180px; /* pop it out upward */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -230,14 +216,10 @@ header {
 
 .card-img-top:hover, .card-img-categories:hover {
   transform: scale(1.05);
-  /* box-shadow: 0 6px 18px rgba(0,0,0,0.15); */
 }
 
 .content-3{
-    /* height: 650px; */
-    /* background-color: #f9f9f9; */
-    background-color: #D6A976;
-    /* background-color: #222224; */
+  background-color: #D6A976;
 }
 
 .content-4{
@@ -245,19 +227,17 @@ header {
     background-color: #f9f9f9;
 }
 
-
 .membership{
   height: 720px;
   background-color: #6F8777;
-    box-shadow: 0 8px 20px rgba(44, 55, 46, 0.4);
+  box-shadow: 0 8px 20px rgba(44, 55, 46, 0.4);
 }
 
 .membership-word1a{
-    font-size: 2.5em;
-    padding-left: 20px;
-     /* color: white; */
-     color: #D6A976;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  font-size: 2.5em;
+  padding-left: 20px;
+  color: #D6A976;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .membership-word2{
@@ -317,10 +297,8 @@ header {
 }
 
 .giftcard-word1a{
-    font-size: 2.5em;
-     /* color: white; */
-     color: #50685D;
-    /* text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); */
+  font-size: 2.5em;
+  color: #50685D;
 }
 
 .giftcard-word2{
@@ -343,7 +321,6 @@ header {
 }
 
 .content-5{
-    /* height: 550px; */
     background-color: #f9f9f9;
 }
 
@@ -362,7 +339,6 @@ header {
 
 .word1{
     font-size: 1.5em;
-    /* color: white; */
 }
 
 .word2{
@@ -900,7 +876,9 @@ header {
 
 .about-title {
   background: linear-gradient(135deg, #b37f46, #f2c087);
+  background-clip: text; 
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   animation: popIn 1s ease;
 }
@@ -1201,6 +1179,13 @@ header {
 
 .pulse {
   animation: pulse 2s infinite;
+  transition: transform 0.2s ease;
+}
+
+.pulse:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rqgba(177, 129, 73, 0.5);
+    filter: brightness(1.1);
 }
 
 .egg-flash {
