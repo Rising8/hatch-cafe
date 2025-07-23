@@ -1,16 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const giftModal = document.getElementById('giftCardModal');
   const confettiCanvas = document.getElementById('confetti-canvas');
+  const giftButton = document.getElementById('giftCardRedirectBtn');
 
-  if (!giftModal || !confettiCanvas) return; // safety check
+  if (!confettiCanvas || !giftButton) return; // safety check
 
   const myConfetti = confetti.create(confettiCanvas, {
     resize: true,
     useWorker: true,
   });
 
-  giftModal.addEventListener('shown.bs.modal', () => {
-    // Burst
+  giftButton.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Play confetti burst
     myConfetti({
       particleCount: 80,
       spread: 100,
@@ -37,5 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(frame);
       }
     })();
+
+    // Redirect after 2.5 seconds
+    setTimeout(() => {
+      window.open("https://www.hatchcafe.com.au/s/gift-cards", "_blank");
+    }, 2500);
   });
 });

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-    <div class="wrapper">
+    <div class="index-wrapper">
 
         <!-- Content 1 -->
         <div class="content-1">

@@ -11,37 +11,16 @@ get_header();
         <section class="giftcard-hero-section pt-5 pb-3 text-dark animate__animated animate__bounceIn">
             <div class="giftcard-hero container text-center py-5">
                 <h1 class="display-4 fw-bold mb-3">Give the Gift of Hatch</h1>
-                <p class="lead">Perfect for birthdays, thank-yous, or just because - our gift cards are the ultimate treat. 🧇✨</p>                
-                <button class="btn btn-warning btn-lg rounded-pill fw-bold mt-3 shadow animate__animated animate__bounceIn animate__delay-1s animate__faster" data-bs-toggle="modal" data-bs-target="#giftCardModal">🎁 Purchase a Gift Card</button>
+                <p class="lead">Perfect for birthdays, thank-yous, or just because - our gift cards are the ultimate treat.</p>                
+                <button id="giftCardRedirectBtn" class="btn btn-warning btn-lg rounded-pill fw-bold mt-3 shadow animate__animated animate__bounceIn animate__delay-1s animate__faster">
+                    🎁 Purchase a Gift Card
+                </button>
             </div>
-        </section>
-
-        <!-- Gift Card Modal -->
-        <div class="modal fade" id="giftCardModal" tabindex="-1" aria-labelledby="giftCardModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content gift-modal-content rounded-4 border-0 animate__animated animate__fadeInDown animate__faster">
-                    <div class="modal-header border-0">
-                        <h5 class="modal-title fw-bold" id="giftCardModalLabel">🎁 Choose a Gift Card Option</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row justify-content-center">
-                            <div class="col-md-8 mx-auto">
-                                <div class="giftcard-option bg-white rounded-4 shadow-sm p-4 h-100 text-center border">
-                                    <h3 class="fw-bold mb-2">🎫 E-Gift Card</h3>
-                                    <p>Instant delivery via email — perfect for last-minute surprises! Customize your amount and message.</p>
-                                    <a href="https://www.hatchcafe.com.au/s/gift-cards" target="_blank" class="btn btn-outline-warning rounded-pill fw-bold mt-2">Buy E-Gift Card</a>
-                                </div>
-                            </div>                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>        
     </div>
 
     <div class="giftcard-content-2">
-        <section class="gift-how-section pt-3 pb-4" style="background-color: #fffaf3;">
+        <section class="gift-how-section pt-3 pb-4">
             <!-- How It Works -->
             <div class="container text-center">
                 <h2 class="fw-bold mb-2">How It Works!</h2>
@@ -54,17 +33,18 @@ get_header();
                         ['img' => 'hiw3.png', 'title' => "Step 3: Personalize", 'desc' => 'Add a message, select the amount, and choose who to send it to.'],
                         ['img' => 'hiw4.png', 'title' => "Step 4: Send or Pick Up", 'desc' => 'Send your personalized gift card instantly via email or SMS. Done!']
                     ];
-                    foreach ($steps as $step): ?>
-                    <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-                        <div class="hiw-step shadow">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/giftcard-page/<?php echo $step['img']; ?>" 
-                                alt="Step" 
-                                class="rounded-circle mb-3" 
-                                style="width: 70px; height: 70px; object-fit: cover;">
-                            <h6 class="fw-bold mb-1" style="font-size: 0.95rem;"><?php echo $step['title']; ?></h6>
-                            <p class="text-muted mb-0" style="font-size: 0.85rem;"><?php echo $step['desc']; ?></p>
+                    foreach ($steps as $index => $step): 
+                        $staggerClass = ($index % 2 == 1) ? 'step-down' : '';
+                    ?>
+                        <div class="col-12 col-sm-6 col-md-3 pt-5 d-flex justify-content-center">
+                            <div class="hiw-step shadow <?php echo $staggerClass; ?>">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/giftcard-page/<?php echo $step['img']; ?>" 
+                                    alt="Step" 
+                                    class="rounded-circle mb-3">
+                                <h3 class="fw-bold" style="font-size: 0.95rem;"><?php echo $step['title']; ?></h6>
+                                <p class="text-muted" style="font-size: 0.85rem;"><?php echo $step['desc']; ?></p>
+                            </div>
                         </div>
-                    </div>
                     <?php endforeach; ?>
                 </div>
             </div>
@@ -72,7 +52,7 @@ get_header();
     </div>
 
     <div class="giftcard-content-3">
-        <section class="gift-faq-section py-5 text-dark">
+        <section class="gift-faq-section pt-3 pb-5 text-dark">
             <!-- FAQ -->
             <div class="container">
                 <h2 class="fw-bold text-center mb-4">FAQs</h2>
