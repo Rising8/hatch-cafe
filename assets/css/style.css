@@ -142,12 +142,33 @@ header {
 }
 
 .content-1{
-    height: 650px;
-    /* background-color: #f9f9f9; */
+    /* height: 650px; */
     background-color: #E5E5E5;
 }
 
-.vertical-text {
+.blur-box {
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent dark */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  padding: 50px;
+  border-radius: 25px;
+  /* max-width: 600px; */
+  color: white;
+}
+
+.carousel-item img {
+  filter: brightness(70%) blur(1px);
+}
+
+.hero-h{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+}
+
+.hero-p{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+}
+
+/* .vertical-text {
     text-align: center;
     line-height: 1;
     padding-top: 4em;
@@ -156,9 +177,7 @@ header {
 .word-1{
     font-family: "Cormorant Garamond";
     font-size: 2em;
-    /* color: #6F8777; */
     color: #B1804B;
-    /* color: #f9f9f9; */
     animation-delay: 0.3s;
 }
 
@@ -167,7 +186,7 @@ header {
     font-size: 2em;
     color: #3f3f3f;
     animation-delay: 0.9s;
-}
+} */
 
 .menus-h2{
   color: #50685D !important;

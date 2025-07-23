@@ -5,8 +5,68 @@
 
         <!-- Content 1 -->
         <div class="content-1">
-            <div class="container">
-                <div class="row">
+            <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/slide2.jpeg" class="w-100 img-fluid" alt="Slide 1">
+                        <!-- Content overlay -->
+                        <div class="carousel-caption d-none d-md-block text-start">
+                            <h1 class="hero-h text-start">
+                            Your Hidden Hatchway
+                            </h1>
+                            <p class="hero-p py-3" id="sentenceTyping">
+                            Follow the scent of warm waffles and you’ll find us your secret hideout from the city buzz. Cozy, charming, and always freshly hatched.
+                            </p>
+                            <div class="button1 pt-3">
+                            <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="index-hero-order btn btn-lg rounded-pill px-5 py-3 fs-5 pulse">
+                                Order Now
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/slide3.jpeg" class="d-block w-100" alt="Slide 1">
+                        <!-- Content overlay -->
+                        <div class="carousel-caption blur-box d-none d-md-block text-start">
+                            <h1 class="hero-h text-start">
+                            Your Hidden Hatchway
+                            </h1>
+                            <p class="hero-p py-3" id="sentenceTyping">
+                            Follow the scent of warm waffles and you’ll find us your secret hideout from the city buzz. Cozy, charming, and always freshly hatched.
+                            </p>
+                            <div class="button1 pt-3">
+                            <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="index-hero-order btn btn-lg rounded-pill px-5 py-3 fs-5 pulse">
+                                Order Now
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/slide1.jpeg" class="d-block w-100" alt="Slide 1">
+                    </div>
+                </div>
+
+                <!-- Optional controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <!-- <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span> -->
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <!-- <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span> -->
+               </button>
+            </div>
+
+
+
+
+                <!-- <div class="row">
                     <div class="col-md-5">
                         <div class="container">
                             <h1 class="vertical-text text-start animated-header">
@@ -29,8 +89,7 @@
                     <div class="col-md-7 pt-5">
                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/hero.png" class="img-fluid" alt="Image description">
                     </div>
-                </div>
-            </div>
+                </div> -->
         </div>
 
         <!-- Content 2 -->
