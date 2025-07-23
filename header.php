@@ -42,7 +42,8 @@
                 <!-- Left: Burger Menu Dropdown -->
                 <div class="col-md-3">
                     <button id="burgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" style="background:none; border:none; cursor:pointer;">
-                        <i class="fa-solid fa-bars" style="color: #f9f9f9; font-size: 2em;"></i>
+                        <i class="burger-menu p-3 fa-solid fa-bars" style="color: #f9f9f9; font-size: 2em;"></i>
+                        <span class="explore px-2"> EXPLORE</span>
                     </button>
                 </div>
 
@@ -59,7 +60,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         class="btn btn-lg rounded-pill px-3 fs-6 order-now-btn pulse" 
-                        style="background-color: #B18149; color: white;">
+                        style="background: linear-gradient(to bottom right, #c29357, #B18149, #8e622e); color: white;">
                         Order Now
                     </a>
                 </div>
@@ -67,12 +68,12 @@
 
              <!-- Dropdown Menu -->
             <nav id="burgerDropdown" class="d-none border-top  py-3">
-                <ul class="drop-menus nav justify-content-center flex-wrap gap-5 pt-5 pb-3 border rounded-pill extra-gap">
+                <ul class="drop-menus nav justify-content-center flex-wrap gap-4 pb-4 border rounded-pill">
 
                     <!-- About -->
                     <li class="nav-item text-center">
-                        <a href="<?php echo site_url('/about'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="About" style="width: 60px; height: 60px;" class="mb-2">
+                        <a href="<?php echo site_url('/about'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center px-5">
+                            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="About" style="width: 60px; height: 60px;" class="mb-2"> -->
                             About
                         </a>
                     </li>
@@ -80,7 +81,7 @@
                     <!-- Menu -->
                     <li class="nav-item text-center">
                         <a href="<?php echo site_url('/menu'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Menu" style="width: 60px; height: 60px;" class="mb-2">
+                            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Menu" style="width: 60px; height: 60px;" class="mb-2"> -->
                             Menu
                         </a>
                     </li>
@@ -88,7 +89,7 @@
                     <!-- Gift Cards -->
                     <li class="nav-item text-center">
                         <a href="<?php echo site_url('/gift-cards'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Gift Cards" style="width: 60px; height: 60px;" class="mb-2">
+                            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Gift Cards" style="width: 60px; height: 60px;" class="mb-2"> -->
                             Gift Cards
                         </a>
                     </li>
@@ -96,7 +97,7 @@
                     <!-- Membership -->
                     <li class="nav-item text-center">
                         <a href="<?php echo site_url('/membership'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Membership" style="width: 60px; height: 60px;" class="mb-2">
+                            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Membership" style="width: 60px; height: 60px;" class="mb-2"> -->
                             Membership
                         </a>
                     </li>
@@ -104,7 +105,7 @@
                     <!-- Contact -->
                     <li class="nav-item text-center">
                         <a href="<?php echo site_url('/contact'); ?>" class="nav-link fw-semibold d-flex flex-column align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Contact" style="width: 60px; height: 60px;" class="mb-2">
+                            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Contact" style="width: 60px; height: 60px;" class="mb-2"> -->
                             Contact
                         </a>
                     </li>

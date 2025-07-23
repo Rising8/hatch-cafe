@@ -82,26 +82,44 @@ header {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
+    z-index: 999;
   }
+
 .icon i{
     color: black !important;
 }
 
+.burger-menu{
+  background-color: rgba(111, 135, 119, 0.4); 
+  border: 1px solid #f9f9f9; /* Use background color as border */
+  border-radius: 50%;
+}
+
+.explore{
+  color: #f9f9f9;
+}
+
 .drop-menus{
-  background-color: #6F8777;
+  /* background-color: #6F8777; */
+    background-color: rgba(111, 135, 119, 0.4); 
+  backdrop-filter: blur(50px); 
+  padding-top: 70px;
 }
 
 .nav-item{
-  width: 8.5rem;
-  background-color: #849f8d;
-    border-radius: 30px;
+  width: 10rem;
+  background: linear-gradient(135deg, #8ca697, #6F8777, #4f6155);
+  border-radius: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+   transition: transform 0.3s ease;
 }
 
 .nav-item:hover{
   /* background-color: #D6A976; */
-  background-color: #D6A976;
-    border-radius: 30px;
-
+  transform: translateY(-5px); /* Move up 5px */
+  border-radius: 30px;
+ background: linear-gradient(to bottom, #7f9987, #6F8777, #5a6f65);
 }
 
 /* main page */
