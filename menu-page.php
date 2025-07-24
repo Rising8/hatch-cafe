@@ -244,7 +244,7 @@ get_header();
                 <?php endforeach; ?>
 
                 <!-- Special Bundle Section -->
-                <div class="special-bundles-header mx-auto mb-4 text-center">
+                <div id="special-bundle" class="special-bundles-header mx-auto mb-4 text-center">
                     <h2 class="fw-bold mb-0">✨ Special Eggchi Bundles</h2>
                 </div>
 

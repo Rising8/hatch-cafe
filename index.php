@@ -94,14 +94,14 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Takeaway" class="card-img-categories " width="50">
                         <h3 class="menus-h3 mt-3">Grab & Go Goodness</h3>
                         <p class="menus-p p-style">Freshly made egg waffles and drinks ready when you are.</p>
-                        <a href="#" class="menus-btn btn rounded-pill mt-2">Order Now</a>
+                        <a href="<?php echo site_url('/menu'); ?>#eggchi" class="menus-btn btn rounded-pill mt-2">Order Now</a>
                     </div>
 
                     <div class="category-card text-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Party Pack" class="card-img-categories" width="50">
                         <h3 class="menus-h3 mt-3">Party Pack Joy</h3>
                         <p class="menus-p p-style">Perfect for birthdays and gatherings. Waffle happiness in a box!</p>
-                        <a href="#" class="menus-btn btn rounded-pill mt-2">View Options</a>
+                        <a href="<?php echo site_url('/menu'); ?>#special-bundle" class="menus-btn btn rounded-pill mt-2">View Options</a>
                     </div>
 
                     <div class="category-card text-center">
@@ -136,7 +136,7 @@
                                Easy to buy, fun to share, and full of sweet moments.
                             </p>
                             <div class="button1 pt-1">
-                            <a href="<?php echo site_url('/contact'); ?>" 
+                            <a href="<?php echo site_url('/gift-cards'); ?>" 
                                 class="btn btn-lg rounded-pill px-5 py-3 fs-5 pulse" 
                                 style="background: linear-gradient(135deg, #C7A678, #B88A54, #B18149); color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); box-shadow: 0 4px 10px rgba(177, 129, 73, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;" 
                                 type="button">
@@ -184,7 +184,6 @@
                 <!-- </div> -->
             </div>
         </div>
-
 
         <!-- Content 5 -->
         <div class="content-5 pt-5">
