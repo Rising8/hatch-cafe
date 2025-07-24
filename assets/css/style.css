@@ -534,10 +534,33 @@ header {
 
 /* Gift Cards Page Styling */
 .giftcard-hero-section {
-  background-color: #fef9f6;
-  background-image: url('../img/backgrounds/waffle-bg-light.jpg');
+  background: linear-gradient(to bottom, #f9f9f9 0%, #f7e8dc 100%);
   background-size: cover;
   background-repeat: repeat;
+}
+
+.gift-card{
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 60% 40% 55% 45% / 55% 45% 60% 40%;
+  width: 300px;
+  height: 300px;
+  padding: 2rem;
+  text-align: center;
+  overflow: visible;
+  padding-bottom: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.gift-card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.card-img-gift {
+  width: 120px;
+  margin-top: -120px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .giftcard-hero h1 {
@@ -556,51 +579,12 @@ header {
   border-color: #f3e4d7;
 }
 
-.gift-how-section {
-  background-color: #fdf5ee;
-}
-
-.rounded-circle {
-  width: 70px; 
-  height: 70px; 
-  object-fit: cover;
-}
-
-.gift-how-section .hiw-step {
-  width: 250px;
-  height: 250px;
-  background-color: white;
-  border-radius: 60% 40% 55% 45% / 55% 45% 60% 40%;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.gift-how-section .hiw-step:hover {
-  transform: scale(1.03);
-}
-
-/* Gift Card HIW Offset */
-@media (min-width: 768px) {
-  .step-down {
-    margin-top: -50px;
-  }
+.giftcard-content-2 {
+  background: linear-gradient(to bottom, #f7e8dc 0%, #d7beb0 100%);
 }
 
 .gift-faq-section {
-  background: linear-gradient(to right, #fff4e4, #ffe9cf);
-}
-
-.hover-shadow {
-  transition: transform 0.3s ease;
-}
-
-.hover-shadow:hover {
-  transform: translateY(-5px);
+  background: linear-gradient(to bottom, #d7beb0 0%, #f9f9f9 100%);
 }
 
 /* Confetti Canvas Style */

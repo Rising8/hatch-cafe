@@ -11,7 +11,7 @@ get_header();
         <section class="giftcard-hero-section pt-5 pb-3 text-dark animate__animated animate__bounceIn">
             <div class="giftcard-hero container text-center py-5">
                 <h1 class="display-4 fw-bold mb-3">Give the Gift of Hatch</h1>
-                <p class="lead">Perfect for birthdays, thank-yous, or just because - our gift cards are the ultimate treat.</p>                
+                <p class="fs-5">Perfect for birthdays, thank-yous, or just because - our gift cards are the ultimate treat.</p>                
                 <button id="giftCardRedirectBtn" class="btn btn-warning btn-lg rounded-pill fw-bold mt-3 shadow animate__animated animate__bounceIn animate__delay-1s animate__faster">
                     🎁 Purchase a Gift Card
                 </button>
@@ -20,35 +20,33 @@ get_header();
     </div>
 
     <div class="giftcard-content-2">
-        <section class="gift-how-section pt-3 pb-4">
-            <!-- How It Works -->
-            <div class="container text-center">
-                <h2 class="fw-bold mb-2">How It Works!</h2>
-                <div class="row justify-content-center g-4">
-                    <!-- Steps -->
-                    <?php 
-                    $steps = [
-                        ['img' => 'hiw1.png', 'title' => "Step 1: Click 'Purchase a Gift Card'", 'desc' => 'Start the journey by clicking the big yellow button above.'],
-                        ['img' => 'hiw2.png', 'title' => "Step 2: Redirect to Square", 'desc' => 'You\'ll be redirected to our secure Square site to continue your purchase.'],
-                        ['img' => 'hiw3.png', 'title' => "Step 3: Personalize", 'desc' => 'Add a message, select the amount, and choose who to send it to.'],
-                        ['img' => 'hiw4.png', 'title' => "Step 4: Send or Pick Up", 'desc' => 'Send your personalized gift card instantly via email or SMS. Done!']
-                    ];
-                    foreach ($steps as $index => $step): 
-                        $staggerClass = ($index % 2 == 1) ? 'step-down' : '';
-                    ?>
-                        <div class="col-12 col-sm-6 col-md-3 pt-5 d-flex justify-content-center">
-                            <div class="hiw-step shadow <?php echo $staggerClass; ?>">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/giftcard-page/<?php echo $step['img']; ?>" 
-                                    alt="Step" 
-                                    class="rounded-circle mb-3">
-                                <h3 class="fw-bold" style="font-size: 0.95rem;"><?php echo $step['title']; ?></h6>
-                                <p class="text-muted" style="font-size: 0.85rem;"><?php echo $step['desc']; ?></p>
-                            </div>
+        <h2 class="giftcard-h2 text-center pb-5">How it Works!</h2>
+        <div class="container pt-5">
+            <div class="row text-center py-5 gx-5 gy-5">
+                <?php 
+                $steps = [
+                    ['img' => 'hiw1.png', 'title' => "Step 1: Click 'Purchase a Gift Card'", 'desc' => 'Crispy, golden, and unforgettable'],
+                    ['img' => 'hiw2.png', 'title' => "Step 2: Choose Gift Type", 'desc' => 'Pick how you want to send your gift'],
+                    ['img' => 'hiw3.png', 'title' => "Step 3: Add Personal Details", 'desc' => 'Add a message and choose your amount with love'],
+                    ['img' => 'hiw4.png', 'title' => "Step 4: Check Out and Send", 'desc' => 'Review everything and complete your purchase. Done!']
+                ];
+                foreach ($steps as $index => $step): 
+                    // Add top margin only to even-indexed items (1 and 3 for 0-based index)
+                    $marginStyle = ($index % 2 == 1) ? 'style="margin-top: -50px;"' : '';
+                ?>
+                    <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center mb-4">
+                        <div class="gift-card text-center" <?php echo $marginStyle; ?>>
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/giftcard-page/<?php echo $step['img']; ?>" 
+                                alt="Step" 
+                                class="card-img-gift mb-3">
+                            <h3 class="giftcard-h3"><?php echo $step['title']; ?></h3>
+                            <p class="p-style"><?php echo $step['desc']; ?></p>
                         </div>
-                    <?php endforeach; ?>
-                </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
-        </section>
+        </div>
     </div>
 
     <div class="giftcard-content-3">
