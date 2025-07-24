@@ -530,10 +530,32 @@ header {
 
 /* Gift Cards Page Styling */
 .giftcard-hero-section {
-  background-color: #fef9f6;
-  background-image: url('../img/backgrounds/waffle-bg-light.jpg');
+  /* background: linear-gradient(to bottom, #f9f9f9 0%, #fdf5ee 100%); */
+background: linear-gradient(to bottom, #f9f9f9 0%, #f7e8dc 100%);
+  /* background-color: #fef9f6; */
+  /* background-image: url('../img/backgrounds/waffle-bg-light.jpg'); */
   background-size: cover;
   background-repeat: repeat;
+}
+
+.gift-card{
+  position: relative;
+  /* background: linear-gradient(to bottom, #eac18b, #f5e2c4, #f9f9f9); */
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding: 2rem;
+  text-align: center;
+  overflow: visible;
+  padding-bottom: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-img-gift {
+  width: 120px;
+  margin-top: -120px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .giftcard-hero h1 {
@@ -552,51 +574,14 @@ header {
   border-color: #f3e4d7;
 }
 
-.gift-how-section {
-  background-color: #fdf5ee;
+.giftcard-content-2 {
+  background: linear-gradient(to bottom, #f7e8dc 0%, #d4b9a8 100%);
 }
 
-.rounded-circle {
-  width: 70px; 
-  height: 70px; 
-  object-fit: cover;
-}
-
-.gift-how-section .hiw-step {
-  width: 250px;
-  height: 250px;
-  background-color: white;
-  border-radius: 60% 40% 55% 45% / 55% 45% 60% 40%;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.gift-how-section .hiw-step:hover {
-  transform: scale(1.03);
-}
-
-/* Gift Card HIW Offset */
-@media (min-width: 768px) {
-  .step-down {
-    margin-top: -50px;
-  }
-}
 
 .gift-faq-section {
-  background: linear-gradient(to right, #fff4e4, #ffe9cf);
-}
+  background: linear-gradient(to bottom, #d4b9a8 0%, #f9f9f9 100%);
 
-.hover-shadow {
-  transition: transform 0.3s ease;
-}
-
-.hover-shadow:hover {
-  transform: translateY(-5px);
 }
 
 /* Confetti Canvas Style */
