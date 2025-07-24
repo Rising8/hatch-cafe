@@ -22,14 +22,14 @@ get_header(); ?>
 
     <!-- Full-Width Image -->
     <div class="about-content-2 full-width-image pt-5">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about-page/about-img.png" class="img-fluid floating-img" alt="Hatch interior">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about-page/about-img.png" class="img-fluid" alt="Hatch interior">
     </div>
 
     <!-- Highlights Section -->
     <div class="about-content-3 pt-5">
         <h2 class="about-h2 text-center pb-5">Our Highlights</h2>
         <div class="container pt-5">
-            <div class="row text-center pt-5">
+            <div class="row text-center fs-5 pt-5">
                 <?php
                 $highlights = [
                     ['highlights1.png', 'Waffle-Licious', 'Crispy, golden, and unforgettable'],
@@ -64,7 +64,7 @@ get_header(); ?>
                 </div>
                 <div class="col-md-6">
                     <h2 class="mb-3">From Alley Dreams to Waffle Magic</h2>
-                    <p class="lead">
+                    <p class="fs-5">
                         Meet Sean Hong — the dreamer, the doer, and the waffle wizard behind Hatch. What started as late-night kitchen experiments turned into a tucked-away café serving golden, crispy joy in every bite.
                     </p>
                 </div>
@@ -73,23 +73,33 @@ get_header(); ?>
     </div>
 
     <!-- 📍 Location CTA -->
-    <div class="about-content-5">
-        <div class="egg-animation container p-5 rounded-3">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="text-start animated-header">
-                        <span class="word1a">Find </span>
-                        <span class="word1">Your Way</span><br>
-                        <span class="word2">To Hatch!</span>
-                    </h1>
-                    <p class="sentence-2 typing-paragraph text-start py-3">
-                        Find Hatch tucked away like a secret treasure down a cozy alley. Once you discover our spot, you’ll be rewarded with warm smiles, delicious egg waffles, and a unique vibe that’s worth the adventure.
-                    </p>
+    <div class="about-content-5 pt-5">
+            <div class="map-animation container p-5 rounded-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="container">
+                            <h1 class=" text-start animated-header">
+                                <span class="word1a">Find </span>
+                                <span class="word1">Your Way</span><br>
+                                <span class="word2">To Hatch!</span>
+                            </h1>
+                            <p class="sentence-2 typing-paragraph text-start mx-auto py-3" id="sentenceTyping">
+                                Find Hatch tucked away like a secret treasure down a cozy alley. Once you discover our spot, you’ll be rewarded with warm smiles, delicious egg waffles, and a unique vibe that’s worth the adventure. Come explore the hidden side of Hatch!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 justify-content-center">
+                        <div class="map-wrapper position-relative">
+                            <!-- map image -->
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map-animation/map-hatch.png" alt="Map" class="map-image">
+                            
+                            <!-- egg pin -->
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map-animation/egg.png" alt="Egg Pin" class="egg-pin">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6"></div>
             </div>
         </div>
-    </div>
 
     <div class="about-content-6"></div>
 </div>
