@@ -9,9 +9,9 @@ get_header();
 
     <div class="container">
         <!-- Hero Section -->
-        <div class="text-center pt-5 mb-5">
+        <div class="text-center py-5">
             <h1 class="display-4 fw-bold text-dark">Hatch-ing a Plan to Visit?</h1>
-            <p class="lead text-secondary">Hidden down the laneway, Hatch is your sweet little escape. Got questions, collab ideas, or just want to say hi? Reach out — we’re all ears.</p>
+            <p class="fs-5">Hidden down the laneway, Hatch is your sweet little escape. Got questions, collab ideas, or just want to say hi? Reach out we’re all ears.</p>
         </div>
 
         <div class="row g-5">

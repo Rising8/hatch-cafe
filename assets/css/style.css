@@ -490,9 +490,13 @@ header {
 }
 
 /* Contact Page Styling */
+.contact-wrapper{
+  background: linear-gradient(to bottom, #FFF2E0 0%, #FFF2E0 40%, #f9f9f9 100%);
+}
+
 .contact-section-1 {
-  background-color: #fef9f6;
-  background-image: url('../img/backgrounds/waffle-bg-light.jpg');
+  /* background-color: #fef9f6;
+  background-image: url('../img/backgrounds/waffle-bg-light.jpg'); */
   background-size: cover;
   background-repeat: repeat;
 }
