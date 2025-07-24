@@ -153,15 +153,15 @@ header {
     background-color: #E5E5E5;
 }
 
-.blur-box {
-  background: rgba(0, 0, 0, 0.3); /* semi-transparent dark */
+/* .blur-box {
+  background: rgba(0, 0, 0, 0.3); 
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  -webkit-backdrop-filter: blur(8px); 
   padding: 50px;
   border-radius: 25px;
-  /* max-width: 600px; */
+  max-width: 600px;
   color: white;
-}
+} */
 
 .carousel-item img {
   filter: brightness(70%) blur(1px);
@@ -173,9 +173,10 @@ header {
 
 .hero-p{
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+  width: 60%;
 }
 
-/* .vertical-text {
+.vertical-text {
     text-align: center;
     line-height: 1;
     padding-top: 4em;
@@ -183,17 +184,17 @@ header {
 
 .word-1{
     font-family: "Cormorant Garamond";
-    font-size: 2em;
-    color: #B1804B;
+    font-size: 1.8em;
+    color: #f9f9f9;
     animation-delay: 0.3s;
 }
 
 .word-2{
     font-family: "Cormorant Garamond";
-    font-size: 2em;
-    color: #3f3f3f;
+    font-size: 1.8em;
+    color: #f9f9f9;
     animation-delay: 0.9s;
-} */
+}
 
 .menus-h2{
   color: #50685D !important;

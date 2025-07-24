@@ -8,16 +8,17 @@
             <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/slide2.jpeg" class="w-100 img-fluid" alt="Slide 1">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/slide1.jpeg" class="w-100 img-fluid" alt="Slide 1">
                         <!-- Content overlay -->
                         <div class="carousel-caption d-none d-md-block text-start">
-                            <h1 class="hero-h text-start">
-                            Your Hidden Hatchway
+                            <h1 class="vertical-text hero-h text-start">
+                                <span class="word-1">Your Hidden</span><br>
+                                <span class="word-2">Hatchaway</span>
                             </h1>
-                            <p class="hero-p py-3" id="sentenceTyping">
+                            <p class="hero-p py-3 fs-5" id="sentenceTyping">
                             Follow the scent of warm waffles and you’ll find us your secret hideout from the city buzz. Cozy, charming, and always freshly hatched.
                             </p>
-                            <div class="button1 pt-3">
+                            <div class="button1 pt-2">
                             <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -28,16 +29,17 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/slide3.jpeg" class="d-block w-100" alt="Slide 1">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/slide2.jpeg" class="d-block w-100" alt="Slide 2">
                         <!-- Content overlay -->
                         <div class="carousel-caption blur-box d-none d-md-block text-start">
-                            <h1 class="hero-h text-start">
-                            Your Hidden Hatchway
+                            <h1 class="vertical-text hero-h text-start">
+                                <span class="word-1">Your Hidden</span><br>
+                                <span class="word-2">Hatchaway</span>
                             </h1>
-                            <p class="hero-p py-3" id="sentenceTyping">
-                            Follow the scent of warm waffles and you’ll find us your secret hideout from the city buzz. Cozy, charming, and always freshly hatched.
+                            <p class="hero-p py-3 fs-5" id="sentenceTyping">
+                                Follow the scent of warm waffles and you’ll find us your secret hideout from the city buzz. Cozy, charming, and always freshly hatched.
                             </p>
-                            <div class="button1 pt-3">
+                            <div class="button1 pt-2">
                             <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -48,7 +50,25 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/slide1.jpeg" class="d-block w-100" alt="Slide 1">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/slide3.jpeg" class="d-block w-100" alt="Slide 3">
+                        <!-- Content overlay -->
+                        <div class="carousel-caption blur-box d-none d-md-block text-start">
+                            <h1 class="vertical-text hero-h text-start">
+                                <span class="word-1">Your Hidden</span><br>
+                                <span class="word-2">Hatchaway</span>
+                            </h1>
+                            <p class="hero-p py-3 fs-5" id="sentenceTyping">
+                                Follow the scent of warm waffles and you’ll find us your secret hideout from the city buzz. Cozy, charming, and always freshly hatched.
+                            </p>
+                            <div class="button1 pt-2">
+                            <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="index-hero-order btn btn-lg rounded-pill px-5 py-3 fs-5 pulse">
+                                Order Now
+                            </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
