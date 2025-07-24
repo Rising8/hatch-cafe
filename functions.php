@@ -31,6 +31,36 @@ function hatch_enqueue_styles()
 
     // Custom JS - ( this may need to be changed later !!! )
     wp_enqueue_script('hatch-scripts', get_template_directory_uri() . '/assets/js/custom.js', array('jquery', 'bootstrap-js'), null, true);
+
+    // Enqueue Animate.css
+    wp_enqueue_style('animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+    // Enqueue Confetti.js (dependency for gift-cards.js)
+    wp_enqueue_script('confetti', 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js', array(), null, true);
+
+    // Gift Card custom JS
+    wp_enqueue_script('gift-cards', get_template_directory_uri() . '/assets/js/gift-cards.js', array('confetti'), null, true);
+
+    // Membership custom JS
+    wp_enqueue_script('membership-js', get_template_directory_uri() . '/assets/js/membership.js', array(), '1.0', true);
+
+    // About custom JS
+    wp_enqueue_script('about-js', get_template_directory_uri() . '/assets/js/about.js', array(), '1.0', true);
+
+    // Tranding JS
+    wp_enqueue_script('tranding-js', get_template_directory_uri() . '/assets/js/tranding.js', array('jquery'), '1.0', true);
+
+    // Index JS
+    wp_enqueue_script('index-js', get_template_directory_uri() . '/assets/js/index.js', array('jquery'), '1.0', true);
+
+    // Preloader JS
+    wp_enqueue_script('preloader-js', get_template_directory_uri() . '/assets/js/preloader.js', array('jquery'), '1.0', true);
+
+    // Header JS
+    wp_enqueue_script('header-js', get_template_directory_uri() . '/assets/js/header.js', array('jquery'), '1.0', true);
+
+    // Menu JS
+    wp_enqueue_script('menu-js', get_template_directory_uri() . '/assets/js/menu.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'hatch_enqueue_styles');
 

@@ -21,8 +21,8 @@
             <ul class="list-inline mb-0">
                 <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">About Us</a></li>
                 <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Menu</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Membership</a></li>
                 <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Gift Card</a></li>
+                <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Membership</a></li>
                 <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
             </ul>
         </div>
@@ -35,67 +35,6 @@
 </footer>
 
 <?php wp_footer(); ?>
-
-<!-- Bootstrap JS -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.bundle.min.js"></script>
-
-<!-- Preloader Script -->
-<script>
-    window.addEventListener("load", function () {
-        const preloader = document.getElementById("preloader");
-        const header = document.querySelector('.animated-header');
-
-        setTimeout(() => {
-            preloader.style.opacity = "0";
-            preloader.style.pointerEvents = "none";
-
-            setTimeout(() => {
-                preloader.style.display = "none";
-                header.classList.add('start');
-            }, 500);
-        }, 1500);
-    });
-</script>
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-<!-- Swiper Init -->
-<script>
-    const FlavourSlider = new Swiper('.tranding-slider', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        loop: false,
-        slidesPerView: 'auto',
-        initialSlide: 1,
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 1.5,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        }
-    });
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const egg = document.getElementById('crackEgg');
-    const targetURL = "<?php echo site_url('/membership-signup'); ?>"; // Change this to your link
-
-    egg.addEventListener('click', function () {
-      egg.classList.add('egg-cracked');
-      setTimeout(() => {
-        window.location.href = targetURL;
-      }, 500); // matches the animation time
-    });
-  });
-</script>
-
 
 </body>
 </html>
