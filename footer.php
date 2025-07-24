@@ -21,8 +21,8 @@
             <ul class="list-inline mb-0">
                 <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">About Us</a></li>
                 <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Menu</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Membership</a></li>
                 <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Gift Card</a></li>
+                <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Membership</a></li>
                 <li class="list-inline-item mx-2"><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
             </ul>
         </div>
