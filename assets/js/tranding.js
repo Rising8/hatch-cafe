@@ -19,3 +19,25 @@ var TrandingSlider = new Swiper('.tranding-slider', {
        prevEl: '.swiper-button-prev',
     }
 });
+
+new Swiper(".top-picks-swiper", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  centeredSlides: false,
+
+  effect: 'fade',             
+  fadeEffect: {
+    crossFade: true,          
+  },
+
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".top-picks-next",
+    prevEl: ".top-picks-prev",
+  },
+  grabCursor: true,
+});

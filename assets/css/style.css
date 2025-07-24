@@ -684,8 +684,94 @@ header {
   display: flex;
 }
 
+.top-picks-carousel {
+  background: linear-gradient(to bottom, #fff9d6 0%, #fff6ee 100%);
+}
+
+.top-picks-carousel .card {
+  background: transparent;
+  border-color: rgba(0,0,0,0.1); 
+  box-shadow: none;
+}
+
+.top-picks-swiper .swiper-slide {
+  width: 100% !important; 
+}
+
+.top-picks-img {
+  width: 120px; 
+  height: 120px; 
+  object-fit: cover;
+}
+
 .paradise-plate {
   background-color: #fff6ee;
+}
+
+.truffle-black-section {
+  background: linear-gradient(135deg, #fff9d6 0%, #fef6ee 100%);
+  color: #4b463e; 
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.truffle-black-section h2 {
+  color: #f0b95c; 
+  text-shadow: 0 0 5px #f0b95c88;
+}
+
+.truffle-black-section p.lead {
+  color: #aaa;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.truffle-card {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #4b463e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #d9d2b0;
+  backdrop-filter: blur(8px);
+}
+
+.truffle-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(255, 209, 91, 0.4);
+  border-color: #f0b95c;
+}
+
+.truffle-card h3 {
+  color: #a1802b !important;
+  font-weight: 700;
+}
+
+.truffle-card p {
+  color: #6a5f3b !important;
+}
+
+.btn-truffle {
+  background-color: #f0b95c;
+  color: #3c2a00;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 4px 12px #f0b95c88;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.btn-truffle:hover,
+.btn-truffle:focus {
+  background-color: #d8a549;
+  box-shadow: 0 6px 20px #d8a549cc;
+  color: #3c2a00;
 }
 
 .menu-img {

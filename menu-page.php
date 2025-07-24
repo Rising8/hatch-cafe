@@ -19,7 +19,17 @@ get_header();
         <nav id="menuScrollNav" class="scroll-nav py-3 bg-light shadow-sm">
             <div class="container d-flex justify-content-center gap-4">
             <a href="#paradise" class="scroll-link fw-bold text-decoration-none">🥭 Paradise Plate</a>
-            <a href="#eggchi" class="scroll-link fw-bold text-decoration-none">🍳 Egg-chi Creations</a>
+
+            <!-- Dropdown container -->
+            <div class="dropdown">
+                <a href="#eggchi" class="scroll-link fw-bold text-decoration-none dropdown-toggle">
+                🍳 Egg-chi Creations
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#special-bundle" class="dropdown-item">✨ Special Eggchi Bundles</a>
+                </div>
+            </div>
+
             <a href="#montblanc" class="scroll-link fw-bold text-decoration-none">🥥 Mont Blanc Dreams</a>
 
             <!-- Dropdown container -->
@@ -39,6 +49,40 @@ get_header();
             </div>
         </nav>
     </div>
+
+    <!-- Top Picks -->
+    <section class="top-picks-carousel py-4 bg-warning-subtle">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">🌟 Top Picks</h2>
+            <div class="swiper top-picks-swiper">
+                <div class="swiper-wrapper">
+                    <?php
+                    $top_picks = [
+                    ['Half Doz Original', 'half-doz-original.webp', 'https://www.hatchcafe.com.au/s/order?location=11f0192a377f200dbfc53cecef6d5b2a&item=9'],
+                    ['Hojicha Mont Blanc', 'hojicha-montblanc.webp', 'https://www.hatchcafe.com.au/s/order?location=11f0192a377f200dbfc53cecef6d5b2a&item=ET6B5OW57S2SQEIQWPTYI52G'],
+                    ['Mix Half Dozen (1 each Flavour)', 'mix-half-doz.webp', 'https://www.hatchcafe.com.au/s/order?location=11f0192a377f200dbfc53cecef6d5b2a&item=8'],
+                    ['Cheese Corn Eggchi', 'cheese-corn.webp', 'https://www.hatchcafe.com.au/s/order?location=11f0192a377f200dbfc53cecef6d5b2a&item=7'],
+                    ];
+
+                    foreach ($top_picks as $pick) : ?>
+                        <div class="swiper-slide">
+                            <a href="<?php echo $pick[2]; ?>" target="_blank" class="text-decoration-none text-dark">
+                                <div class="card rounded-4 border shadow-sm text-center p-3 h-100">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/top-picks/<?php echo $pick[1]; ?>" class="top-picks-img rounded-circle mb-3 mx-auto" alt="<?php echo $pick[0]; ?>">
+                                    <h6 class="fw-bold"><?php echo $pick[0]; ?></h6>
+                                    <span class="text-muted small">✨ Tap to Order</span>
+                                </div>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Swiper Navigation -->
+                <div class="top-picks-next swiper-button-next"></div>
+                <div class="top-picks-prev swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
 
     <!-- Paradise Plate -->
     <div class="menu-content-2">
@@ -104,6 +148,56 @@ get_header();
             </div>
         </section>
     </div>
+
+    <!-- Truffle Black -->
+    <section id="truffleblack" class="truffle-black-section py-5 text-light">
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-center text-warning">🍄 Truffle Black</h2>
+            <p class="lead text-center text-muted mb-5">Indulge in our boldest creation yet — truffle-rich, sesame-deep, unapologetically dark.</p>
+
+            <div class="row g-4 justify-content-center">
+                <?php
+                $truffle_items = [
+                    [
+                    'Truffle Black Sesame Affogato',
+                    'Nutty black sesame ice cream drizzled with truffle honey, finished with a hot shot of espresso. A bold and aromatic twist on the classic affogato.',
+                    'A$9.00',
+                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=F5IQ25PGWU3KCP7PTUZFZS6K'
+                    ],
+                    [
+                    'Truffle Black Sesame Latte',
+                    'A warm blend of roasted black sesame and steamed milk, infused with active charcoal and finished with a touch of truffle honey. Earthy, nutty, and soothingly aromatic.',
+                    'A$7.00',
+                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=6LR27JIA6Z7WWQWXP3ILX4R6'
+                    ],
+                    [
+                    'Ice Truffle Black Sesame Latte',
+                    'Chilled and creamy black sesame latte with active charcoal and a drizzle of truffle honey. Bold, smooth, and refreshingly indulgent.',
+                    'A$8.00',
+                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=E2YFPTU6FQIPB2DLIQOBINW3'
+                    ],
+                    [
+                    'Truffle Black Sesame Mont Blanc',
+                    'Toasted black sesame blended with velvety coconut juice, layered with earthy active charcoal and topped with a luscious black sesame cream foam. Finished with a hint of truffle honey for a luxurious twist—creamy, nutty, and uniquely indulgent.',
+                    'A$9.00',
+                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=NX7W3LQUACXRKQR45XQGGNTH'
+                    ],
+                ];
+                foreach ($truffle_items as $item) : ?>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="truffle-card p-4 rounded-4 h-100 d-flex flex-column">
+                            <h3 class="fw-bold mb-3 text-white">
+                                <?php echo $item[0]; ?> 
+                                <span class="float-end text-warning fw-semibold"><?php echo $item[2]; ?></span>
+                            </h3>
+                            <p class="small text-muted flex-grow-1"><?php echo $item[1]; ?></p>
+                            <a href="<?php echo $item[3]; ?>" target="_blank" class="btn btn-truffle btn-lg rounded-pill mt-4 align-self-center">🛒 Order Now</a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
 
     <!-- Egg-chi Creations -->
     <div class="menu-content-3">
