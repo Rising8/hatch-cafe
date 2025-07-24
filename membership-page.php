@@ -16,14 +16,14 @@ get_header();
 
             <!-- Floating Eggs -->
             <div class="position-relative d-inline-block mx-auto" style="max-width: 700px;">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/golden-egg.jpg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membership/golden-egg.jpg"
                     alt="Golden Egg Left"
                     class="floating-egg golden-egg-left d-none d-md-block position-absolute"> 
                 <p class="lead text-shadow mb-0 px-5">
                     Get surprise rewards, sneak peeks of new flavours, and a chance to win a FREE egg waffle just for being a member.
                 </p>
 
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/golden-egg.jpg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membership/golden-egg.jpg"
                     alt="Golden Egg Right"
                     class="floating-egg golden-egg-right d-none d-md-block position-absolute">
             </div>

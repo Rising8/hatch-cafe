@@ -55,7 +55,7 @@ get_header();
                         </button>
                     </div>
                     <div class="col-md-4 text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/strawberry-plate.webp" class="menu-img img-fluid rounded shadow-sm" alt="Strawberry and Cream" data-bs-toggle="modal" data-bs-target="#modalStrawberry">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/paradise-plate/strawberry-plate.webp" class="menu-img img-fluid rounded shadow-sm" alt="Strawberry and Cream" data-bs-toggle="modal" data-bs-target="#modalStrawberry">
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@ get_header();
                         </button>
                     </div>
                     <div class="col-md-4 text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/chocolate-plate.webp" class="menu-img img-fluid rounded shadow-sm" alt="Chocolate Ganache" data-bs-toggle="modal" data-bs-target="#modalChocolate">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/paradise-plate/chocolate-plate.webp" class="menu-img img-fluid rounded shadow-sm" alt="Chocolate Ganache" data-bs-toggle="modal" data-bs-target="#modalChocolate">
                     </div>
                 </div>
 
@@ -78,7 +78,7 @@ get_header();
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-4">
                             <div class="modal-body text-center">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/strawberry-plate.webp" class="img-fluid rounded mb-3" alt="Strawberry and Cream">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/paradise-plate/strawberry-plate.webp" class="img-fluid rounded mb-3" alt="Strawberry and Cream">
                                 <h5 class="fw-bold">Strawberry and Cream</h5>
                                 <p class="text-muted">Signature eggchi with a dip, creamy cheese with sour berries coulis and fresh strawberries.</p>
                                 <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=BAVEJ3HIPWB7CKAR2HEBXK4P" target="_blank" class="btn btn-warning rounded-pill fw-bold">Order via Square</a>
@@ -92,7 +92,7 @@ get_header();
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-4">
                             <div class="modal-body text-center">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/chocolate-plate.webp" class="img-fluid rounded mb-3" alt="Chocolate Ganache">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/paradise-plate/chocolate-plate.webp" class="img-fluid rounded mb-3" alt="Chocolate Ganache">
                                 <h5 class="fw-bold">Chocolate Ganache</h5>
                                 <p class="text-muted">Signature eggchi with a dip, buttery Belgium chocolate ganache and chocolate sauce.</p>
                                 <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=IK3DLHSGLEQ25NWQVQ4TFUTN" target="_blank" class="btn btn-warning rounded-pill fw-bold">Order via Square</a>
@@ -185,7 +185,7 @@ get_header();
 
                         <!-- Right: Image -->
                         <div class="col-md-4 text-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $item[2]; ?>" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/eggchi/<?php echo $item[2]; ?>" 
                                 class="eggchi-img img-fluid rounded shadow-sm" 
                                 alt="<?php echo $item[0]; ?>">
                         </div>
@@ -209,7 +209,7 @@ get_header();
                                   
                                     <!-- Left: Image -->
                                     <div class="col-md-6 text-center d-flex align-items-center justify-content-center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $item[2]; ?>"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/eggchi/<?php echo $item[2]; ?>"
                                             class="modal-img rounded-circle shadow-sm border border-warning"
                                             alt="<?php echo $item[0]; ?>">
                                     </div>
@@ -253,7 +253,7 @@ get_header();
                             <div class="col-md-4 mb-4">
                                 <div class="special-bundle-card p-4 rounded-4 shadow-sm border text-center h-100">
                                     <div class="mb-3">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo htmlspecialchars($bundle[2]); ?>"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/special-bundle/<?php echo htmlspecialchars($bundle[2]); ?>"
                                             alt="<?php echo htmlspecialchars($bundle[0]); ?>"
                                             class="special-bundle-img rounded-circle border shadow-sm mx-auto d-block"
                                             style="width: 130px; height: 130px; object-fit: cover;">
@@ -303,7 +303,7 @@ get_header();
                                 <div class="mont-blanc-card mont-blanc-hover text-center p-4 rounded-4 shadow-sm border"
                                     data-bs-toggle="modal" data-bs-target="#<?php echo $modalId; ?>">
                                     <div class="mb-3">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $item[2]; ?>"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/mont-blanc/<?php echo $item[2]; ?>"
                                             alt="<?php echo $item[0]; ?>"
                                             class="mont-blanc-img rounded-circle border shadow-sm">
                                     </div>
@@ -340,7 +340,7 @@ get_header();
                                 </div>
 
                                 <div class="modal-body text-center p-4">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $item[2]; ?>"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/mont-blanc/<?php echo $item[2]; ?>"
                                         class="modal-text img-fluid rounded-circle mb-3 shadow-sm"
                                         alt="<?php echo $item[0]; ?>">
                                     <h5 class="fw-bold"><?php echo $item[0]; ?></h5>
@@ -376,9 +376,9 @@ get_header();
                             ['Espresso', 'A$4.00', 'espresso.webp'],
                             ['Short Macchiato', 'A$4.50', 'short-macchiato.webp'],
                             ['Long Macchiato', 'A$5.00', 'long-macchiato.webp'],
-                            ['Long Black', 'A$4.50', 'long-black.jpg'],
+                            ['Long Black', 'A$4.50', 'long-black.webp'],
                             ['Flat White', 'A$5.50', 'flat-white.webp'],
-                            ['Cappuccino', 'A$5.50', 'cappuccino.webp'],
+                            ['Cappuccino', 'A$5.50', 'cappucino.webp'], 
                             ['Hot Chocolate', 'A$6.00', 'hot-chocolate.webp'],
                             ['Mocha', 'A$6.00', 'mocha.webp'],
                             ['Coffee Latte', 'A$5.50', 'coffee-latte.webp'],
@@ -393,7 +393,7 @@ get_header();
                             <div class="col-md-6 col-lg-4">
                                 <div class="hot-drinks-bg d-flex p-3 rounded-4 shadow-sm h-100 align-items-center justify-content-between">
                                     <!-- Image -->
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $drink[2]; ?>" 
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/hot-drinks/<?php echo $drink[2]; ?>" 
                                         alt="<?php echo $drink[0]; ?>" 
                                         class="hot-drinks-img rounded-circle shadow-sm me-3">
                                   
@@ -450,7 +450,7 @@ get_header();
                             <div class="col-md-6 col-lg-4">
                                 <div class="cold-drinks-bg d-flex p-3 rounded-4 shadow-sm h-100 align-items-center justify-content-between">
                                     <!-- Image -->
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $drink[2]; ?>" 
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/cold-drinks/<?php echo $drink[2]; ?>" 
                                         alt="<?php echo $drink[0]; ?>" 
                                         class="cold-drinks-img rounded-circle shadow-sm me-3">
                                   
@@ -505,7 +505,7 @@ get_header();
                     ?>
                         <div class="col-6 col-sm-4 col-md-3">
                             <div class="soda-drinks-bg rounded-4 p-3 soda-card text-center shadow-sm">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?php echo $item[2]; ?>"
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/soda-drinks/<?php echo $item[2]; ?>"
                                     alt="<?php echo $item[0]; ?>" 
                                     class="soda-drinks-img img-fluid mb-2">
                                 <h6 class="fw-semibold mb-0"><?php echo $item[0]; ?></h6>

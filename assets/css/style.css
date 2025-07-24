@@ -467,7 +467,7 @@ header {
 /* Contact Page Styling */
 .contact-section-1 {
   background-color: #fef9f6;
-  background-image: url('../img/waffle-bg-light.jpg');
+  background-image: url('../img/backgrounds/waffle-bg-light.jpg');
   background-size: cover;
   background-repeat: repeat;
 }
@@ -506,7 +506,7 @@ header {
 /* Gift Cards Page Styling */
 .giftcard-hero-section {
   background-color: #fef9f6;
-  background-image: url('../img/waffle-bg-light.jpg');
+  background-image: url('../img/backgrounds/waffle-bg-light.jpg');
   background-size: cover;
   background-repeat: repeat;
 }
@@ -587,7 +587,7 @@ header {
 
 /* Menu Page Styling */
 .menu-section-1 {
-  background-image: url('../img/golden-eggs.jpg');
+  background-image: url('../img/menu-page/golden-eggs.jpg');
   background-size: cover; 
   background-position: center;
 }
