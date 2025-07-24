@@ -34,6 +34,7 @@ get_header();
             </div>
             
             <a href="#sodadrinks" class="scroll-link fw-bold text-decoration-none">🫧 Soda Drinks</a>
+            <a href="#teas" class="scroll-link fw-bold text-decoration-none">🍵 Teas</a>
             <a href="#top" class="scroll-link fw-bold text-decoration-none">⬆️ Back to Top</a>
             </div>
         </nav>
@@ -165,6 +166,13 @@ get_header();
                             ['1 Eggchi', '$4', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=7#ZKEPJWUXQYD3E3I4KA7GWDRN'],
                             ['6 Eggchi', '$21', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=JPOJCCHJOYE2NAYBEZG6GPTR#ZKEPJWUXQYD3E3I4KA7GWDRN'],
                             ['12 Eggchi', '$36', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=RD35HBMDHYEMIFW3XLSTPCUO#ZKEPJWUXQYD3E3I4KA7GWDRN'],
+                        ]
+                    ],
+                    ['Truffle Eggchi', 'Decadent Eggchi with black sesame and truffle chocolate filling. A luxurious dozen of bold flavour and gooey richness.', 'truffle.webp', '$5', 
+                        [
+                            ['1 Eggchi', '$5', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=UXLLKIOEDP6U3DIBLWQSHMCE'],
+                            ['6 Eggchi', '$25', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=PUVS6OIPD6KTBRMB2ST2BEV6'],
+                            ['12 Eggchi', '$50', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=KBFSBUUZN5DEOEVIEAIS27LU'],
                         ]
                     ]
                 ];
@@ -525,6 +533,36 @@ get_header();
             </div>
         </section>
     </div>
+
+    <!-- Tea Section -->
+    <section id="tea" class="tea-section py-5 text-dark tea-bg">
+        <div id ="teas" class="container">
+            <h2 class="fw-bold text-center mb-5">🍵 Teas</h2>
+
+            <div class="row g-4 justify-content-center"> <!-- Need to change the pictures whenever we get the pictures -->
+                <?php
+                $tea_items = [
+                    ['Earl Grey Tea', 'Fragrant black tea infused with citrusy bergamot for a bold and elegant cup.', 'earl-grey.webp', 'A$6.00', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=JXLN6P6CYATCDSKK5L4B5Y5P'],
+                    ['English Breakfast', 'A robust and full-bodied classic to kickstart your day.', 'english-breakfast.webp', 'A$6.00', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=6WKUVBORIRQJHV2TNPSMCFLI'],
+                    ['Chamomile', 'Naturally calming with gentle floral notes to soothe and relax.', 'chamomile.webp', 'A$6.00', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=S4VLIIZNT7CJA35BMYH3M7ZQ'],
+                    ['Lemongrass & Ginger', 'Zesty and warming with a refreshing citrus lift.', 'lemongrass-ginger.webp', 'A$6.00', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=TZM3Z2ESYLCE7W7PFZOZR4NG'],
+                    ['Peppermint', 'Cool and invigorating, perfect for cleansing the palate.', 'peppermint.webp', 'A$6.00', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=ARAXVABEA5RT6EXOT57PCKOI'],
+                ];
+
+                foreach ($tea_items as $tea) :
+                ?>
+                    <div class="col-md-4">
+                        <div class="tea-card p-4 rounded-4 shadow-sm border text-center h-100 bg-white bg-opacity-75">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/tea/<?php echo $tea[2]; ?>" class="rounded-circle mb-3 shadow-sm" alt="<?php echo $tea[0]; ?>">
+                            <h5 class="fw-bold"><?php echo $tea[0]; ?> <span class="float-end text-muted"><?php echo $tea[3]; ?></span></h5>
+                            <p class="text-muted small"><?php echo $tea[1]; ?></p>
+                            <a href="<?php echo $tea[4]; ?>" target="_blank" class="btn btn-outline-warning rounded-pill fw-semibold mt-2">🛒 Order</a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
 </div>
 
 <?php get_footer(); ?>
