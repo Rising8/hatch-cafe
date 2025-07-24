@@ -22,7 +22,7 @@ get_header();
     <div class="giftcard-content-2">
         <h2 class="giftcard-h2 text-center pb-5">How it Works!</h2>
         <div class="container pt-5">
-            <div class="row text-center py-5">
+            <div class="row text-center py-5 gx-5 gy-5">
                 <?php 
                 $steps = [
                     ['img' => 'hiw1.png', 'title' => "Step 1: Click 'Purchase a Gift Card'", 'desc' => 'Crispy, golden, and unforgettable'],
@@ -34,7 +34,7 @@ get_header();
                     // Add top margin only to even-indexed items (1 and 3 for 0-based index)
                     $marginStyle = ($index % 2 == 1) ? 'style="margin-top: -50px;"' : '';
                 ?>
-                    <div class="col-12 col-sm-6 col-md-3">
+                    <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center mb-4">
                         <div class="gift-card text-center" <?php echo $marginStyle; ?>>
                             <img 
                                 src="<?php echo get_template_directory_uri(); ?>/assets/img/giftcard-page/<?php echo $step['img']; ?>" 

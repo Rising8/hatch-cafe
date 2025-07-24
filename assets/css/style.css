@@ -530,19 +530,15 @@ header {
 
 /* Gift Cards Page Styling */
 .giftcard-hero-section {
-  /* background: linear-gradient(to bottom, #f9f9f9 0%, #fdf5ee 100%); */
-background: linear-gradient(to bottom, #f9f9f9 0%, #f7e8dc 100%);
-  /* background-color: #fef9f6; */
-  /* background-image: url('../img/backgrounds/waffle-bg-light.jpg'); */
+  background: linear-gradient(to bottom, #f9f9f9 0%, #f7e8dc 100%);
   background-size: cover;
   background-repeat: repeat;
 }
 
 .gift-card{
   position: relative;
-  /* background: linear-gradient(to bottom, #eac18b, #f5e2c4, #f9f9f9); */
   background-color: #f9f9f9;
-  border-radius: 50%;
+  border-radius: 60% 40% 55% 45% / 55% 45% 60% 40%;
   width: 300px;
   height: 300px;
   padding: 2rem;
@@ -550,6 +546,11 @@ background: linear-gradient(to bottom, #f9f9f9 0%, #f7e8dc 100%);
   overflow: visible;
   padding-bottom: 50px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.gift-card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
 }
 
 .card-img-gift {
@@ -575,13 +576,11 @@ background: linear-gradient(to bottom, #f9f9f9 0%, #f7e8dc 100%);
 }
 
 .giftcard-content-2 {
-  background: linear-gradient(to bottom, #f7e8dc 0%, #d4b9a8 100%);
+  background: linear-gradient(to bottom, #f7e8dc 0%, #d7beb0 100%);
 }
 
-
 .gift-faq-section {
-  background: linear-gradient(to bottom, #d4b9a8 0%, #f9f9f9 100%);
-
+  background: linear-gradient(to bottom, #d7beb0 0%, #f9f9f9 100%);
 }
 
 /* Confetti Canvas Style */
