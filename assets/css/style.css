@@ -709,10 +709,11 @@ header {
 }
 
 .truffle-black-section {
-  background: linear-gradient(135deg, #fff9d6 0%, #fef6ee 100%);
-  color: #4b463e; 
-  padding-top: 4rem;
-  padding-bottom: 6rem;
+  background: linear-gradient(135deg,
+    #fff6ee 0%,
+    #fff7dc 50%,
+    #fff1e6 100%
+  );
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -722,7 +723,6 @@ header {
 }
 
 .truffle-black-section p.lead {
-  color: #aaa;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -731,11 +731,7 @@ header {
 .truffle-card {
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  border-radius: 1rem;
-  padding: 1.5rem;
   color: #4b463e;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #d9d2b0;
@@ -750,7 +746,6 @@ header {
 
 .truffle-card h3 {
   color: #a1802b !important;
-  font-weight: 700;
 }
 
 .truffle-card p {
