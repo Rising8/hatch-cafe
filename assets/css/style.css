@@ -448,6 +448,7 @@ header {
 /* footer section */
 .footer-wrapper {
   background-color: #6F8777;
+  color: #f9f9f9;
 }
 
 .footer-wrapper img {
@@ -463,10 +464,6 @@ header {
   font-weight: 700; 
   box-shadow: 2px 2px 0px #D6A976;
   border: 2px solid #D6A976
-}
-
-.footer-h2 .footer-p {
-  color: #f9f9f9;
 }
 
 .signup-email {
