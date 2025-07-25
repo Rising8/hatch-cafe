@@ -9,20 +9,21 @@ get_header();
     <div class="menu-content-1">
         <!-- Menu Hero Section -->
         <section id="top" class="menu-section-1 py-5 text-light text-center">
-            <div class="container py-5">
-                <h1 class="display-4 fw-bold">🥚 Explore Our Egg-licious Menu 🥚</h1>
-            </div>
+            <div class="overlay"></div>
+                <div class="container py-5">
+                    <h1 class="display-4 fw-bold">Explore Our Egg-licious Menu</h1>
+                </div>
         </section>
     </div>
 
     <div id="scrollNavWrapper">
         <nav id="menuScrollNav" class="scroll-nav py-3 bg-light shadow-sm">
             <div class="container d-flex justify-content-center gap-4">
-            <a href="#paradise" class="scroll-link fw-bold text-decoration-none">🥭 Paradise Plate</a>
+            <a href="#paradise" class="scroll-link fw-bold text-decoration-none border">🥭 Paradise Plate</a>
 
             <!-- Dropdown container -->
             <div class="dropdown">
-                <a href="#eggchi" class="scroll-link fw-bold text-decoration-none dropdown-toggle">
+                <a href="#eggchi" class="scroll-link fw-bold text-decoration-none dropdown-toggle border">
                 🍳 Egg-chi Creations
                 </a>
                 <div class="dropdown-menu">
@@ -30,11 +31,11 @@ get_header();
                 </div>
             </div>
 
-            <a href="#montblanc" class="scroll-link fw-bold text-decoration-none">🥥 Mont Blanc Dreams</a>
+            <a href="#montblanc" class="scroll-link fw-bold text-decoration-none border">🥥 Mont Blanc Dreams</a>
 
             <!-- Dropdown container -->
             <div class="dropdown">
-                <a href="#eggspresso" class="scroll-link fw-bold text-decoration-none dropdown-toggle">
+                <a href="#eggspresso" class="scroll-link fw-bold text-decoration-none dropdown-toggle border">
                 ☕ Eggspresso Bar
                 </a>
                 <div class="dropdown-menu">
@@ -43,15 +44,15 @@ get_header();
                 </div>
             </div>
             
-            <a href="#sodadrinks" class="scroll-link fw-bold text-decoration-none">🫧 Soda Drinks</a>
-            <a href="#teas" class="scroll-link fw-bold text-decoration-none">🍵 Teas</a>
-            <a href="#top" class="scroll-link fw-bold text-decoration-none">⬆️ Back to Top</a>
+            <a href="#sodadrinks" class="scroll-link fw-bold text-decoration-none border">🫧 Soda Drinks</a>
+            <a href="#teas" class="scroll-link fw-bold text-decoration-none border">🍵 Teas</a>
+            <a href="#top" class="scroll-link fw-bold text-decoration-none border">⬆️ Back to Top</a>
             </div>
         </nav>
     </div>
 
     <!-- Top Picks -->
-    <section class="top-picks-carousel py-4 bg-warning-subtle">
+    <section class="top-picks-carousel py-4">
         <div class="container">
             <h2 class="fw-bold text-center mb-4">🌟 Top Picks</h2>
             <div class="swiper top-picks-swiper">
@@ -69,8 +70,8 @@ get_header();
                             <a href="<?php echo $pick[2]; ?>" target="_blank" class="text-decoration-none text-dark">
                                 <div class="card rounded-4 border shadow-sm text-center p-3 h-100">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/top-picks/<?php echo $pick[1]; ?>" class="top-picks-img rounded-circle mb-3 mx-auto" alt="<?php echo $pick[0]; ?>">
-                                    <h6 class="fw-bold"><?php echo $pick[0]; ?></h6>
-                                    <span class="text-muted small">✨ Tap to Order</span>
+                                    <h6 class="fw-bold fs-4"><?php echo $pick[0]; ?></h6>
+                                    <span class="text-muted fs-6">✨ Tap to Order</span>
                                 </div>
                             </a>
                         </div>
@@ -84,17 +85,68 @@ get_header();
         </div>
     </section>
 
+    <!-- Truffle Black -->
+    <section id="truffleblack" class="truffle-black-section text-light pb-5">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack11.png" class="img-fluid" alt="Image description">
+        <div class="container">
+            <h2 class="fw-bold mb-5 text-center">🍄 Truffle Black</h2>
+            <!-- <p class="lead text-center text-muted mb-5">Indulge in our boldest creation yet — truffle-rich, sesame-deep, unapologetically dark.</p> -->
+
+            <div class="row g-4 justify-content-center">
+                <?php
+                $truffle_items = [
+                    [
+                    'Truffle Black Sesame Affogato',
+                    'Nutty black sesame ice cream drizzled with truffle honey, finished with a hot shot of espresso. A bold and aromatic twist on the classic affogato.',
+                    'A$9.00',
+                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=F5IQ25PGWU3KCP7PTUZFZS6K'
+                    ],
+                    [
+                    'Truffle Black Sesame Latte',
+                    'A warm blend of roasted black sesame and steamed milk, infused with active charcoal and finished with a touch of truffle honey. Earthy, nutty, and soothingly aromatic.',
+                    'A$7.00',
+                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=6LR27JIA6Z7WWQWXP3ILX4R6'
+                    ],
+                    [
+                    'Ice Truffle Black Sesame Latte',
+                    'Chilled and creamy black sesame latte with active charcoal and a drizzle of truffle honey. Bold, smooth, and refreshingly indulgent.',
+                    'A$8.00',
+                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=E2YFPTU6FQIPB2DLIQOBINW3'
+                    ],
+                    [
+                    'Truffle Black Sesame Mont Blanc',
+                    'Toasted black sesame blended with velvety coconut juice, layered with earthy active charcoal and topped with a luscious black sesame cream foam. Finished with a hint of truffle honey for a luxurious twist—creamy, nutty, and uniquely indulgent.',
+                    'A$9.00',
+                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=NX7W3LQUACXRKQR45XQGGNTH'
+                    ],
+                ];
+                foreach ($truffle_items as $item) : ?>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="truffle-card p-4 rounded-4 h-100 d-flex flex-column">
+                            <h3 class="fw-bold mb-3 text-white">
+                                <?php echo $item[0]; ?> 
+                                <span class="float-end text-warning fw-semibold"><?php echo $item[2]; ?></span>
+                            </h3>
+                            <p class="small text-muted flex-grow-1 fs-6"><?php echo $item[1]; ?></p>
+                            <a href="<?php echo $item[3]; ?>" target="_blank" class="btn btn-truffle btn-lg rounded-pill mt-4 align-self-center">🛒 Order Now</a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
     <!-- Paradise Plate -->
     <div class="menu-content-2">
-        <section id="paradise" class="paradise-plate py-5">
+        <section id="paradise" class="py-5">
             <div class="container">
                 <h2 class="fw-bold mb-5 text-center">🥭 Paradise Plate</h2>
 
                 <!-- Item: Strawberry and Cream -->
-                <div class="row align-items-center mb-5">
+                <div class="paradise-plate row align-items-center mb-5 rounded-4 border p-3">
                     <div class="col-md-8">
-                        <h5 class="fw-bold mb-1">Strawberry and Cream <span class="text-muted fw-normal float-end">$16.00</span></h5>
-                        <p class="text-muted">Signature Eggchi with a dip, creamy cheese with sour berries coulis and fresh strawberries.</p>
+                        <h5 class="fw-bold fs-4">Strawberry and Cream <span class="text-muted fw-normal float-end">$16.00</span></h5>
+                        <p class="text-muted fs-5">Signature Eggchi with a dip, creamy cheese with sour berries coulis and fresh strawberries.</p>
                         <button class="btn btn-outline-warning btn-sm mt-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#modalStrawberry">
                           🍓 See More
                         </button>
@@ -105,10 +157,10 @@ get_header();
                 </div>
 
                 <!-- Item: Chocolate Ganache -->
-                <div class="row align-items-center mb-5">
+                <div class="paradise-plate row align-items-center mb-5 rounded-4 border p-3">
                     <div class="col-md-8">
-                        <h5 class="fw-bold mb-1">Chocolate Ganache <span class="text-muted fw-normal float-end">$16.00</span></h5>
-                        <p class="text-muted">Signature Eggchi with a dip, buttery Belgian chocolate ganache and chocolate sauce.</p>
+                        <h5 class="fw-bold fs-4">Chocolate Ganache <span class="text-muted fw-normal float-end">$16.00</span></h5>
+                        <p class="text-muted fs-5">Signature Eggchi with a dip, buttery Belgian chocolate ganache and chocolate sauce.</p>
                         <button class="btn btn-outline-warning btn-sm mt-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#modalChocolate">
                           🍫 See More
                         </button>
@@ -148,56 +200,6 @@ get_header();
             </div>
         </section>
     </div>
-
-    <!-- Truffle Black -->
-    <section id="truffleblack" class="truffle-black-section py-5 text-light">
-        <div class="container">
-            <h2 class="fw-bold mb-4 text-center text-warning">🍄 Truffle Black</h2>
-            <p class="lead text-center text-muted mb-5">Indulge in our boldest creation yet — truffle-rich, sesame-deep, unapologetically dark.</p>
-
-            <div class="row g-4 justify-content-center">
-                <?php
-                $truffle_items = [
-                    [
-                    'Truffle Black Sesame Affogato',
-                    'Nutty black sesame ice cream drizzled with truffle honey, finished with a hot shot of espresso. A bold and aromatic twist on the classic affogato.',
-                    'A$9.00',
-                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=F5IQ25PGWU3KCP7PTUZFZS6K'
-                    ],
-                    [
-                    'Truffle Black Sesame Latte',
-                    'A warm blend of roasted black sesame and steamed milk, infused with active charcoal and finished with a touch of truffle honey. Earthy, nutty, and soothingly aromatic.',
-                    'A$7.00',
-                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=6LR27JIA6Z7WWQWXP3ILX4R6'
-                    ],
-                    [
-                    'Ice Truffle Black Sesame Latte',
-                    'Chilled and creamy black sesame latte with active charcoal and a drizzle of truffle honey. Bold, smooth, and refreshingly indulgent.',
-                    'A$8.00',
-                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=E2YFPTU6FQIPB2DLIQOBINW3'
-                    ],
-                    [
-                    'Truffle Black Sesame Mont Blanc',
-                    'Toasted black sesame blended with velvety coconut juice, layered with earthy active charcoal and topped with a luscious black sesame cream foam. Finished with a hint of truffle honey for a luxurious twist—creamy, nutty, and uniquely indulgent.',
-                    'A$9.00',
-                    'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=NX7W3LQUACXRKQR45XQGGNTH'
-                    ],
-                ];
-                foreach ($truffle_items as $item) : ?>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="truffle-card p-4 rounded-4 h-100 d-flex flex-column">
-                            <h3 class="fw-bold mb-3 text-white">
-                                <?php echo $item[0]; ?> 
-                                <span class="float-end text-warning fw-semibold"><?php echo $item[2]; ?></span>
-                            </h3>
-                            <p class="small text-muted flex-grow-1"><?php echo $item[1]; ?></p>
-                            <a href="<?php echo $item[3]; ?>" target="_blank" class="btn btn-truffle btn-lg rounded-pill mt-4 align-self-center">🛒 Order Now</a>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
 
     <!-- Egg-chi Creations -->
     <div class="menu-content-3">
@@ -278,10 +280,10 @@ get_header();
                     <div class="eggchi-row row align-items-center g-4 mb-4">
                         <!-- Left: Text Box -->
                         <div class="col-md-8">
-                            <div class="eggchi-card bg-white p-4 rounded shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#<?php echo $modalId; ?>">
-                                <h5 class="fw-bold mb-1"><?php echo $item[0]; ?> <span class="text-muted fw-normal float-end"><?php echo $item[3]; ?></span></h5>
-                                <p class="text-muted mb-0"><?php echo $item[1]; ?></p>
-                                <small class="text-muted fst-italic d-block mt-1">Tap to customise</small>
+                            <div class="eggchi-card p-4 rounded-4 border shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#<?php echo $modalId; ?>">
+                                <h5 class="fw-bold mb-1 fs-4"><?php echo $item[0]; ?> <span class="text-muted fw-normal float-end"><?php echo $item[3]; ?></span></h5>
+                                <p class="text-muted fs-5"><?php echo $item[1]; ?></p>
+                                <small class="text-muted d-block mt-1">Tap to customise</small>
                             </div>
                         </div>
 
@@ -338,7 +340,7 @@ get_header();
                 <?php endforeach; ?>
 
                 <!-- Special Bundle Section -->
-                <div id="special-bundle" class="special-bundles-header mx-auto mb-4 text-center">
+                <div id="special-bundle" class="special-bundles-header mx-auto mb-4 text-center pt-5">
                     <h2 class="fw-bold mb-0">✨ Special Eggchi Bundles</h2>
                 </div>
 
@@ -360,8 +362,8 @@ get_header();
                                             class="special-bundle-img rounded-circle border shadow-sm mx-auto d-block"
                                             style="width: 130px; height: 130px; object-fit: cover;">
                                     </div>
-                                    <h5 class="fw-bold mb-1"><?php echo htmlspecialchars($bundle[0]); ?></h5>
-                                    <p class="text-muted small mb-2"><?php echo htmlspecialchars($bundle[1]); ?></p>
+                                    <h5 class="fw-bold fs-4"><?php echo htmlspecialchars($bundle[0]); ?></h5>
+                                    <p class="text-muted fs-5"><?php echo htmlspecialchars($bundle[1]); ?></p>
                                     <a href="<?php echo htmlspecialchars($bundle[3]); ?>"
                                         target="_blank"
                                         class="btn btn-outline-warning rounded-pill fw-semibold px-4">
@@ -382,10 +384,9 @@ get_header();
             <div class="container text-center">
 
                 <!-- Coconut Header -->
-                <div class="coconut-header mx-auto mb-4">
+                <div class=" mx-auto mb-4">
                     <h2 class="fw-bold mb-0">🥥 Mont Blanc Coconut Dreams</h2>
                 </div>
-                <p class="text-muted mb-5">Delicate whipped coconut cream meets earthy flavours — cloud-soft, cool and dreamy.</p>
 
                 <!-- Swiper Slider -->
                 <div class="tranding-slider swiper">
@@ -409,9 +410,9 @@ get_header();
                                             alt="<?php echo $item[0]; ?>"
                                             class="mont-blanc-img rounded-circle border shadow-sm">
                                     </div>
-                                    <h5 class="fw-bold"><?php echo $item[0]; ?></h5>
-                                    <p class="text-muted small"><?php echo $item[1]; ?></p>
-                                    <span class="text-warning fw-semibold d-block">A$8.00</span>
+                                    <h5 class="fw-bold fs-4"><?php echo $item[0]; ?></h5>
+                                    <p class="text-muted fs-5"><?php echo $item[1]; ?></p>
+                                    <span class="text-warning fw-semibold d-block fs-5">A$8.00</span>
                                     <small class="text-muted fst-italic">✨ Tap to explore</small>
                                 </div>
                             </div>
@@ -465,7 +466,6 @@ get_header();
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="fw-bold">☕️ Eggspresso Bar</h2>
-                    <p class="text-muted fst-italic">Warming hearts & chilling vibes — one dreamy sip at a time.</p>
                 </div>
 
                 <!-- Hot Drinks -->
@@ -503,8 +503,9 @@ get_header();
                                     <div class="flex-grow-1">
                                         <div class="d-flex justify-content-between align-items-start">
                                             <div>
-                                                <h6 class="fw-bold mb-0"><?php echo $drink[0]; ?></h6>
-                                                <p class="text-muted mb-1 small"><?php echo $drink[1]; ?></p>
+                                                <h6 class="fw-bold mb-0 fs-4"><?php echo $drink[0]; ?></h6>
+                                                <p class="text-muted mb-1 fs-5"><?php echo $drink[1]; ?></p>
+                                                <a href="<?php echo $item[4]; ?>" target="_blank" class="btn btn-sm btn-outline-warning rounded-pill fw-semibold mt-1">🛒 Order</a>
                                             </div>
                                             <span class="badge bg-danger-subtle text-danger fw-semibold ms-2">Hot</span>
                                         </div>
@@ -512,14 +513,6 @@ get_header();
                                 </div>
                             </div>
                         <?php endforeach; ?>
-                    </div>
-
-                    <!-- Order Button -->
-                    <div class="text-center mt-5">
-                        <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a#ODQNIASYVI5U2NDNVPHHMY23" target="_blank"
-                          class="hot-drinks-order btn btn-primary btn-sm px-4 py-2 rounded-pill fw-semibold mt-2">
-                            ☕ Order via Square
-                        </a>
                     </div>
                 </div>
 
@@ -560,8 +553,9 @@ get_header();
                                     <div class="flex-grow-1">
                                         <div class="d-flex justify-content-between align-items-start">
                                             <div>
-                                                <h6 class="fw-bold mb-0"><?php echo $drink[0]; ?></h6>
-                                                <p class="text-muted mb-1 small"><?php echo $drink[1]; ?></p>
+                                                <h6 class="fw-bold mb-0 fs-4"><?php echo $drink[0]; ?></h6>
+                                                <p class="text-muted mb-1 fs-5"><?php echo $drink[1]; ?></p>
+                                                <a href="<?php echo $item[4]; ?>" target="_blank" class="btn btn-sm btn-outline-warning rounded-pill fw-semibold mt-1">🛒 Order</a>
                                             </div>
                                             <span class="badge bg-primary-subtle text-primary fw-semibold ms-2">Cold</span>
                                         </div>
@@ -569,14 +563,6 @@ get_header();
                                 </div>
                             </div>
                         <?php endforeach; ?>
-                    </div>
-
-                    <!-- Order Button -->
-                    <div class="text-center mt-5"> 
-                        <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a#FBOP43NO6KRYQWKR7HR4PZBZ" target="_blank"
-                          class="cold-drinks-order btn btn-sm px-4 py-2 rounded-pill fw-semibold mt-2">
-                            ❄️ Order via Square
-                        </a>
                     </div>
                 </div>
             </div>
@@ -587,10 +573,12 @@ get_header();
     <div class="menu-content-6">
         <section id="sodadrinks" class="soda-drinks py-5">
             <div class="container">
-                <h2 class="fw-bold text-center mb-4">🫧 Soda Drinks</h2>
-                <p class="text-muted text-center mb-5">Pop, fizz, and chill — sip your favourite sparkle ✨</p>
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">🫧 Soda Drinks</h2>
+                </div>
 
-                <div class="row g-4 justify-content-center">
+                <!-- Soda List -->
+                <div class="row g-4">
                     <?php
                     $soda_items = [
                         ['Sanpellegrino Sparkling Mineral Water', 'A$6.00', 'sanpellegrino.webp'],
@@ -605,35 +593,35 @@ get_header();
 
                     foreach ($soda_items as $item) :
                     ?>
-                        <div class="col-6 col-sm-4 col-md-3">
-                            <div class="soda-drinks-bg rounded-4 p-3 soda-card text-center shadow-sm">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/soda-drinks/<?php echo $item[2]; ?>"
+                        <div class="col-md-6 col-lg-4">
+                            <div class="soda-drinks-bg d-flex p-3 rounded-4 shadow-sm h-100 align-items-center justify-content-between">
+                                <!-- Image -->
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/soda-drinks/<?php echo $item[2]; ?>" 
                                     alt="<?php echo $item[0]; ?>" 
-                                    class="soda-drinks-img img-fluid mb-2">
-                                <h6 class="fw-semibold mb-0"><?php echo $item[0]; ?></h6>
-                                <small class="text-muted"><?php echo $item[1]; ?></small>
+                                    class="hot-drinks-img rounded-circle shadow-sm me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+
+                                <!-- Info -->
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0 fs-4"><?php echo $item[0]; ?></h6>
+                                    <p class="text-muted mb-0 fs-5"><?php echo $item[1]; ?></p>                           
+                                    <a href="<?php echo $item[4]; ?>" target="_blank" class="btn btn-sm btn-outline-warning rounded-pill fw-semibold mt-1">🛒 Order</a>
+                                </div>
                             </div>
                         </div>
                     <?php endforeach; ?>
-                </div>
-
-                <!-- Order Button -->
-                <div class="text-center mt-5">
-                    <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a#7JC4HPZNFWALD7K54UU2H3MS" target="_blank" 
-                        class="soda-drinks-order btn btn-info px-4 py-2 rounded-pill fw-bold shadow-sm">
-                        🛒 Order via Square
-                    </a>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Tea Section -->
+
+   <!-- Tea Section -->
     <section id="tea" class="tea-section py-5 text-dark tea-bg">
-        <div id ="teas" class="container">
+        <div id="teas" class="container">
             <h2 class="fw-bold text-center mb-5">🍵 Teas</h2>
 
-            <div class="row g-4 justify-content-center"> <!-- Need to change the pictures whenever we get the pictures -->
+            <div class="row g-4 justify-content-start">
                 <?php
                 $tea_items = [
                     ['Earl Grey Tea', 'Fragrant black tea infused with citrusy bergamot for a bold and elegant cup.', 'earl-grey.webp', 'A$6.00', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=JXLN6P6CYATCDSKK5L4B5Y5P'],
@@ -643,20 +631,27 @@ get_header();
                     ['Peppermint', 'Cool and invigorating, perfect for cleansing the palate.', 'peppermint.webp', 'A$6.00', 'https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a&item=ARAXVABEA5RT6EXOT57PCKOI'],
                 ];
 
-                foreach ($tea_items as $tea) :
+                foreach ($tea_items as $item) :
                 ?>
-                    <div class="col-md-4">
-                        <div class="tea-card p-4 rounded-4 shadow-sm border text-center h-100 bg-white bg-opacity-75">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/tea/<?php echo $tea[2]; ?>" class="rounded-circle mb-3 shadow-sm" alt="<?php echo $tea[0]; ?>">
-                            <h5 class="fw-bold"><?php echo $tea[0]; ?> <span class="float-end text-muted"><?php echo $tea[3]; ?></span></h5>
-                            <p class="text-muted small"><?php echo $tea[1]; ?></p>
-                            <a href="<?php echo $tea[4]; ?>" target="_blank" class="btn btn-outline-warning rounded-pill fw-semibold mt-2">🛒 Order</a>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="tea-card-bg d-flex p-3 rounded-4 shadow-sm h-100 align-items-center justify-content-between">
+                            <!-- Image -->
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/tea/<?php echo $item[2]; ?>" 
+                                alt="<?php echo $item[0]; ?>" 
+                                class="hot-drinks-img rounded-circle shadow-sm me-3"
+                                style="width: 60px; height: 60px; object-fit: cover;">
+
+                            <!-- Info -->
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-1 fs-4"><?php echo $item[0]; ?> <span class="float-end text-muted"><?php echo $item[3]; ?></span></h6>
+                                <p class="text-muted mb-1 fs-6"><?php echo $item[1]; ?></p>
+                                <a href="<?php echo $item[4]; ?>" target="_blank" class="btn btn-sm btn-outline-warning rounded-pill fw-semibold mt-1">🛒 Order</a>
+                            </div>
                         </div>
                     </div>
                 <?php endforeach; ?>
             </div>
         </div>
     </section>
-</div>
 
 <?php get_footer(); ?>
