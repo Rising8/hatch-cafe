@@ -1200,7 +1200,7 @@ header {
 }
 
 .hero-gradient {
-  background: linear-gradient(to bottom, #fceec9, #f9dca1);
+  background: linear-gradient(to bottom, #f9f9f9, #f9dca1);
   z-index: 1;
 }
 
@@ -1230,7 +1230,7 @@ header {
 
 .egg-wrapper-page {
   width: 120px;
-  height: 120px;
+  height: 130px;
   margin: 0 auto;
   transition: transform 0.3s ease;
 }
@@ -1292,7 +1292,7 @@ header {
 
 .membership-content-2 {
   background: linear-gradient(to bottom, #f9dca1, #f7c77f);
-  color: #6b4e00 !important;
+  color: #212529 !important;
   padding: 3rem 0;
 }
 
@@ -1345,6 +1345,7 @@ header {
 .membership-content-3 {
   background: linear-gradient(to bottom, #f7c77f, #f9d8a6);
   padding: 3rem 0;
+    color: #212529 !important;
   text-align: center;
 }
 

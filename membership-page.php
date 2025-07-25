@@ -10,8 +10,8 @@ get_header();
     <div class="membership-content-1 py-5 text-center hero-gradient position-relative">
         <div class="container position-relative z-2">
             <div class="membership-hero-spacer"></div>
-            <h1 class="display-4 fw-bold mb-3 text-shadow">
-                Join the <span class="text-warning">Eggclusive</span> Club 🍳
+            <h1 class="display-4 fw-bold mb-3">
+                Join the Eggclusive Club 
             </h1>
 
             <!-- Floating Eggs -->
@@ -19,7 +19,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membership/golden-egg.jpg"
                     alt="Golden Egg Left"
                     class="golden-egg-left d-none d-md-block position-absolute"> 
-                <p class="lead text-shadow mb-0 px-5">
+                <p class="px-5 fs-5">
                     Get surprise rewards, sneak peeks of new flavours, and a chance to win a FREE egg waffle just for being a member.
                 </p>
 
@@ -31,19 +31,19 @@ get_header();
             <!-- Egg Crack Animation -->
             <div class="my-4">
                 <p class="fw-bold fs-5 text-shadow tracking-wide text-danger-emphasis" style="letter-spacing: 1px;">
-                    Tap to crack... something sweet might hatch 🐣
+                    Tap to crack... something sweet might hatch 
                 </p>
                 <!-- Egg Animation Trigger -->
                 <div class="egg-wrapper-page position-relative" id="crackEggMemberPage" style="cursor: pointer;">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/top.png" alt="Top Egg" class="egg-part egg-top">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/bottom.png" alt="Bottom Egg" class="egg-part egg-bottom">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/bottom2.png" alt="Bottom Egg" class="egg-part egg-bottom">
                     <div class="sprinkles" id="sprinkles"></div>
                 </div>
             </div>
 
-            <div class="alert alert-light border mt-3 mx-auto" style="max-width: 420px">
+            <!-- <div class="alert alert-light border mt-3 mx-auto" style="max-width: 420px">
                 <strong>Note:</strong> After clicking the egg, on the square page, tap the <strong>👤 profile icon</strong> to sign up!
-            </div>
+            </div> -->
         </div>
 
         <!-- Animated Badge -->
@@ -61,24 +61,24 @@ get_header();
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <div class="how-step p-4 rounded-4 shadow-lg text-center h-100">
                         <div class="icon-circle mb-3">🥚</div>
-                        <h5 class="fw-bold mb-2">1. Tap the Egg</h5>
-                        <p>Click or tap the egg above to start your journey with us and open the Square portal.</p>
+                        <h4 class="fw-bold mb-2">1. Tap the Egg</h4>
+                        <p class="fs-5 px-3">Click or tap the egg above to start your journey with us and open the Square portal.</p>
                     </div>
                 </div>
                 <!-- Step 2 -->
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <div class="how-step p-4 rounded-4 shadow-lg text-center h-100">
                         <div class="icon-circle mb-3">👤</div>
-                        <h5 class="fw-bold mb-2">2. Create Your Account</h5>
-                        <p>Tap the <strong>👤 profile icon</strong> on the top right, then enter your email to sign up.</p>
+                        <h4 class="fw-bold mb-2">2. Create Your Account</h4>
+                        <p class="fs-5 px-3">Tap the <strong>👤 profile icon</strong> on the top right, then enter your email to sign up.</p>
                     </div>
                 </div>
                 <!-- Step 3 -->
                 <div class="col-12 col-md-4">
                     <div class="how-step p-4 rounded-4 shadow-lg text-center h-100">
                         <div class="icon-circle mb-3">🏱</div>
-                        <h5 class="fw-bold mb-2">3. Enjoy Membership Perks</h5>
-                        <p>You're in! Get loyalty rewards, surprise drops & more sweet goodies.</p>
+                        <h4 class="fw-bold mb-2">3. Enjoy Membership Perks</h4>
+                        <p class="fs-5 px-3">You're in! Get loyalty rewards, surprise drops & more sweet goodies.</p>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@ get_header();
                     <div class="col-6 col-md-3">
                         <div class="perk-card bg-white text-dark p-4 rounded-4 shadow-sm h-100 text-center transition">
                             <div class="fs-1"><?php echo $perk[0]; ?></div>
-                            <h6 class="fw-semibold mt-3"><?php echo $perk[1]; ?></h6>
+                            <p class="fw-semibold mt-3 fs-5"><?php echo $perk[1]; ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>
