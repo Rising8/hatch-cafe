@@ -1066,22 +1066,16 @@ header {
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, #f1d9b5, #fce7ca, #fff5e5);
-  padding-top: 160px;
+  background: linear-gradient(to bottom, #fceec9, #f9dca1);
   z-index: 1;
-  position: relative;
 }
 
-.text-shadow {
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+.membership-content-1 h1 {
+  text-shadow: 0 2px 8px rgba(255, 193, 7, 0.4);
 }
 
 .animated-badge {
   top: 60px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 20px;
   z-index: 10;
 }
 .animated-badge .badge {
@@ -1101,11 +1095,9 @@ header {
 }
 
 .egg-wrapper-page {
-  position: relative;
   width: 120px;
   height: 120px;
   margin: 0 auto;
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
@@ -1139,10 +1131,6 @@ header {
   pointer-events: none;
 }
 
-.floating-egg {
-  animation: floatRotate 4s ease-in-out infinite;
-}
-
 .golden-egg-left,
 .golden-egg-right {
   width: 90px;
@@ -1150,7 +1138,6 @@ header {
   transform: translateY(-50%);
   animation: floatRotate 4s ease-in-out infinite;
   z-index: 1;
-  position: absolute;
 }
 
 .golden-egg-left {
@@ -1170,8 +1157,8 @@ header {
 }
 
 .membership-content-2 {
-  background: linear-gradient(135deg, #f7e7b5, #f9dca9);
-  color: #6b4e00;
+  background: linear-gradient(to bottom, #f9dca1, #f7c77f);
+  color: #6b4e00 !important;
   padding: 3rem 0;
 }
 
@@ -1180,20 +1167,14 @@ header {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
   cursor: pointer;
   color: #4b3a00;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(178, 127, 0, 0.3);
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.5rem;
-  text-align: center;
 }
 
 .how-step:hover {
   background: #fff0d9; 
   box-shadow: 0 12px 30px rgba(255, 193, 7, 0.5); 
-  color: #6b4e00;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
@@ -1213,7 +1194,6 @@ header {
   border-radius: 50%;
   color: #7a5900;
   margin: 0 auto 1rem;
-  box-shadow: 0 0 8px rgba(178, 127, 0, 0.6);
   animation: pulseIcon 3s ease-in-out infinite;
 }
 
@@ -1229,21 +1209,15 @@ header {
 }
 
 .membership-content-3 {
-  background: linear-gradient(135deg, #f9d9b7, #fce2c8);
-  color: white;
+  background: linear-gradient(to bottom, #f7c77f, #f9d8a6);
   padding: 3rem 0;
   text-align: center;
 }
 
 .perk-card {
   background: white;
-  color: #222;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1255,36 +1229,30 @@ header {
 }
 
 .membership-content-4 {
-  background: linear-gradient(135deg, #fff6e7, #f8e7d6);
-  padding: 3rem 0;
-}
-
-.faq-gradient {
-  background: linear-gradient(135deg, #fff6e7, #f8e7d6);
+  background: linear-gradient(to bottom, #f9d8a6, #f0d8b1);
   color: #333;
 }
 
 .bg-warning-subtle {
-  background-color: #fff4cc;
+  background: linear-gradient(to bottom, #f0d8b1 0%, #f9f9f9 100%);
   color: #4b3a00;
   padding: 3rem 0;
-  text-align: center;
 }
 
 .bg-warning-subtle a.btn {
-  background-color: #b4912a;
-  border-color: #b4912a;
+  background-color: #d1b35a; 
+  border-color: #d1b35a;
   color: white;
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
 
 .bg-warning-subtle a.btn:hover {
-  background-color: #8a6f21;
-  border-color: #8a6f21;
-  color: white;
+  background-color: #b4912a;
+  border-color: #b4912a;
 }
 
+/* Membership.js styling */
 .pulse {
   animation: pulse 2s infinite;
   transition: transform 0.2s ease;
@@ -1310,7 +1278,6 @@ header {
   100% { opacity: 0; }
 }
 
-/* BIG SHAKE */
 @keyframes shakeHard {
   0%, 100% { transform: translate(0); }
   20% { transform: translate(-20px, -5px); }
@@ -1320,23 +1287,6 @@ header {
 }
 .shake-hard {
   animation: shakeHard 0.6s ease;
-}
-
-.egg-pop-text {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  font-size: 4rem;
-  color: #ffb700;
-  font-weight: 900;
-  text-shadow: 2px 2px #00000033;
-  z-index: 9999;
-  animation: popZoomFade 0.8s ease-out forwards;
-}
-@keyframes popZoomFade {
-  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-  100% { transform: translate(-50%, -50%) scale(2); opacity: 0; }
 }
 
 .sparkle {

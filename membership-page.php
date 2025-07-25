@@ -18,14 +18,14 @@ get_header();
             <div class="position-relative d-inline-block mx-auto" style="max-width: 700px;">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membership/golden-egg.jpg"
                     alt="Golden Egg Left"
-                    class="floating-egg golden-egg-left d-none d-md-block position-absolute"> 
+                    class="golden-egg-left d-none d-md-block position-absolute"> 
                 <p class="lead text-shadow mb-0 px-5">
                     Get surprise rewards, sneak peeks of new flavours, and a chance to win a FREE egg waffle just for being a member.
                 </p>
 
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/membership/golden-egg.jpg"
                     alt="Golden Egg Right"
-                    class="floating-egg golden-egg-right d-none d-md-block position-absolute">
+                    class="golden-egg-right d-none d-md-block position-absolute">
             </div>
 
             <!-- Egg Crack Animation -->
@@ -111,7 +111,7 @@ get_header();
     </div>
 
     <!-- FAQ Section -->
-    <div class="membership-content-4 py-5 faq-gradient bg-white">
+    <div class="membership-content-4 py-5 bg-white">
         <div class="container" style="max-width: 800px">
             <h4 class="fw-bold text-center mb-4">Frequently Asked Questions</h4>
             <div class="accordion" id="membershipFAQ">

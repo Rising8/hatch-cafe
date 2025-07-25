@@ -45,13 +45,6 @@ document.getElementById("crackEggMemberPage").addEventListener("click", () => {
   page.classList.add('shake-hard');
   setTimeout(() => page.classList.remove('shake-hard'), 600);
 
-  // POP! Text
-  const popText = document.createElement('div');
-  popText.className = 'egg-pop-text';
-  popText.innerText = 'POP!';
-  page.appendChild(popText);
-  setTimeout(() => page.removeChild(popText), 800);
-
   setTimeout(() => {
     window.open(encodeURI("https://www.hatchcafe.com.au/s/order"), "_blank");
   }, 1200);
