@@ -108,7 +108,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Cakes" class="card-img-categories" width="50">
                         <h3 class="menus-h3 mt-3">Handcrafted Cakes</h3>
                         <p class="menus-p p-style">Golden waffle cakes and sweets beautiful and delicious.</p>
-                        <a href="https://www.hatchcafe.com.au/s/order/F252CY6EXPK6ZFBYLICOCEY7?location=11f0192a377f200dbfc53cecef6d5b2a" target="_blank" class="menus-btn btn rounded-pill mt-2">Explore Cakes</a>
+                        <a href="<?php echo site_url('/menu'); ?>#eggchi-cakes" class="menus-btn btn rounded-pill mt-2">Explore Cakes</a>
                     </div>
                 </div>
                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack2.png" class="img-fluid" alt="Image description"> -->
