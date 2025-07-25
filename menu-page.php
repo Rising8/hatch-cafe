@@ -29,6 +29,7 @@ get_header();
                 </a>
                 <div class="dropdown-menu">
                     <a href="#special-bundle" class="dropdown-item">✨ Special Eggchi Bundles</a>
+                    <a href="#eggchi-cakes" class="dropdown-item">🎂 Eggchi Cakes</a>
                 </div>
             </div>
 
@@ -368,6 +369,54 @@ get_header();
                                     <a href="<?php echo htmlspecialchars($bundle[3]); ?>"
                                         target="_blank"
                                         class="btn btn-outline-warning rounded-pill fw-semibold px-4">
+                                        🛒 Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+
+                <!-- Eggchi Cakes Section -->
+                <div id="eggchi-cakes" class="eggchi-cake-header mx-auto mb-4 text-center pt-5">
+                    <h2 class="fw-bold mb-0">🎂 Eggchi Cakes</h2>
+                </div>
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <?php
+                        $eggchi_cakes = [
+                            [
+                                'Caramel Eggchi Tower',
+                                'A$72.00',
+                                'caramel-tower.webp', 
+                                'A show-stopping tower of 36 golden Egg-Chi bubbles, stacked high and drizzled with luscious caramel sauce. Almond-based waffles with a crispy edge — perfect for celebrations, sharing, or treating yourself like royalty.',
+                                'https://www.hatchcafe.com.au/s/order/F252CY6EXPK6ZFBYLICOCEY7?location=11f0192a377f200dbfc53cecef6d5b2a&item=RESN6TKH27N4F2L3XZXWURU7'
+                            ],
+                            [
+                                'Double Chocolate Eggchi Tower',
+                                'A$108.00',
+                                'double-choc-tower.webp', // Placeholder for future image
+                                'An irresistible tower of 36 Egg-Chi bubbles infused with rich chocolate flavour. Crispy outside, molten inside, and crowned with a decadent chocolate drizzle. A dream come true for chocoholics — made to share, but hard to resist.',
+                                'https://www.hatchcafe.com.au/s/order/F252CY6EXPK6ZFBYLICOCEY7?location=11f0192a377f200dbfc53cecef6d5b2a&item=A2GJT7PM2IHB74OHAHRMXJOV'
+                            ]
+                        ];
+
+                        foreach ($eggchi_cakes as $cake): ?>
+                            <div class="col-md-6 mb-4">
+                                <div class="eggchi-cake-card p-4 rounded-4 shadow-sm border text-center h-100">
+                                    <div class="mb-3">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu-page/eggchi-cakes/<?php echo htmlspecialchars($cake[2]); ?>"
+                                            alt="<?php echo htmlspecialchars($cake[0]); ?>"
+                                            class="eggchi-cake-img rounded-circle border shadow-sm mx-auto d-block"
+                                            style="width: 130px; height: 130px; object-fit: cover;">
+                                    </div>
+                                    <h5 class="fw-bold fs-4"><?php echo htmlspecialchars($cake[0]); ?></h5>
+                                    <p class="text-muted fs-5"><?php echo htmlspecialchars($cake[1]); ?></p>
+                                    <p class="text-muted small"><?php echo htmlspecialchars($cake[3]); ?></p>
+                                    <a href="<?php echo htmlspecialchars($cake[4]); ?>"
+                                        target="_blank"
+                                        class="btn btn-outline-warning rounded-pill fw-semibold px-4 mt-2">
                                         🛒 Order Now
                                     </a>
                                 </div>

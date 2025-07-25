@@ -872,6 +872,27 @@ header {
  color: #212529;
 }
 
+.eggchi-cake-card {
+  background: linear-gradient(to bottom, #fbe3c6, #fffdf9); /* Soft golden beige */
+  border: 1px solid #f4cfaa; /* Light caramel border */
+  box-shadow: 0 6px 18px rgba(244, 186, 116, 0.2); /* Soft warm shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.eggchi-cake-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(244, 186, 116, 0.25); /* Warm hover glow */
+}
+
+.eggchi-cake-card h5 {
+  color: #5c4432; /* Rich chocolatey heading */
+}
+
+.eggchi-cake-card p {
+  color: #6b4f3f; /* Dessert-toned text */
+}
+
 .modal-section .modal-box {
   background: #fff9f3; 
   border-radius: 1rem; 
