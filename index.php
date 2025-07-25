@@ -196,7 +196,7 @@
                                 <span class="word1">Your Way</span><br>
                                 <span class="word2">To Hatch!</span>
                             </h1>
-                            <p class="sentence-2 typing-paragraph text-start mx-auto py-3" id="sentenceTyping">
+                            <p class="p-style text-start mx-auto py-3" id="sentenceTyping">
                                 Find Hatch tucked away like a secret treasure down a cozy alley. Once you discover our spot, you’ll be rewarded with warm smiles, delicious egg waffles, and a unique vibe that’s worth the adventure. Come explore the hidden side of Hatch!
                             </p>
                         </div>
@@ -217,9 +217,9 @@
         <!-- Content 6 -->
         <div class="content-6 pb-5 mt-5">
             <div class="container">
-                <div class="index-contact position-relative p-5 text-center text-muted border border-dashed rounded-5">
+                <div class="position-relative p-5 text-center text-muted">
                     <h2 class="text-body-emphasis">Need a Hand? We're Here to Help!</h2>
-                    <p class="col-lg-6 mx-auto mb-4">
+                    <p class="col-lg-6 mx-auto mb-4 fs-5">
                         Whether you're planning a party, curious about our flavours, or just have a question we're only a click away. Get in touch and we’ll crack it together!
                     </p>
                     <div class="button1 pt-3">
