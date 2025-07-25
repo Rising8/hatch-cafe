@@ -424,13 +424,13 @@ header {
 
 
 .word1a{
-    font-size: 1.5em;
-     color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .word1{
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .word2{
@@ -438,7 +438,7 @@ header {
 }
 
 .content-6{
-    background-color: #f9f9f9
+  background-color: #f9f9f9
 }
 
 .index-contact {
@@ -446,47 +446,94 @@ header {
 }
 
 /* footer section */
-.footer-wrapper{
-  /* background-color: #D6A976; */
+.footer-wrapper {
   background-color: #6F8777;
 }
 
-.footer-h2{
+.footer-wrapper img {
+  margin-bottom: -50px;
+  display: block;
+  max-width: 100%;
+}
+
+.footer-h2 {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  font-weight: 700; 
+  box-shadow: 2px 2px 0px #D6A976;
+  border: 2px solid #D6A976
+}
+
+.footer-h2 .footer-p {
   color: #f9f9f9;
 }
 
-.footer-p{
-  color: #f9f9f9;
-}
-
-.signup-email{
+.signup-email {
   position: relative;
 }
 
-.emailbox{
-    width: 400px;
-    height: 50px;
-    border-radius: 50px;
+/* Email input styling */
+.email-form-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 420px;
+  width: 100%;
 }
 
-.emailbutton{
-    width: 100px;
-    height: 45px;
-    border-radius: 50px;
-    background-color: #D6A976;
-    display: inline-block;
-    margin-left: -105px;
-    cursor: pointer;
+/* Input styling */
+.emailbox {
+  border: none;
+  padding: 0 1rem;
+  height: 50px;
+  flex: 1;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: none;
 }
 
-.emailbutton:hover{
-    background-color:#B1804B;
-    color: #f9f9f9;
+/* Sign up button styling */
+.emailbutton {
+  background-color: #D6A976;
+  color: #fff;
+  border: none;
+  padding: 0 1.5rem;
+  height: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border-radius: 0;
+  white-space: nowrap;
 }
 
-.icons{
+.emailbutton:hover {
+  background-color: #B1804B;
+  color: #f9f9f9;
+}
+
+.icons {
   font-size: 2em;
   color: #f9f9f9;
+  transition: transform 0.2s ease;
+}
+
+.icons:hover {
+  transform: scale(1.1);
+}
+
+.footer-wrapper .nav-links a {
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: #D6A976;
+  display: inline-block;
+  margin: 0.2rem;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* Contact Page Styling */
