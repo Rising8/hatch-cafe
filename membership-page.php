@@ -43,7 +43,7 @@ get_header();
         </div>
 
         <!-- Animated Badge -->
-        <div class="animated-badge position-absolute start-50 translate-middle-x mt-5" id="badgeAnchor">
+        <div class="badge-cont2 animated-badge position-absolute start-50 translate-middle-x mt-5" id="badgeAnchor">
             <span class="badge rounded-pill bg-danger-subtle text-danger-emphasis fs-6 fw-bold pulse">Top Fan Reward System!</span>
         </div>
     </div>

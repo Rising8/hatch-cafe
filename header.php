@@ -112,6 +112,38 @@
 
                 </ul>
             </nav>
+
+            <!-- Mobile Header -->
+            <div class="d-flex d-md-none justify-content-between align-items-center px-3 py-2 mobile-header">
+            <!-- Burger icon -->
+            <button id="mobileBurgerBtn" aria-label="Toggle menu" style="background:none; border:none;">
+                <i class="fa-solid fa-bars" style="font-size: 1.8em; color: #f9f9f9;"></i>
+            </button>
+
+            <!-- Logo -->
+            <a href="<?php echo home_url(); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo" class="mobile-logo">
+            </a>
+
+            <!-- Order Now -->
+            <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
+                target="_blank"
+                class="text-white"
+                aria-label="Order Now">
+                <i class="fa-solid fa-bag-shopping" style="font-size: 1.5em;"></i>
+            </a>
+            </div>
+
+            <!-- Mobile Dropdown Menu -->
+            <nav id="mobileDropdown" class="mobile-dropdown d-none rounded-4">
+                <ul class="mobile-menu nav flex-column text-center gap-3 py-4">
+                    <li><a href="<?php echo site_url('/about'); ?>">About</a></li>
+                    <li><a href="<?php echo site_url('/menu'); ?>">Menu</a></li>
+                    <li><a href="<?php echo site_url('/gift-cards'); ?>">Gift Cards</a></li>
+                    <li><a href="<?php echo site_url('/membership'); ?>">Membership</a></li>
+                    <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 </div>

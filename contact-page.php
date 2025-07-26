@@ -9,7 +9,7 @@ get_header();
 
     <div class="container">
         <!-- Hero Section -->
-        <div class="text-center py-5">
+        <div class="contact-hero-section text-center py-5">
             <h1 class="display-4 fw-bold text-dark">Hatch-ing a Plan to Visit?</h1>
             <p class="fs-5">Hidden down the laneway, Hatch is your sweet little escape. Got questions, collab ideas, or just want to say hi? Reach out we’re all ears.</p>
         </div>

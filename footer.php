@@ -2,9 +2,9 @@
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack9.png" class="img-fluid" alt="Image description">
     <div class="container">
          <!-- Sign Up Email -->
-        <div class="container footer-signup-email text-center pt-2 pb-3 mt-n2">
+        <div class="container footer-signup-email text-center pb-3 mt-n2">
             <h2 class="footer-h2 fs-3 fs-md-2 fs-lg-1 pb-2">Don’t Miss a Crumb!</h2>
-            <p class="footer-p">Be the first to know about new flavours, specials, and Hatch news. Sign up for tasty updates!</p>
+            <p class="footer-p fs-5">Be the first to know about new flavours, specials, and Hatch news. Sign up for tasty updates!</p>
             <div class="footer-email-form">
                 <input type="text" class="footer-emailbox" placeholder="Email Address:">
                 <button class="footer-emailbutton" aria-label="Email box">Sign Up</button>
@@ -14,7 +14,7 @@
          <!-- Social Media Icons -->
         <div class="container text-center mb-4">
             <a href="https://www.instagram.com/hatch.perth/" target="_blank" rel="noopener" class="footer-icons me-3"><i class="fa-brands fa-instagram"></i></a>
-            <p class="footer-p mb-2">Follow us on Instagram for sweet surprises 🍓</p>
+            <p class="footer-p mb-2 fs-5">Follow us on Instagram for sweet surprises 🍓</p>
         </div>
 
         <!-- Navigation Links -->

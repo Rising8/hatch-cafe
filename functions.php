@@ -61,6 +61,12 @@ function hatch_enqueue_styles()
 
     // Menu JS
     wp_enqueue_script('menu-js', get_template_directory_uri() . '/assets/js/menu.js', array('jquery'), '1.0', true);
+
+    // Mobile Burger Icon JS
+    wp_enqueue_script('mobile-burger-icon-js', get_template_directory_uri() . '/assets/js/mobile-burger-icon.js', array('jquery'), '1.0', true);
+
+    // Mobile Menu Dropdown JS
+    wp_enqueue_script('mobile-menu-dropdown-js', get_template_directory_uri() . '/assets/js/mobile-menu-dropdown.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'hatch_enqueue_styles');
 

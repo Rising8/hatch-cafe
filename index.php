@@ -16,31 +16,38 @@
             <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-inner">
                     <?php foreach ($slides as $index => $slide): ?>
-                        <div class="carousel-item index-carousel-item <?= $index === 0 ? 'active' : '' ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/<?= $slide['img']; ?>" 
+                    <div class="carousel-item index-carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                        <picture>
+                            <source 
+                                media="(max-width: 600px)" 
+                                srcset="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/mobile-<?= $slide['img']; ?>">
+                            
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/<?= $slide['img']; ?>" 
                                 class="w-100 img-fluid" 
                                 alt="<?= htmlspecialchars($slide['alt']) ?>">
-                            
-                            <!-- Content overlay -->
-                            <div class="carousel-caption <?= $index === 0 ? 'd-none d-md-block' : 'blur-box d-none d-md-block' ?> text-start">
-                                <h1 class="<?= $index === 0 ? 'index-hero-h' : 'hero-h' ?> text-start">
-                                    <span class="index-carousel-word1">Your Hidden</span><br>
-                                    <span class="index-carousel-word2">Hatchaway</span>
-                                </h1>
-                                <p class="<?= $index === 0 ? 'index-hero-p' : 'hero-p' ?> py-3 fs-5 sentenceTyping">
-                                    <?= $slide['caption'] ?>
-                                </p>
-                                <div class="button1 pt-2">
-                                    <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="index-hero-order btn btn-lg rounded-pill px-5 py-3 fs-5 pulse">
-                                        Order Now
-                                    </a>
-                                </div>
+                        </picture>
+
+                        <div class="carousel-caption blur-box text-start">
+                            <h1 class="index-hero-h text-start">
+                                <span class="index-carousel-word1">Your Hidden</span><br>
+                                <span class="index-carousel-word2">Hatchaway</span>
+                            </h1>
+                            <p class="index-hero-p py-3 fs-5 sentenceTyping">
+                                <?= $slide['caption'] ?>
+                            </p>
+                            <div class="button1 pt-2">
+                                <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="index-hero-order btn btn-lg rounded-pill px-5 py-3 fs-5 pulse">
+                                    Order Now
+                                </a>
                             </div>
                         </div>
-                    <?php endforeach; ?>
+                    </div>
+                <?php endforeach; ?>
+
                 </div>
             </div>
         </div>
@@ -75,20 +82,21 @@
         </div>
 
         <!-- Gift Card Section -->
-        <div class="index-content-3 container p-3 rounded-5 mt-5">
-            <div class="index-giftcard row">
-                <div class="col-md-5">
-                    <div class="gift-wrapper position-relative text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/giftcard-picture.png" alt="Map" class="index-gift-image">
-                    </div>
+        <div class="container">
+        <div class="index-content-3 p-3 rounded-5 mt-5">
+            <div class="index-giftcard row flex-column flex-md-row align-items-center">
+                <!-- Image on top on mobile -->
+                <div class="col-12 col-md-5 text-center mb-3 mb-md-0">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing-page/giftcard-picture.png" alt="Gift Card" class="img-fluid index-gift-image">
                 </div>
-                <div class="col-md-7 justify-content-center">
+                <!-- Text and Button -->
+                <div class="col-12 col-md-7 text-center text-md-start pb-5">
                     <div class="container">
-                        <h1 class=" text-start animated-header">
+                        <h1 class="animated-header">
                             <span class="index-giftcard-word1">Crack </span>
                             <span class="index-giftcard-word2">A Smile</span>
                         </h1>
-                        <p class="text-start mx-auto py-1 index-giftcard-p" id="sentenceTyping" style="color:#f9f9f9;">
+                        <p class="py-1 index-giftcard-p" id="sentenceTyping" style="color:#f9f9f9;">
                             Surprise your loved ones with our delicious waffle gift cards perfect for any occasion!  
                             Easy to buy, fun to share, and full of sweet moments.
                         </p>
@@ -98,13 +106,14 @@
                                 style="background: linear-gradient(135deg, #C7A678, #B88A54, #B18149); color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); box-shadow: 0 4px 10px rgba(177, 129, 73, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;" 
                                 type="button">
                                 Gift Card
-                                </button>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
+
 
        <!-- Membership Section -->
         <div class="index-content-4 pt-5">
@@ -126,7 +135,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="fs-5 text-center" style="width: 70%; margin:0 auto;">
+                        <p class="index-membership-p fs-5 text-center" style="width: 70%; margin:0 auto;">
                         Join our Eggclusive Club today and unlock sweet surprises!  
                         Be the first to taste new flavors, score sweet discounts, and crack open exclusive goodies made just for Hatchers.
                         </p>
@@ -139,31 +148,34 @@
         </div>
 
         <!-- Map Section -->
+        <div class="container">
         <div class="index-content-5 pt-5">
             <div class="map-animation container p-5 rounded-3">
                 <div class="row">
-                    <div class="col-md-6">
+                    <!-- Text Column: shown first on mobile -->
+                    <div class="col-12 col-md-6 order-1 order-md-1">
                         <div class="container">
-                            <h1 class=" text-start animated-header">
-                                <span class="index-map-word1">Find </span>
-                                <span class="index-map-word2">Your Way</span><br>
-                                <span class="index-map-word3">To Hatch!</span>
-                            </h1>
-                            <p class="index-map-p text-start mx-auto py-3" id="sentenceTyping">
-                                Find Hatch tucked away like a secret treasure down a cozy alley. Once you discover our spot, you’ll be rewarded with warm smiles, delicious egg waffles, and a unique vibe that’s worth the adventure. Come explore the hidden side of Hatch!
-                            </p>
+                        <h1 class="text-start animated-header">
+                            <span class="index-map-word1">Find </span>
+                            <span class="index-map-word2">Your Way</span><br>
+                            <span class="index-map-word3">To Hatch!</span>
+                        </h1>
+                        <p class="index-map-p text-start mx-auto py-3 fs-5" id="sentenceTyping">
+                            Find Hatch tucked away like a secret treasure down a cozy alley. Once you discover our spot, you’ll be rewarded with warm smiles, delicious egg waffles, and a unique vibe that’s worth the adventure. Come explore the hidden side of Hatch!
+                        </p>
                         </div>
                     </div>
-                    <div class="col-md-6 justify-content-center">
+
+                    <!-- Map Column: shown second on mobile -->
+                    <div class="col-12 col-md-6 order-2 order-md-2 justify-content-center">
                         <div class="index-map-wrapper position-relative">
-                            <!-- map image -->
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map-animation/map-hatch.png" alt="Map" class="map-image">
-                            <!-- egg pin -->
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map-animation/egg.png" alt="Egg Pin" class="egg-pin">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map-animation/map-hatch.png" alt="Map" class="map-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map-animation/egg.png" alt="Egg Pin" class="egg-pin">
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <!-- Contact Section -->
