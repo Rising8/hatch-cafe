@@ -5,7 +5,7 @@
 get_header();
 ?>
 
-<div class="contact-wrapper contact-section-1 py-5">
+<div class="contact-wrapper py-5">
 
     <div class="container">
         <!-- Hero Section -->
@@ -20,21 +20,21 @@ get_header();
                 <!-- Info Boxes -->
                 <div class="row g-3 mb-4">
                     <div class="col-md-4 col-12">
-                        <div class="info-boxes p-4 rounded shadow text-center h-100">
+                        <div class="contact-info-boxes p-4 rounded shadow text-center h-100">
                             <i class="fa-solid fa-phone fs-4 mb-2 text-warning"></i>
                             <h6 class="fw-bold">Phone</h6>
                             <p class="mb-0">+61 493 346 288</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-12">
-                        <div class="info-boxes p-4 rounded shadow text-center h-100">
+                        <div class="contact-info-boxes p-4 rounded shadow text-center h-100">
                             <i class="fa-solid fa-envelope fs-4 mb-2 text-warning"></i>
                             <h6 class="fw-bold">Email</h6>
                             <p class="mb-0">hatchawaffleegg<br>@gmail.com</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-12">
-                        <div class="info-boxes p-4 rounded shadow text-center h-100">
+                        <div class="contact-info-boxes p-4 rounded shadow text-center h-100">
                             <i class="fa-solid fa-location-dot fs-4 mb-2 text-warning"></i>
                             <h6 class="fw-bold">Our Shop</h6>
                             <p class="mb-0">189 William Street,<br>Northbridge, WA 6003</p>
@@ -54,7 +54,7 @@ get_header();
 
                 <!-- Hours -->
                 <h5 class="fw-bold text-center pt-3 mb-3">⏰ Opening Hours</h5>
-                <div class="row text-center opening-hours mb-3">
+                <div class="row text-center contact-opening-hours mb-3">
                     <div class="col-6">Mon-Sat: 4:00–10:00 pm</div>
                     <div class="col-6">Sunday: <strong>Closed</strong></div>
                 </div>

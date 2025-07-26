@@ -21,7 +21,7 @@ get_header(); ?>
     </div>
 
     <!-- Full-Width Image -->
-    <div class="about-content-2 full-width-image pt-5">
+    <div class="about-content-2 pt-5">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about-page/about-img.png" class="img-fluid" alt="Hatch interior">
     </div>
 
@@ -44,9 +44,9 @@ get_header(); ?>
                 ?>
                     <div class="col-3">
                         <div class="about-card text-center scroll-fade scroll-delay-<?php echo $delay; ?>" style="margin-top: <?php echo $marginTop; ?>;">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about-page/<?php echo $item[0]; ?>" alt="<?php echo $item[1]; ?>" class="card-img-about">
-                            <h3 class="hightlightst-h3"><?php echo $item[1]; ?></h3>
-                            <p class="about-p"><?php echo $item[2]; ?></p>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about-page/<?php echo $item[0]; ?>" alt="<?php echo $item[1]; ?>" class="about-card-img">
+                            <h3 class="highlights-h3"><?php echo $item[1]; ?></h3>
+                            <p class="highlights-p"><?php echo $item[2]; ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -60,7 +60,7 @@ get_header(); ?>
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-md-6 px-5">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about-page/sean-pic.webp" class="about-content4-img rounded-5" alt="Sean Hong">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about-page/sean-pic.webp" class="about-founder-img rounded-5" alt="Sean Hong">
                 </div>
                 <div class="col-md-6">
                     <h2 class="mb-3">From Alley Dreams to Waffle Magic</h2>

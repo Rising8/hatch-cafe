@@ -8,7 +8,7 @@ get_header();
 <div class="giftcard-wrapper">
     <div class="giftcard-content-1">
         <!-- Gift Cards Hero Section -->
-        <section class="giftcard-hero-section pt-5 pb-3 text-dark animate__animated animate__bounceIn">
+        <section class="pt-5 pb-3 text-dark animate__animated animate__bounceIn">
             <div class="giftcard-hero container text-center py-5">
                 <h1 class="display-4 fw-bold mb-3">Give the Gift of Hatch</h1>
                 <p class="fs-5">Perfect for birthdays, thank-yous, or just because - our gift cards are the ultimate treat.</p>                
@@ -20,7 +20,7 @@ get_header();
     </div>
 
     <div class="giftcard-content-2">
-        <h2 class="giftcard-h2 text-center pb-5">How it Works!</h2>
+        <h2 class="text-center pb-5">How it Works!</h2>
         <div class="container pt-5">
             <div class="row text-center py-5 gx-5 gy-5">
                 <?php 
@@ -31,11 +31,10 @@ get_header();
                     ['img' => 'hiw4.png', 'title' => "Step 4: Check Out and Send", 'desc' => 'Review everything and complete your purchase. Done!']
                 ];
                 foreach ($steps as $index => $step): 
-                    // Add top margin only to even-indexed items (1 and 3 for 0-based index)
                     $marginStyle = ($index % 2 == 1) ? 'style="margin-top: -50px;"' : '';
                 ?>
                     <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center mb-4">
-                        <div class="gift-card text-center" <?php echo $marginStyle; ?>>
+                        <div class="gift-card-hiw text-center" <?php echo $marginStyle; ?>>
                             <img 
                                 src="<?php echo get_template_directory_uri(); ?>/assets/img/giftcard-page/<?php echo $step['img']; ?>" 
                                 alt="Step" 
@@ -50,7 +49,7 @@ get_header();
     </div>
 
     <div class="giftcard-content-3">
-        <section class="gift-faq-section pt-3 pb-5 text-dark">
+        <section class="pt-3 pb-5 text-dark">
             <!-- FAQ -->
             <div class="container">
                 <h2 class="fw-bold text-center mb-4">FAQs</h2>

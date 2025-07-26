@@ -7,7 +7,7 @@ get_header();
 
 <div class="membership-wrapper text-dark">
     <!-- Hero Section -->
-    <div class="membership-content-1 py-5 text-center hero-gradient position-relative">
+    <div class="membership-content-1 py-5 text-center position-relative">
         <div class="container position-relative z-2">
             <div class="membership-hero-spacer"></div>
             <h1 class="display-4 fw-bold mb-3 text-shadow">
@@ -34,9 +34,9 @@ get_header();
                     Tap to crack... something sweet might hatch 🐣
                 </p>
                 <!-- Egg Animation Trigger -->
-                <div class="egg-wrapper-page position-relative" id="crackEggMemberPage" style="cursor: pointer;">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/top.png" alt="Top Egg" class="egg-part egg-top">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/bottom.png" alt="Bottom Egg" class="egg-part egg-bottom">
+                <div class="membership-page-egg position-relative" id="crackEggMemberPage" style="cursor: pointer;">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/top.png" alt="Top Egg" class="membership-egg-img egg-top">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/bottom.png" alt="Bottom Egg" class="membership-egg-img egg-bottom">
                     <div class="sprinkles" id="sprinkles"></div>
                 </div>
             </div>
@@ -47,36 +47,36 @@ get_header();
         </div>
 
         <!-- Animated Badge -->
-        <div class="animated-badge position-absolute start-50 translate-middle-x mt-5 glow" id="badgeAnchor">
+        <div class="animated-badge position-absolute start-50 translate-middle-x mt-5" id="badgeAnchor">
             <span class="badge rounded-pill bg-danger-subtle text-danger-emphasis fs-6 fw-bold pulse">Top Fan Reward System!</span>
         </div>
     </div>
 
     <!-- How It Works Section -->
-    <div class="membership-content-2 py-5 how-gradient text-white">
+    <div class="membership-content-2 py-5 text-white">
         <div class="container">
             <h2 class="text-center fw-bold mb-5">How It Works</h2>
             <div class="row justify-content-center gx-5">
                 <!-- Step 1 -->
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
-                    <div class="how-step p-4 rounded-4 shadow-lg text-center h-100">
-                        <div class="icon-circle mb-3">🥚</div>
+                    <div class="hiw-steps p-4 rounded-4 shadow-lg text-center h-100">
+                        <div class="hiw-icon mb-3">🥚</div>
                         <h5 class="fw-bold mb-2">1. Tap the Egg</h5>
                         <p>Click or tap the egg above to start your journey with us and open the Square portal.</p>
                     </div>
                 </div>
                 <!-- Step 2 -->
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
-                    <div class="how-step p-4 rounded-4 shadow-lg text-center h-100">
-                        <div class="icon-circle mb-3">👤</div>
+                    <div class="hiw-steps p-4 rounded-4 shadow-lg text-center h-100">
+                        <div class="hiw-icon mb-3">👤</div>
                         <h5 class="fw-bold mb-2">2. Create Your Account</h5>
                         <p>Tap the <strong>👤 profile icon</strong> on the top right, then enter your email to sign up.</p>
                     </div>
                 </div>
                 <!-- Step 3 -->
                 <div class="col-12 col-md-4">
-                    <div class="how-step p-4 rounded-4 shadow-lg text-center h-100">
-                        <div class="icon-circle mb-3">🏱</div>
+                    <div class="hiw-steps p-4 rounded-4 shadow-lg text-center h-100">
+                        <div class="hiw-icon mb-3">🏱</div>
                         <h5 class="fw-bold mb-2">3. Enjoy Membership Perks</h5>
                         <p>You're in! Get loyalty rewards, surprise drops & more sweet goodies.</p>
                     </div>
@@ -86,7 +86,7 @@ get_header();
     </div>
 
     <!-- Perks Section -->
-    <div class="membership-content-3 py-5 perks-gradient text-white">
+    <div class="membership-content-3 py-5 text-white">
         <div class="container text-center">
             <h2 class="fw-bold mb-4">Your Hatch Perks</h2>
             <div class="row g-4 justify-content-center">
@@ -152,7 +152,7 @@ get_header();
     </div>
 
     <!-- FOMO (Fear Of Missing Out) CTA Button -->
-    <div class="bg-warning-subtle py-5 text-center">
+    <div class="membership-cta py-5 text-center">
         <div class="container">
             <h2 class="fw-bold mb-3">Still Not Signed Up?</h2>
             <p class="lead">We saved you a warm spot. Treats, smiles, and eggstra love await 🧇</p>
