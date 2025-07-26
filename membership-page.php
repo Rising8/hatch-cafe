@@ -36,14 +36,10 @@ get_header();
                 <!-- Egg Animation Trigger -->
                 <div class="membership-page-egg position-relative" id="crackEggMemberPage" style="cursor: pointer;">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/top.png" alt="Top Egg" class="membership-egg-img egg-top">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/bottom.png" alt="Bottom Egg" class="membership-egg-img egg-bottom">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/animation-egg/bottom2.png" alt="Bottom Egg" class="membership-egg-img egg-bottom">
                     <div class="sprinkles" id="sprinkles"></div>
                 </div>
             </div>
-
-            <!-- <div class="alert alert-light border mt-3 mx-auto" style="max-width: 420px">
-                <strong>Note:</strong> After clicking the egg, on the square page, tap the <strong>👤 profile icon</strong> to sign up!
-            </div> -->
         </div>
 
         <!-- Animated Badge -->
@@ -61,24 +57,24 @@ get_header();
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <div class="hiw-steps p-4 rounded-4 shadow-lg text-center h-100">
                         <div class="hiw-icon mb-3">🥚</div>
-                        <h5 class="fw-bold mb-2">1. Tap the Egg</h5>
-                        <p>Click or tap the egg above to start your journey with us and open the Square portal.</p>
+                        <h4 class="fw-bold mb-2">1. Tap the Egg</h4>
+                        <p class="fs-5 px-3">Click or tap the egg above to start your journey with us and open the Square portal.</p>
                     </div>
                 </div>
                 <!-- Step 2 -->
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <div class="hiw-steps p-4 rounded-4 shadow-lg text-center h-100">
                         <div class="hiw-icon mb-3">👤</div>
-                        <h5 class="fw-bold mb-2">2. Create Your Account</h5>
-                        <p>Tap the <strong>👤 profile icon</strong> on the top right, then enter your email to sign up.</p>
+                        <h4 class="fw-bold mb-2">2. Create Your Account</h4>
+                        <p class="fs-5 px-3">Tap the <strong>👤 profile icon</strong> on the top right, then enter your email to sign up.</p>
                     </div>
                 </div>
                 <!-- Step 3 -->
                 <div class="col-12 col-md-4">
                     <div class="hiw-steps p-4 rounded-4 shadow-lg text-center h-100">
                         <div class="hiw-icon mb-3">🏱</div>
-                        <h5 class="fw-bold mb-2">3. Enjoy Membership Perks</h5>
-                        <p>You're in! Get loyalty rewards, surprise drops & more sweet goodies.</p>
+                        <h4 class="fw-bold mb-2">3. Enjoy Membership Perks</h4>
+                        <p class="fs-5 px-3">You're in! Get loyalty rewards, surprise drops & more sweet goodies.</p>
                     </div>
                 </div>
             </div>

@@ -1028,17 +1028,12 @@ header {
 /* === MEMBERSHIP PAGE STYLING === */
 /* Membership Page - Hero Section */
 .membership-content-1 {
-  background: linear-gradient(to bottom, #fceec9, #f9dca1);
+  background: linear-gradient(to bottom, #f9f9f9, #f9dca1);
   z-index: 1;
 }
 
 .membership-hero-spacer {
   height: 100px;
-}
-
-.hero-gradient {
-  background: linear-gradient(to bottom, #fceec9, #f9dca1);
-  z-index: 1;
 }
 
 .membership-content-1 h1 {
