@@ -1036,6 +1036,11 @@ header {
   height: 100px;
 }
 
+.hero-gradient {
+  background: linear-gradient(to bottom, #fceec9, #f9dca1);
+  z-index: 1;
+}
+
 .membership-content-1 h1 {
   text-shadow: 0 2px 8px rgba(255, 193, 7, 0.4);
 }
@@ -1067,7 +1072,7 @@ header {
 
 .membership-page-egg {
   width: 120px;
-  height: 120px;
+  height: 130px;
   margin: 0 auto;
   transition: transform 0.3s ease;
 }
@@ -1116,7 +1121,7 @@ header {
 /* Membership Page - How It Works Section */
 .membership-content-2 {
   background: linear-gradient(to bottom, #f9dca1, #f7c77f);
-  color: #6b4e00 !important;
+  color: #212529 !important;
   padding: 3rem 0;
 }
 
@@ -1170,6 +1175,7 @@ header {
 .membership-content-3 {
   background: linear-gradient(to bottom, #f7c77f, #f9d8a6);
   padding: 3rem 0;
+    color: #212529 !important;
   text-align: center;
 }
 
