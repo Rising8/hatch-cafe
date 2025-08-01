@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/d20f1d4040.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -25,14 +25,14 @@
 
 <body <?php body_class(); ?>>
 
-<!-- <div id="preloader">
+<div id="preloader">
     <div class="loader-text">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-wb.png" alt="Hatch Logo" style="width: 60%;" class="logo-animation">
               <p class="loading-caption mt-5">Loading your eggcitement...</p>
         </div>
     </div>
-</div> -->
+</div>
 
 <!-- Header -->
 <div class="header-wrapper">
