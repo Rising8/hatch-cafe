@@ -9,6 +9,6 @@ window.addEventListener("load", function () {
         setTimeout(() => {
             preloader.style.display = "none";
             header.classList.add('start');
-        }, 500);
-    }, 1500);
+        }, 300);
+    }, 1000);
 });

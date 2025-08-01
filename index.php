@@ -1,14 +1,23 @@
 <?php get_header(); ?>
 
 <main>
+    <div id="preloader">
+        <div class="loader-text">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-wb.png" alt="Hatch Logo" style="width: 60%;" class="logo-animation">
+                <p class="loading-caption mt-5">Loading your eggcitement...</p>
+            </div>
+        </div>
+    </div>
+    
     <div class="index-wrapper">
 
         <!-- Carousel Hero Section -->
         <?php
         $slides = [
-            ['img' => 'slide1.jpeg', 'alt' => 'Slide 1', 'caption' => "Follow the scent of warm waffles and you’ll find us your secret hideout<br>from the city buzz. Cozy, charming, and always freshly hatched."],
-            ['img' => 'slide2.jpeg', 'alt' => 'Slide 2', 'caption' => "Follow the scent of warm waffles and you’ll find us your secret hideout<br>from the city buzz. Cozy, charming, and always freshly hatched."],
-            ['img' => 'slide3.jpeg', 'alt' => 'Slide 3', 'caption' => "Follow the scent of warm waffles and you’ll find us your secret hideout<br>from the city buzz. Cozy, charming, and always freshly hatched."]
+            ['img' => 'slide1.jpeg', 'alt' => 'Slide 1', 'caption' => "Follow the scent of warm waffles and you’ll find us at your secret hideout<br>from the city buzz. Cozy, charming, and always freshly hatched."],
+            ['img' => 'slide2.jpeg', 'alt' => 'Slide 2', 'caption' => "Follow the scent of warm waffles and you’ll find us at your secret hideout<br>from the city buzz. Cozy, charming, and always freshly hatched."],
+            ['img' => 'slide3.jpeg', 'alt' => 'Slide 3', 'caption' => "Follow the scent of warm waffles and you’ll find us at your secret hideout<br>from the city buzz. Cozy, charming, and always freshly hatched."]
         ];
         ?>
 
@@ -30,18 +39,18 @@
 
                         <div class="carousel-caption blur-box text-start">
                             <h1 class="index-hero-h text-start">
-                                <span class="index-carousel-word1">Your Hidden</span><br>
-                                <span class="index-carousel-word2">Hatchaway</span>
+                                <span class="index-carousel-word1">ARTISAN</span><br>
+                                <span class="index-carousel-word2">WAFFLE EGG</span><br>
+                                <span class="index-carousel-word2">COFFEE BAR</span>
                             </h1>
                             <p class="index-hero-p py-3 fs-5 sentenceTyping">
                                 <?= $slide['caption'] ?>
                             </p>
                             <div class="button1 pt-2">
-                                <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
-                                target="_blank"
+                                <a href="<?php echo site_url('/menu'); ?>"
                                 rel="noopener noreferrer"
                                 class="index-hero-order btn btn-lg rounded-pill px-5 py-3 fs-5 pulse">
-                                    Order Now
+                                    Explore Menu
                                 </a>
                             </div>
                         </div>
@@ -59,8 +68,8 @@
                 <div class="index-category-section d-flex flex-wrap justify-content-center gap-5 my-2">
                     <div class="index-category-card text-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/waffle.png" alt="Takeaway" class="index-card-img" width="50">
-                        <h3 class="index-menus-h3 mt-3">Grab & Go Goodness</h3>
-                        <p class="index-menus-p">Freshly made egg waffles and drinks ready when you are.</p>
+                        <h3 class="index-menus-h3 mt-3">Eggchi to Go</h3>
+                        <p class="index-menus-p">Freshly made egg waffles and drinks ready whenever you are.</p>
                         <a href="<?php echo site_url('/menu'); ?>#eggchi" class="index-menus-btn btn rounded-pill mt-2">Order Now</a>
                     </div>
 

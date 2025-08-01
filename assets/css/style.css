@@ -176,14 +176,14 @@ header {
 
 .index-carousel-word1 {
   font-family: "Cormorant Garamond";
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: #f9f9f9;
   animation-delay: 0.3s;
 }
 
 .index-carousel-word2 {
   font-family: "Cormorant Garamond";
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: #f9f9f9;
   animation-delay: 0.9s;
 }
@@ -1470,13 +1470,13 @@ header {
   }
 
   .index-hero-h {
-    font-size: 1.6rem;
-    padding-top: 0;
+    font-size: 1.4rem;
   }
 
   .index-hero-p {
     font-size: 1rem;
     max-width: 100%;
+    line-height: 1;
   }
 
   /* How Do You Want It Section */
