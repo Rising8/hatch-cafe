@@ -177,7 +177,7 @@ header {
 
 /* === INDEX PAGE STYLING === */
 .index-wrapper {
-  background-color: #FBFBFB;
+  background-color: #F9EEE1;
 }
 
 /* Index Page - Order Now Button */
@@ -233,8 +233,11 @@ header {
   color: #f9f9f9;
 }
 
+/* Introduction Section */
+
+
 /* Index Page - How Do You Want It Section */
-.index-menus-h2 {
+/* .index-menus-h2 {
   color: #50685D !important;
 }
 
@@ -295,14 +298,134 @@ header {
 
 .index-card-img:hover {
   transform: scale(1.05);
+} */
+
+
+.index-content-4 {
+  background-color: #F9EEE1;
 }
 
-/* Index Page - Giftcard Section */
-.index-content-3 {
-  background: linear-gradient(to bottom, #D6A976 0%, #6F8777 100%);
+.matcha-platter-heading{
+  font-weight: bold;
+  font-size: 3em;
 }
 
-.index-giftcard {
+.matcha-platter-rounded{
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+}
+
+.image-layout {
+  position: relative;
+  width: 800px;  
+  height: 700px;  
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.matcha-platter-rounded-big{
+  border-radius: 100%;
+  width: 450px;
+  height: 450px;
+}
+
+.image-layout .small {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.top-left {
+  top: 70px;
+  left: 70px;
+}
+.top-right {
+  top: 70px;
+  right: 70px;
+}
+.bottom-left {
+  bottom: 70px;
+  left: 70px;
+}
+.bottom-right {
+  bottom: 70px;
+  right: 70px;
+}
+.bottom-center {
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.index-book-button{
+  border: 0.5px solid #F9EEE1;
+  background-color: #4A644B;
+  color: #F9EEE1;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.index-book-button:hover{
+  border: 0.5px solid #F9EEE1;
+  background-color: #4A644B;
+  color: #F9EEE1;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.index-content-5 {
+  background-color: #F9EEE1;
+}
+
+.menu-section{
+  width: 100%;
+  width: 1200px; 
+  margin: auto;
+  /* background-color: #6F8777; */
+  background-color: #f9f9f9;
+}
+
+.menu-section .item {
+  flex: 1 0 25%;
+  padding: 15px;
+  text-align: center;
+}
+
+.menu-section p {
+  margin: 10px; 
+  font-size: 14px;
+}
+
+.menu-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.menu-p{
+  color: black;
+  font-size: 20px !important;
+}
+
+.index-content-6 {
+  background-color: #F9EEE1;
+}
+
+.about-p{
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+/* .index-giftcard {
   height: 230px;
 }
 
@@ -336,15 +459,15 @@ header {
   50%  { transform: rotate(-6deg) translateX(1px); }
   75%  { transform: rotate(-8deg) translateX(-2px); }
   100% { transform: rotate(-7deg) translateX(0); }
-}
+} */
 
 /* Index Page - Membership Section */
-.index-content-4 {
+/* .index-content-4 {
   height: 800px;
   background-color: #f9f9f9;
-}
+} */
 
-.index-membership {
+/* .index-membership {
   height: 720px;
   background: linear-gradient(to bottom, #6F8777 0%, #6F8777 75%, #D6A976 100%);
 }
@@ -419,36 +542,40 @@ header {
 
 .index-membership-img {
   width: 70%;
-}
+} */
 
 /* Index Page - Animated Map Section */
-.index-content-5 {
+/* .index-content-5 {
   background-color: #f9f9f9;
-}
+} */
 
+/* Map Section */
 .map-animation{
-  background-color: #D6A976;
+  background-color: #6F8777;
   box-shadow: 0 8px 24px rgba(179, 128, 75, 0.3);
   height: 400px;
 }
 
 .index-map-word1 {
   font-size: 1.5em;
-  color: white;
+  color: black;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .index-map-word2 {
   font-size: 1.5em;
+  color: white;
 }
 
 .index-map-word3 {
   font-size: 1.5em;
+  color: white;
 }
 
 .index-map-p {
   font-size: 1.2em;
   line-height: 1.2;
+  color: white;
 }
 
 .index-map-wrapper {
@@ -490,9 +617,9 @@ header {
 }
 
 /* Index Page - Contact Secion */
-.index-content-6 {
+/* .index-content-6 {
   background-color: #f9f9f9;
-}
+} */
 
 
 /* === ABOUT PAGE STYLING === */
