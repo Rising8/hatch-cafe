@@ -15,9 +15,8 @@
         <!-- Carousel Hero Section -->
         <?php
         $slides = [
-            ['img' => 'slide1.jpeg', 'alt' => 'Slide 1', 'caption' => "Follow the scent of warm waffles and you’ll find us at your secret hideout<br>from the city buzz. Cozy, charming, and always freshly hatched."],
-            ['img' => 'slide2.jpeg', 'alt' => 'Slide 2', 'caption' => "Follow the scent of warm waffles and you’ll find us at your secret hideout<br>from the city buzz. Cozy, charming, and always freshly hatched."],
-            ['img' => 'slide3.jpeg', 'alt' => 'Slide 3', 'caption' => "Follow the scent of warm waffles and you’ll find us at your secret hideout<br>from the city buzz. Cozy, charming, and always freshly hatched."]
+            ['img' => 'landing-page1.jpeg', 'alt' => 'Slide 1', 'caption'],
+            ['img' => 'landing-page2.jpeg', 'alt' => 'Slide 2', 'caption']
         ];
         ?>
 
@@ -39,17 +38,14 @@
 
                         <div class="carousel-caption blur-box text-start">
                             <h1 class="index-hero-h text-start">
-                                <span class="index-carousel-word1">ARTISAN</span><br>
-                                <span class="index-carousel-word2">WAFFLE EGG</span><br>
-                                <span class="index-carousel-word2">COFFEE BAR</span>
+                                <span class="index-carousel-word1">FROM MATCHA</span><br>
+                                <span class="index-carousel-word1">DREAMS TO</span><br>
+                                <span class="index-carousel-word2">HATCH REALITY</span>
                             </h1>
-                            <p class="index-hero-p py-3 fs-5 sentenceTyping">
-                                <?= $slide['caption'] ?>
-                            </p>
-                            <div class="button1 pt-2">
+                            <div class="pt-4">
                                 <a href="<?php echo site_url('/menu'); ?>"
                                 rel="noopener noreferrer"
-                                class="index-hero-order btn btn-lg rounded-pill px-5 py-3 fs-5 pulse">
+                                class="index-hero-order fs-5 rounded-pill px-5 py-2">
                                     Explore Menu
                                 </a>
                             </div>
