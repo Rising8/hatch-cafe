@@ -1485,11 +1485,8 @@ header {
 
 .footer-h2 {
   display: inline-block;
-  padding: 0.4rem 1rem;
   border-radius: 25px;
   font-weight: 700; 
-  box-shadow: 2px 2px 0px #D6A976;
-  border: 2px solid #D6A976
 }
 
 .footer-signup-email {
@@ -1519,7 +1516,7 @@ header {
 }
 
 .footer-emailbutton {
-  background-color: #D6A976;
+  background-color: #87a090;
   color: #fff;
   border: none;
   padding: 0 1.5rem;
@@ -1531,7 +1528,6 @@ header {
 }
 
 .footer-emailbutton:hover {
-  background-color: #B1804B;
   color: #f9f9f9;
 }
 
@@ -1549,7 +1545,6 @@ header {
   padding: 0.4rem 0.9rem;
   border-radius: 20px;
   font-weight: 600;
-  background-color: #D6A976;
   display: inline-block;
   margin: 0.2rem;
   font-size: 0.95rem;

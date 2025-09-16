@@ -1,9 +1,9 @@
 <footer class="footer-wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack9.png" class="img-fluid" alt="Image description">
+    <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/style/crack9.png" class="img-fluid" alt="Image description"> -->
     <div class="container">
          <!-- Sign Up Email -->
         <div class="container footer-signup-email text-center pb-3 mt-n2">
-            <h2 class="footer-h2 fs-3 fs-md-2 fs-lg-1 pb-2">Don’t Miss a Crumb!</h2>
+            <h2 class="footer-h2 fs-3 fs-md-2 fs-lg-1 pb-2 pt-5">Don’t Miss a Crumb!</h2>
             <p class="footer-p fs-5">Be the first to know about new flavours, specials, and Hatch news. Sign up for tasty updates!</p>
             <div class="footer-email-form">
                 <input type="text" class="footer-emailbox" placeholder="Email Address:">
@@ -14,7 +14,8 @@
          <!-- Social Media Icons -->
         <div class="container text-center mb-4">
             <a href="https://www.instagram.com/hatch.perth/" target="_blank" rel="noopener" class="footer-icons me-3"><i class="fa-brands fa-instagram"></i></a>
-            <p class="footer-p mb-2 fs-5">Follow us on Instagram for sweet surprises 🍓</p>
+            <a href="https://www.instagram.com/hatch.perth/" target="_blank" rel="noopener" class="footer-icons me-3"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/hatch.perth/" target="_blank" rel="noopener" class="footer-icons me-3"><i class="fa-brands fa-facebook"></i></a>
         </div>
 
         <!-- Navigation Links -->
