@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #ffff;
+  background-color: #F9EEE1;
   margin: 0;
 }
 
@@ -16,7 +16,7 @@ html {
 
 
 /* === PRELOADER STYLING === */
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -49,11 +49,64 @@ html {
   letter-spacing: 2px;
   animation: blink 1.2s infinite;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
-}
+} */
 
 
 /* === HEADER STYLING === */
-.header-wrapper {
+.header-wrapper{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Custom navbar */
+.custom-navbar {
+  position: absolute;    
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;           
+  background-color: #F9EEE1;
+  z-index: 10;
+}
+
+.logo{
+  width: 60px;
+  height: auto;
+}
+
+.nav-link{
+  color: #4B634B;
+}
+
+.nav-link:hover{
+  color: #4B634B;
+}
+
+.nav-icon{
+  color: #4B634B !important;
+}
+
+/* Contact Header Styling */
+/* Contact Header Styling */
+.header-contact-btn {
+  border: 0.5px solid #4A644B;
+  background-color: #F9EEE1;
+  color: #4A644B;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.header-contact-btn:hover {
+  background: linear-gradient(135deg, #8DC9BD, #875DA6);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* .header-wrapper {
   background-color: #6F8777;
   position: sticky;
   top: 0;
@@ -119,7 +172,7 @@ header {
   transform: translateY(-5px);
   border-radius: 30px;
   background: linear-gradient(to bottom, #7f9987, #6F8777, #5a6f65);
-}
+} */
 
 
 /* === INDEX PAGE STYLING === */

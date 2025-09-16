@@ -27,33 +27,30 @@
 
 <!-- Header -->
 <div class="header-wrapper">
-    <header class="border-bottom">
+    <header class="custom-navbar rounded-4 p-2 mt-4">
         <div class="container">
-            <div class="row align-items-center d-none d-md-flex" style="height: 85px;">
-                <!-- Left: Burger Menu Dropdown -->
-                <div class="col-md-3">
-                    <button id="burgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" style="background:none; border:none; cursor:pointer;">
-                        <i class="burger-menu p-2 fa-solid fa-bars" style="color: #f9f9f9; font-size: 2em;"></i>
-                        <span class="explore px-1"> EXPLORE</span>
-                    </button>
-                </div>
+            <div class="d-none d-md-flex align-items-center justify-content-between">
+                <!-- Left: Logo -->
+                <div class="col-md-3 nav-logo">
+                    <a href="<?php echo site_url('/'); ?>" class="d-inline-flex text-decoration-none">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo/hatch-logo.jpeg" class="logo" alt="Logo">
+                    </a> 
+                </div>          
 
-                <!-- Logo -->
-                <div class="col-md-6 position-relative">
-                    <a href="<?php echo home_url(); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo" class="logo">
-                    </a>
-                </div>
+                <!-- Middle: Menu -->
+                <nav class="navbar navbar-expand-md nav-menu" data-bs-theme="dark">
+                    <ul class="navbar-nav flex-row gap-3">
+                    <li><a href="<?php echo site_url('/'); ?>" class="nav-link">About Matcha</a></li>
+                    <li><a href="<?php echo site_url('/about'); ?>" class="nav-link">Menu</a></li>
+                    <li><a href="<?php echo site_url('/booking'); ?>" class="nav-link">Booking</a></li>
+                    <li><a href="<?php echo site_url('/shop'); ?>" class="nav-link">Membership</a></li>
+                    <li><a href="<?php echo site_url('/giftcard'); ?>" class="nav-link">Gift Card</a></li>
+                    </ul>
+                </nav>         
 
-                <!-- Right -->
-                <div class="col-md-3 d-flex justify-content-end align-items-center gap-2">
-                    <a href="https://www.hatchcafe.com.au/s/order/XWMYTQVSRX6DPNPZWDYIAHL5?location=11f0192a377f200dbfc53cecef6d5b2a"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-lg rounded-pill px-3 fs-6 order-now-btn pulse" 
-                        style="background: linear-gradient(to bottom right, #c29357, #B18149, #8e622e); color: white;">
-                        Order Now
-                    </a>
+                <!-- Right: Button -->
+                 <div class="icon col-md-3 text-end d-flex justify-content-end align-items-center" style="cursor: pointer;">
+                     <a class="header-contact-btn rounded-pill px-4 py-2 fw-bold" href="#">Order Now</a>
                 </div>
             </div>
 

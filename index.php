@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="loader-text">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-wb.png" alt="Hatch Logo" style="width: 60%;" class="logo-animation">
@@ -9,7 +9,7 @@
             </div>
         </div>
     </div>
-    
+     -->
     <div class="index-wrapper">
 
         <!-- Carousel Hero Section -->
