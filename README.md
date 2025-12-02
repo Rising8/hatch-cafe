@@ -30,4 +30,12 @@ Welcome to the **Hatch Cafe** website project! This site was created for **Hatch
 
 ---
 
+## ⚠️ License / Usage
+
+This repository is for **viewing purposes only**.  
+All code and content are **protected by copyright**.  
+No part of this project may be reused, copied, or redistributed without permission.
+
+---
+
 Enjoy exploring the world of Hatch Cafe online! 🍽️
